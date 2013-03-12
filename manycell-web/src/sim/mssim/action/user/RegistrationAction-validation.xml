@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"  
+         "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">  
+  <validators> 
+      
+      <field name="name">  
+          <field-validator type="requiredstring">  
+              <message>You must enter a value for Name</message>  
+          </field-validator>  
+          <field-validator type="stringlength">  
+              <param name="maxLength">40</param>  
+              <message>  
+                  Name cannot contain more than 40 characters  
+              </message>  
+          </field-validator>  
+      </field>  
+      <field name="username">  
+       <field-validator type="requiredstring">  
+              <message>You must enter a value for Username</message>  
+          </field-validator>  
+          <field-validator type="stringlength">  
+              <param name="maxLength">10</param>  
+              <message>  
+                  Username cannot contain more than 10 characters  
+              </message>  
+          </field-validator> 
+      </field>
+       
+<field name="password">
+	<field-validator type="requiredstring">
+		<message>Please provide Password</message>
+	</field-validator>
+	<field-validator type="stringlength">
+		<param name="minLength">6</param>
+		<param name="maxLength">15</param>
+		<message>Password should be min of 8 and max of 15 letters</message>
+	</field-validator>
+</field>
+
+<field name="accesscode">
+		<field-validator type="requiredstring">
+			<message>Please you need a valid code to register</message>
+		</field-validator>		
+	</field>
+	
+	<validator type="expression" short-circuit="true">
+		<param name="expression">accesscode == 238238238</param>
+		<message>You have not entered a valid code, please consult the administrator.</message>
+	</validator>
+
+	<field name="cPassword">
+		<field-validator type="requiredstring">
+			<message>Please confirm your password</message>
+		</field-validator>		
+	</field>
+	
+	<validator type="expression" short-circuit="true">
+		<param name="expression">password == cPassword</param>
+		<message>Password entered in both the fields are not same</message>
+	</validator>
+	
+	<field name="email">
+		<field-validator type="requiredstring">  
+              <message>You must enter a value for email</message>  
+          </field-validator>  
+          <field-validator type="email">  
+              <message>Please enter a valid email address</message>  
+          </field-validator>  
+      </field>  
+  </validators> 

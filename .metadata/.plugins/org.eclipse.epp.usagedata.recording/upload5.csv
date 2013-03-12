@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.core.resources,3.7.100.v20110510-0712,"org.eclipse.core.resources",1363104174275
+started,bundle,org.eclipse.core.runtime,3.7.0.v20110110,"org.eclipse.core.runtime",1363104174275
+started,bundle,org.eclipse.core.runtime.compatibility,3.2.100.v20100505,"org.eclipse.core.runtime.compatibility",1363104174276
+started,bundle,org.eclipse.core.runtime.compatibility.auth,3.2.200.v20110110,"org.eclipse.core.runtime.compatibility.auth",1363104174276
+started,bundle,org.eclipse.emf.common,2.7.0.v20110912-0920,"org.eclipse.emf.common",1363104174277
+started,bundle,org.eclipse.emf.common.ui,2.7.0.v20110913-1156,"org.eclipse.emf.common.ui",1363104174277
+started,bundle,org.eclipse.emf.ecore,2.7.0.v20110912-0920,"org.eclipse.emf.ecore",1363104174278
+started,bundle,org.eclipse.emf.ecore.xmi,2.7.0.v20110520-1406,"org.eclipse.emf.ecore.xmi",1363104174279
+started,bundle,org.eclipse.emf.edit,2.7.1.v20110913-1526,"org.eclipse.emf.edit",1363104174279
+started,bundle,org.eclipse.emf.edit.ui,2.7.0.v20110913-1156,"org.eclipse.emf.edit.ui",1363104174280
+started,bundle,org.eclipse.epp.mpc.ui,1.1.1.I20110907-0947,"org.eclipse.epp.mpc.ui",1363104174280
+started,bundle,org.eclipse.epp.usagedata.gathering,1.3.1.R201106061540,"org.eclipse.epp.usagedata.gathering",1363104174280
+started,bundle,org.eclipse.epp.usagedata.recording,1.3.1.R201106061540,"org.eclipse.epp.usagedata.recording",1363104174281
+started,bundle,org.eclipse.equinox.app,1.3.100.v20110321,"org.eclipse.equinox.app",1363104174281
+started,bundle,org.eclipse.equinox.common,3.6.0.v20110523,"org.eclipse.equinox.common",1363104174281
+started,bundle,org.eclipse.equinox.ds,1.3.1.R37x_v20110701,"org.eclipse.equinox.ds",1363104174282
+started,bundle,org.eclipse.equinox.event,1.2.100.v20110502,"org.eclipse.equinox.event",1363104174282
+started,bundle,org.eclipse.equinox.p2.core,2.1.0.v20110502-1955,"org.eclipse.equinox.p2.core",1363104174282
+started,bundle,org.eclipse.equinox.p2.directorywatcher,1.0.300.v20110502-1955,"org.eclipse.equinox.p2.directorywatcher",1363104174283
+started,bundle,org.eclipse.equinox.p2.engine,2.1.0.v20110511,"org.eclipse.equinox.p2.engine",1363104174283
+started,bundle,org.eclipse.equinox.p2.metadata,2.1.0.v20110510,"org.eclipse.equinox.p2.metadata",1363104174284
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.2.0.v20110511-1359,"org.eclipse.equinox.p2.metadata.repository",1363104174284
+started,bundle,org.eclipse.equinox.p2.operations,2.1.0.v20110511-1821,"org.eclipse.equinox.p2.operations",1363104174284
+started,bundle,org.eclipse.equinox.p2.reconciler.dropins,1.1.100.v20110510,"org.eclipse.equinox.p2.reconciler.dropins",1363104174285
+started,bundle,org.eclipse.equinox.p2.repository,2.1.0.v20110601,"org.eclipse.equinox.p2.repository",1363104174285
+started,bundle,org.eclipse.equinox.p2.ui.sdk.scheduler,1.0.100.v20110502-1955,"org.eclipse.equinox.p2.ui.sdk.scheduler",1363104174285
+started,bundle,org.eclipse.equinox.p2.updatechecker,1.1.200.v20110502-1955,"org.eclipse.equinox.p2.updatechecker",1363104174286
+started,bundle,org.eclipse.equinox.preferences,3.4.1.R37x_v20110725,"org.eclipse.equinox.preferences",1363104174286
+started,bundle,org.eclipse.equinox.registry,3.5.101.R37x_v20110810-1611,"org.eclipse.equinox.registry",1363104174286
+started,bundle,org.eclipse.equinox.security,1.1.1.R37x_v20110822-1018,"org.eclipse.equinox.security",1363104174287
+started,bundle,org.eclipse.equinox.util,1.0.300.v20110502,"org.eclipse.equinox.util",1363104174287
+started,bundle,org.eclipse.help,3.5.100.v20110426,"org.eclipse.help",1363104174288
+started,bundle,org.eclipse.jdt.core,3.7.1.xx-20111212-0900-e37-RELEASE,"org.eclipse.jdt.core",1363104174288
+started,bundle,org.eclipse.jdt.core.manipulation,1.4.0.v20110505-0800,"org.eclipse.jdt.core.manipulation",1363104174289
+started,bundle,org.eclipse.jdt.groovy.core,2.6.0.xx-20111212-0900-e37-RELEASE,"org.eclipse.jdt.groovy.core",1363104174289
+started,bundle,org.eclipse.jdt.ui,3.7.1.r371_v20110824-0800,"org.eclipse.jdt.ui",1363104174291
+started,bundle,org.eclipse.jem.util,2.1.100.v201103021400,"org.eclipse.jem.util",1363104174292
+started,bundle,org.eclipse.jface,3.7.0.I20110522-1430,"org.eclipse.jface",1363104174292
+started,bundle,org.eclipse.jsch.core,1.1.300.I20110514-0800,"org.eclipse.jsch.core",1363104174292
+started,bundle,org.eclipse.jst.j2ee.webservice,1.1.400.v201004110600,"org.eclipse.jst.j2ee.webservice",1363104174293
+started,bundle,org.eclipse.jst.j2ee.webservice.ui,1.1.500.v201105122000,"org.eclipse.jst.j2ee.webservice.ui",1363104174293
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.201.r371_v20110824-0800,"org.eclipse.ltk.core.refactoring",1363104174294
+started,bundle,org.eclipse.m2e.logback.configuration,1.0.100.20110804-1717,"org.eclipse.m2e.logback.configuration",1363104174294
+started,bundle,org.eclipse.photran.core,7.0.0.201109141657,"org.eclipse.photran.core",1363104174294
+started,bundle,org.eclipse.photran.core.vpg,7.0.0.201109141657,"org.eclipse.photran.core.vpg",1363104174295
+started,bundle,org.eclipse.team.core,3.6.0.I20110525-0800,"org.eclipse.team.core",1363104174295
+started,bundle,org.eclipse.team.cvs.core,3.3.400.I20110510-0800,"org.eclipse.team.cvs.core",1363104174296
+started,bundle,org.eclipse.team.cvs.ui,3.3.400.I20110510-0800,"org.eclipse.team.cvs.ui",1363104174296
+started,bundle,org.eclipse.team.ui,3.6.100.I20110525-0800,"org.eclipse.team.ui",1363104174297
+started,bundle,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui",1363104174298
+started,bundle,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console",1363104174298
+started,bundle,org.eclipse.ui.editors,3.7.0.v20110517-0800,"org.eclipse.ui.editors",1363104174299
+started,bundle,org.eclipse.ui.forms,3.5.100.v20110425,"org.eclipse.ui.forms",1363104174299
+started,bundle,org.eclipse.ui.ide,3.7.0.v20110809-1737,"org.eclipse.ui.ide",1363104174300
+started,bundle,org.eclipse.ui.navigator,3.5.100.v20110809-2227,"org.eclipse.ui.navigator",1363104174301
+started,bundle,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.resources",1363104174301
+started,bundle,org.eclipse.ui.net,1.2.100.I20110511-0800,"org.eclipse.ui.net",1363104174302
+started,bundle,org.eclipse.ui.views,3.6.0.I20110412-0800,"org.eclipse.ui.views",1363104174302
+started,bundle,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"org.eclipse.ui.workbench",1363104174302
+started,bundle,org.eclipse.ui.workbench.texteditor,3.7.0.v20110505-0800,"org.eclipse.ui.workbench.texteditor",1363104174303
+started,bundle,org.eclipse.update.configurator,3.3.100.v20100512,"org.eclipse.update.configurator",1363104174304
+started,bundle,org.eclipse.update.core,3.2.500.v20110330,"org.eclipse.update.core",1363104174305
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1363104174305
+started,bundle,org.eclipse.wb.discovery.core,1.1.0.r37x201109091028,"org.eclipse.wb.discovery.core",1363104174306
+started,bundle,org.eclipse.wb.discovery.ui,1.1.0.r37x201109091028,"org.eclipse.wb.discovery.ui",1363104174306
+started,bundle,org.eclipse.wst.common.emf,1.2.100.v201101101900,"org.eclipse.wst.common.emf",1363104174307
+started,bundle,org.eclipse.wst.common.emfworkbench.integration,1.2.101.v201107140600,"org.eclipse.wst.common.emfworkbench.integration",1363104174308
+started,bundle,org.eclipse.wst.common.frameworks,1.2.101.v201107192200,"org.eclipse.wst.common.frameworks",1363104174308
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.200.v201103170332,"org.eclipse.wst.common.project.facet.core",1363104174309
+started,bundle,org.eclipse.wst.web,1.1.500.v201104251400,"org.eclipse.wst.web",1363104174309
+started,bundle,repast.simphony.relogo.ide,2.0.0,"repast.simphony.relogo.ide",1363104174310
+started,bundle,org.eclipse.egit.core,2.3.1.201302201838-r,"org.eclipse.egit.core",1363104174310
+started,bundle,org.eclipse.egit.ui,2.3.1.201302201838-r,"org.eclipse.egit.ui",1363104174313
+started,bundle,org.eclipse.jgit,2.3.1.201302201838-r,"org.eclipse.jgit",1363104174314
+started,bundle,org.eclipse.mylyn.bugzilla.core,3.8.3.v20130107-0100,"org.eclipse.mylyn.bugzilla.core",1363104174314
+started,bundle,org.eclipse.mylyn.bugzilla.ui,3.8.3.v20130107-0100,"org.eclipse.mylyn.bugzilla.ui",1363104174315
+started,bundle,org.eclipse.mylyn.commons.core,3.8.3.v20130107-0100,"org.eclipse.mylyn.commons.core",1363104174315
+started,bundle,org.eclipse.mylyn.commons.net,3.8.3.v20130107-0100,"org.eclipse.mylyn.commons.net",1363104174315
+started,bundle,org.eclipse.mylyn.commons.notifications.core,1.0.3.v20130107-0100,"org.eclipse.mylyn.commons.notifications.core",1363104174316
+started,bundle,org.eclipse.mylyn.commons.notifications.feed,1.0.3.v20130107-0100,"org.eclipse.mylyn.commons.notifications.feed",1363104174316
+started,bundle,org.eclipse.mylyn.commons.ui,3.8.3.v20130107-0100,"org.eclipse.mylyn.commons.ui",1363104174316
+started,bundle,org.eclipse.mylyn.commons.workbench,3.8.3.v20130107-0100,"org.eclipse.mylyn.commons.workbench",1363104174317
+started,bundle,org.eclipse.mylyn.context.core,3.8.3.v20130107-0100,"org.eclipse.mylyn.context.core",1363104174317
+started,bundle,org.eclipse.mylyn.context.tasks.ui,3.8.3.v20130107-0100,"org.eclipse.mylyn.context.tasks.ui",1363104174318
+started,bundle,org.eclipse.mylyn.monitor.ui,3.8.3.v20130107-0100,"org.eclipse.mylyn.monitor.ui",1363104174318
+started,bundle,org.eclipse.mylyn.tasks.ui,3.8.3.v20130107-0100,"org.eclipse.mylyn.tasks.ui",1363104174319
+started,bundle,org.eclipse.mylyn.team.ui,3.8.3.v20130107-0100,"org.eclipse.mylyn.team.ui",1363104174319
+os,sysinfo,,,"linux",1363104174322
+arch,sysinfo,,,"x86",1363104174322
+ws,sysinfo,,,"gtk",1363104174322
+locale,sysinfo,,,"en_GB",1363104174322
+processors,sysinfo,,,"4",1363104174323
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1363104174323
+java.runtime.version,sysinfo,,,"1.6.0_25-b06",1363104174323
+java.specification.name,sysinfo,,,"Java Platform API Specification",1363104174323
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1363104174323
+java.specification.version,sysinfo,,,"1.6",1363104174323
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1363104174323
+java.version,sysinfo,,,"1.6.0_25",1363104174323
+java.vm.info,sysinfo,,,"mixed mode",1363104174323
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1363104174323
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1363104174323
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1363104174323
+java.vm.specification.version,sysinfo,,,"1.0",1363104174323
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1363104174323
+java.vm.version,sysinfo,,,"20.0-b11",1363104174323
+started,bundle,org.eclipse.m2e.usagedata,1.0.100.20110804-1717,"org.eclipse.m2e.usagedata",1363104174326
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104177830
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.import",1363104263968
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104263977
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104276101
+started,bundle,org.eclipse.wst.common.project.facet.ui,1.4.200.v201103311536,"org.eclipse.wst.common.project.facet.ui",1363104277779
+started,bundle,org.eclipse.wst.common.core,1.2.0.v200908252030,"org.eclipse.wst.common.core",1363104277836
+started,bundle,org.eclipse.wst.common.modulecore,1.2.101.v201108231700,"org.eclipse.wst.common.modulecore",1363104277841
+started,bundle,org.eclipse.wst.web.ui,1.1.400.v201004141630,"org.eclipse.wst.web.ui",1363104277843
+started,bundle,org.eclipse.jst.servlet.ui,1.1.501.v201108220630,"org.eclipse.jst.servlet.ui",1363104277845
+started,bundle,org.eclipse.jst.common.project.facet.core,1.4.200.v201103170302,"org.eclipse.jst.common.project.facet.core",1363104278132
+started,bundle,org.eclipse.jst.ws.jaxrs.core,1.0.301.v201108240656,"org.eclipse.jst.ws.jaxrs.core",1363104278134
+started,bundle,org.eclipse.wst.server.core,1.1.303.v20110816_1717,"org.eclipse.wst.server.core",1363104278162
+error,log,,,"Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.jst.server.core.",1363104278174
+started,bundle,org.eclipse.wst.server.ui,1.1.306.v20110823_1704,"org.eclipse.wst.server.ui",1363104278197
+started,bundle,org.eclipse.debug.core,3.7.0.v20110518,"org.eclipse.debug.core",1363104278222
+started,bundle,org.eclipse.jdt.launching,3.6.1.v20110803_r371,"org.eclipse.jdt.launching",1363104278243
+started,bundle,org.eclipse.jst.j2ee.core,1.2.101.v201108110300,"org.eclipse.jst.j2ee.core",1363104278281
+started,bundle,org.eclipse.jem,2.0.500.v201104271400,"org.eclipse.jem",1363104278293
+started,bundle,org.eclipse.wst.common.frameworks.ui,1.2.100.v201105122000,"org.eclipse.wst.common.frameworks.ui",1363104278312
+started,bundle,org.eclipse.wst.xml.core,1.1.601.v201108302147,"org.eclipse.wst.xml.core",1363104278314
+started,bundle,org.eclipse.wst.validation,1.2.302.v201107140600,"org.eclipse.wst.validation",1363104278324
+started,bundle,org.eclipse.jst.j2ee,1.1.501.v201108231845,"org.eclipse.jst.j2ee",1363104278347
+started,bundle,org.eclipse.jst.j2ee.web,1.1.501.v201108231500,"org.eclipse.jst.j2ee.web",1363104278350
+started,bundle,org.eclipse.jst.common.frameworks,1.1.500.v201104081500,"org.eclipse.jst.common.frameworks",1363104278362
+started,bundle,org.eclipse.jst.j2ee.ui,1.1.501.v201108231700,"org.eclipse.jst.j2ee.ui",1363104278407
+started,bundle,org.eclipse.jst.common.project.facet.ui,1.4.200.v201008182133,"org.eclipse.jst.common.project.facet.ui",1363104278466
+started,bundle,org.eclipse.jem.workbench,2.0.400.v201104251400,"org.eclipse.jem.workbench",1363104303222
+started,bundle,org.codehaus.groovy,1.7.10.xx-20111212-0900-e37-RELEASE,"org.codehaus.groovy",1363104303861
+started,bundle,org.eclipse.jst.jee.ui,1.0.400.v201105122000,"org.eclipse.jst.jee.ui",1363104303992
+started,bundle,org.eclipse.wst.common.ui,1.1.500.v200911190730,"org.eclipse.wst.common.ui",1363104304021
+started,bundle,org.eclipse.jst.j2ee.navigator.ui,1.1.501.v201107261503,"org.eclipse.jst.j2ee.navigator.ui",1363104304027
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104304599
+started,bundle,org.eclipse.rephraserengine.ui,3.0.0.201109141657,"org.eclipse.rephraserengine.ui",1363104304640
+started,bundle,org.eclipse.photran.ui.vpg,7.0.0.201109141657,"org.eclipse.photran.ui.vpg",1363104304654
+started,bundle,org.eclipse.jst.jee,1.0.401.v201105122000,"org.eclipse.jst.jee",1363104304757
+started,bundle,org.eclipse.jst.server.core,1.2.202.v20110419,"org.eclipse.jst.server.core",1363104304776
+started,bundle,org.eclipse.jst.j2ee.ejb,1.1.503.v201108102200,"org.eclipse.jst.j2ee.ejb",1363104307422
+started,bundle,org.eclipse.jst.j2ee.jca,1.1.500.v201108102200,"org.eclipse.jst.j2ee.jca",1363104307451
+started,bundle,org.eclipse.jst.jee.ejb,1.0.301.v201007070821,"org.eclipse.jst.jee.ejb",1363104307457
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104307459
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104307460
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104307461
+started,bundle,org.eclipse.wb.core.lib,1.1.0.r37x201109091012,"org.eclipse.wb.core.lib",1363104314076
+started,bundle,org.eclipse.wb.core,1.1.0.r37x201109091012,"org.eclipse.wb.core",1363104314096
+started,bundle,org.eclipse.wst.jsdt.core,1.1.101.v201108151912,"org.eclipse.wst.jsdt.core",1363104316646
+started,bundle,org.eclipse.wst.jsdt.manipulation,1.0.300.v201104272153,"org.eclipse.wst.jsdt.manipulation",1363104316689
+started,bundle,org.eclipse.wst.jsdt.ui,1.1.101.v201108151912,"org.eclipse.wst.jsdt.ui",1363104316692
+started,bundle,org.eclipse.wst.sse.core,1.1.601.v201108151912,"org.eclipse.wst.sse.core",1363104316794
+started,bundle,org.eclipse.wst.html.core,1.1.501.v201109080146,"org.eclipse.wst.html.core",1363104316833
+started,bundle,com.google.gdt.eclipse.platform.shared,2.5.1.v201201120043-rel-r37,"com.google.gdt.eclipse.platform.shared",1363104316857
+started,bundle,com.google.gdt.eclipse.platform.e37,2.5.1.v201201120043-rel-r37,"com.google.gdt.eclipse.platform.e37",1363104316857
+started,bundle,com.google.gwt.eclipse.core,2.5.1.v201201120043-rel-r37,"com.google.gwt.eclipse.core",1363104317362
+started,bundle,org.eclipse.m2e.core,1.0.100.20110804-1717,"org.eclipse.m2e.core",1363104335345
+executed,command,org.eclipse.ui.ide,3.7.0.v20110809-1737,"org.eclipse.ui.project.buildProject",1363104342030
+started,bundle,com.google.appengine.eclipse.core,2.5.1.v201201120043-rel-r37,"com.google.appengine.eclipse.core",1363104342168
+started,bundle,com.google.gdt.eclipse.appengine.rpc,2.5.1.v201201120043-rel-r37,"com.google.gdt.eclipse.appengine.rpc",1363104342172
+started,bundle,org.eclipse.jdt.apt.core,3.3.500.v20110420-1015,"org.eclipse.jdt.apt.core",1363104342187
+started,bundle,org.eclipse.jdt.apt.pluggable.core,1.0.400.v20110305-1450,"org.eclipse.jdt.apt.pluggable.core",1363104342191
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104342342
+started,bundle,org.eclipse.wst.dtd.core,1.1.501.v201107252021,"org.eclipse.wst.dtd.core",1363104342911
+started,bundle,org.eclipse.wst.sse.ui,1.3.1.v201108191312,"org.eclipse.wst.sse.ui",1363104342915
+started,bundle,org.eclipse.wst.html.ui,1.0.601.v201108152113,"org.eclipse.wst.html.ui",1363104342915
+started,bundle,org.eclipse.wst.wsdl.validation,1.1.502.v201104071820,"org.eclipse.wst.wsdl.validation",1363104342923
+started,bundle,org.eclipse.wst.xsd.core,1.1.600.v201104070312,"org.eclipse.wst.xsd.core",1363104342926
+started,bundle,org.eclipse.wst.common.uriresolver,1.1.401.v201004280700,"org.eclipse.wst.common.uriresolver",1363104343319
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104343348
+started,bundle,org.eclipse.wst.internet.cache,1.0.400.v201004280700,"org.eclipse.wst.internet.cache",1363104343491
+error,log,,,"Unable to update index for central|http://repo1.maven.org/maven2",1363104343592
+started,bundle,org.eclipse.wst.css.core,1.1.500.v201104191926,"org.eclipse.wst.css.core",1363104343766
+started,bundle,org.eclipse.pde.core,3.7.1.v20110822-2108,"org.eclipse.pde.core",1363104345484
+started,bundle,org.eclipse.ltk.ui.refactoring,3.6.0.v20110505-0800,"org.eclipse.ltk.ui.refactoring",1363104352375
+started,bundle,org.eclipse.compare.core,3.5.200.I20110208-0800,"org.eclipse.compare.core",1363104352491
+opened,editor,org.eclipse.jdt.ui,3.7.1.r371_v20110824-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1363104352946
+activated,editor,org.eclipse.jdt.ui,3.7.1.r371_v20110824-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1363104353110
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1363104353156
+started,bundle,org.codehaus.groovy.eclipse.quickfix,2.6.0.xx-20111212-0900-e37-RELEASE,"org.codehaus.groovy.eclipse.quickfix",1363104353261
+started,bundle,org.eclipse.jdt.junit,3.7.0.v20110505-0800,"org.eclipse.jdt.junit",1363104353264
+started,bundle,org.eclipse.core.variables,3.2.500.v20110511,"org.eclipse.core.variables",1363104353296
+started,bundle,org.codehaus.groovy.eclipse.core,2.6.0.xx-20111212-0900-e37-RELEASE,"org.codehaus.groovy.eclipse.core",1363104361531
+started,bundle,org.eclipse.jdt.debug,3.7.1.v20110802_r371,"org.eclipse.jdt.debug",1363104361557
+started,bundle,org.eclipse.debug.ui,3.7.101.v20110817_r371,"org.eclipse.debug.ui",1363104361599
+started,bundle,org.eclipse.jdt.debug.ui,3.6.1.v20110803_r371,"org.eclipse.jdt.debug.ui",1363104361653
+started,bundle,org.codehaus.groovy.eclipse.ui,2.6.0.xx-20111212-0900-e37-RELEASE,"org.codehaus.groovy.eclipse.ui",1363104361655
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104377013
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104456461
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104504566
+started,bundle,org.eclipse.equinox.p2.garbagecollector,1.0.200.v20110510,"org.eclipse.equinox.p2.garbagecollector",1363104644354
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104665119
+started,bundle,org.eclipse.search,3.7.0.v20110505-0800,"org.eclipse.search",1363104666329
+started,bundle,org.eclipse.compare,3.5.201.R37x_v20110817-0800,"org.eclipse.compare",1363104666374
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.refresh",1363104668106
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104668159
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104668160
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104668160
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104668274
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104668275
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104668275
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104668277
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104668278
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104668278
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104668425
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104668425
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104668426
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104668461
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104668462
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104668463
+started,bundle,org.eclipse.cdt.debug.core,7.1.0.201109151620,"org.eclipse.cdt.debug.core",1363104670501
+started,bundle,org.eclipse.cdt.debug.ui,7.1.1.201109151620,"org.eclipse.cdt.debug.ui",1363104670505
+started,bundle,com.google.gdt.eclipse.suite,2.5.1.v201201120043-rel-r37,"com.google.gdt.eclipse.suite",1363104670741
+executed,command,org.eclipse.ui.ide,3.7.0.v20110809-1737,"org.eclipse.ui.project.buildProject",1363104673230
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104685222
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104821345
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.refresh",1363104823489
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104823543
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104823543
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104823544
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104823649
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104823650
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104823650
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104823652
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104823652
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104823653
+started,bundle,com.google.gdt.eclipse.maven,2.5.1.v201201120043-rel-r37,"com.google.gdt.eclipse.maven",1363104823683
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104823780
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104823780
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104823781
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104823854
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104823854
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104823854
+executed,command,org.eclipse.ui.ide,3.7.0.v20110809-1737,"org.eclipse.ui.project.buildProject",1363104828790
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104857870
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104867004
+error,log,,,"No IModelProvider exists for project P/manycell-web of version: Dynamic Web Module 3.0",1363104867084
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.navigator"".",1363104867084
+error,log,,,"An exception occurred invoking extension: org.eclipse.jst.jee.ui.web for object P/manycell-web",1363104867084
+executed,command,org.eclipse.ui.ide,3.7.0.v20110809-1737,"org.eclipse.ui.project.buildAll",1363104870704
+activated,view,org.eclipse.ui.ide,3.7.0.v20110809-1737,"org.eclipse.ui.views.AllMarkersView",1363104873184
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1363104886977
+opened,editor,org.eclipse.jdt.ui,3.7.1.r371_v20110824-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1363104891313
+activated,editor,org.eclipse.jdt.ui,3.7.1.r371_v20110824-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1363104891409
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1363104891429
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1363104923393
+started,bundle,org.codehaus.groovy.eclipse.refactoring,2.6.0.xx-20111212-0900-e37-RELEASE,"org.codehaus.groovy.eclipse.refactoring",1363104925225

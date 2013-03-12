@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns2="http://timecoursews.services.copasiws.copasi.org/types"
+ xmlns:ns1="http://services.copasiws.copasi.org/timecoursews.wsdl"
+ xmlns:ns3="http://copasi.org/copasiws/schemas">
+ <SOAP-ENV:Body>
+   <ns2:RunDeterministicSimulator>
+    <parameters inputFormat="SBML" outputFormat="sbrml">
+     <IntegrateReducedModel>true</IntegrateReducedModel>
+     <RelativeTolerance>0.000001</RelativeTolerance>
+     <AbsoluteTolerance>0.000000</AbsoluteTolerance>
+     <AdamsMaxOrder></AdamsMaxOrder>
+     <BDFMaxOrder></BDFMaxOrder>
+     <MaxInternalSteps></MaxInternalSteps>
+     <StepNumber></StepNumber>
+     <StepSize>0.010000</StepSize>
+     <Duration>1.000000</Duration>
+     <OutputStartTime>0.000000</OutputStartTime>
+     <sensitivityParameters>
+      <function>Concentration Fluxes of Reaction</function>
+      <variable>All Parameter Values</variable>
+      <deltaFactor>0.001000</deltaFactor>
+      <deltaMinimum>0.000000</deltaMinimum>
+     </sensitivityParameters>
+     <updatedModelRequired>false</updatedModelRequired>
+     <updatedModelFormatRequired>CopasiML</updatedModelFormatRequired>
+     <copasiml></copasiml>
+    </parameters>
+   </ns2:RunDeterministicSimulator>
+
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

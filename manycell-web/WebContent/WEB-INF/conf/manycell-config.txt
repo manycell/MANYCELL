@@ -1,0 +1,52 @@
+#+++++Configuration file simulation job in ManyCell++++#
+# Set the directory of COPASI Web services and sub-cellular SBML model.
+webServiceAddress=http://linda.mib.manchester.ac.uk:8282/CopasiWS/services/TimeCourseService
+
+#total allowed resource for each user
+totalResourceAllowed=15
+
+#Host name of the computer where main ManyCell server is running
+hostName=bernie.mib.manchester.ac.uk
+
+#user account on the host computer, user must be able to log into the host ssh key pairs
+user=joseph
+
+#Home directory for locating user running ManyCell server
+homeDirectory=/home
+
+#ManyCell executable file
+executableFile=/home/joseph/local/user-workspace/manycell/manycell-v7.jar
+libraryPath=/home/joseph/local/mssimulator/lib
+
+#user workspace directory for manycell on the user's home directory, this must be created by
+userWorkspaceDirectory=local/user-workspace/users
+
+#Simulation environment basic configuration
+simulationDuration=7200
+
+#set standard deviation for the random number
+standardDeviation=0.20
+
+#set the average cell volume ..this is temporary 
+averageCellVolume=10e-10
+
+#set number of processor for parallel execution code
+numberOfProcessors=4
+
+#set tolerance for ISAT execution code
+tolerance=0.013
+
+#set maximum cell geological age
+maxCellGeologicalAge=31
+
+#database configuration information
+serverName=localhost
+#database server port 
+port=5432
+databaseName=unicellsys
+userName=unicellsys
+password=
+initialConnections=40
+maxConnections=150
+
+

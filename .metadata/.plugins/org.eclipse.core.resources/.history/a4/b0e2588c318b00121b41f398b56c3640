@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+	<xsd:schema targetNamespace="http://www.manycell.org/sim-config-schema"	xmlns="http://www.manycell.org/sim-config-schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--
+		XML Multiscale Model description language for ManyCell: A multiscale modelling and simulator for cellular systems
+	-->
+	<!-- Data element for data -->
+	<xsd:element name="environment">
+		<xsd:complexType>
+			<xsd:sequence>
+			<xsd:element name="volume" minOccurs="1" maxOccurs="1">
+			<xsd:complexType>
+				<xsd:attribute name="size" use="required" type="xsd:double" />	
+				<xsd:attribute name="unit" use="required" type="xsd:string" />							
+			</xsd:complexType>
+		</xsd:element>	
+				<xsd:element name="nutrients" minOccurs="1" maxOccurs="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="nutrient" minOccurs="1" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:attribute name="name" use="required" type="xsd:string" />
+									<xsd:attribute name="modelId" use="required" type="xsd:string" />
+									<xsd:attribute name="value" use="required" type="xsd:float" />
+									<xsd:attribute name="isAmount" use="required" type="xsd:boolean" />
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>						
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>			
+			<xsd:attribute name="type" use="required" type="xsd:string" />
+		</xsd:complexType>
+	</xsd:element>	
+	<!--definition of cells type -->	
+	<xsd:element name="cellular">
+	<xsd:complexType>
+	<xsd:sequence>	
+	<xsd:element name="cells" minOccurs="0" maxOccurs="1">
+	<xsd:complexType>
+		<xsd:sequence>
+		<xsd:element name="sizeVariable" minOccurs="1" maxOccurs="1">
+			<xsd:complexType>
+				<xsd:attribute name="modelId" use="required" type="xsd:string" />
+				<xsd:attribute name="value" use="required" type="xsd:float" />
+				<xsd:attribute name="isRandom" use="optional" type="xsd:boolean" default="true"/>
+				<xsd:attribute name="standardDeviation" use="optional" type="xsd:float" default="0.1"/>
+			</xsd:complexType>
+		</xsd:element>	
+			<xsd:element name="changeModelInitialConditons" minOccurs="0" maxOccurs="1">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="variable" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:attribute name="modelId" use="required" type="xsd:string" />
+								<xsd:attribute name="value" use="required" type="xsd:float" />
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+					<xsd:attribute name="isRandom" use="optional" type="xsd:boolean" default="true"/>
+					<xsd:attribute name="standardDeviation" use="optional" type="xsd:float" default="0.1"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="behaviours" minOccurs="0" maxOccurs="1">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="behaviour" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:attribute name="name" use="required" type="xsd:string" />
+								<xsd:attribute name="eventReference" use="required" type="xsd:string" />
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="total" use="required" type="xsd:int" />
+		<xsd:attribute name="averageCellVolume" use="required" type="xsd:double" />
+		<xsd:attribute name="cellVolumeUnit" use="required" type="xsd:string" />
+	</xsd:complexType>
+</xsd:element>
+	<xsd:element name="cell" minOccurs="0" maxOccurs="unbounded">
+	<xsd:complexType>
+		<xsd:sequence>
+		<xsd:element name="sizeVariable" minOccurs="1" maxOccurs="1">
+			<xsd:complexType>
+				<xsd:attribute name="modelId" use="required" type="xsd:string" />
+				<xsd:attribute name="value" use="required" type="xsd:float" />				
+			</xsd:complexType>
+		</xsd:element>		
+			<xsd:element name="changeModelInitialConditons"	minOccurs="0" maxOccurs="1">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="variable" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:attribute name="modelId" use="required" type="xsd:string" />
+								<xsd:attribute name="value" use="required" type="xsd:float" />
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>	
+					<xsd:attribute name="standardDeviation" use="optional" type="xsd:float" default="0.1"/>
+					<xsd:attribute name="isRandom" use="optional" type="xsd:boolean" default="false"/>				
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="behaviours" minOccurs="0" maxOccurs="1">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="behaviour" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:attribute name="name" use="required" type="xsd:string" />
+								<xsd:attribute name="eventReference" use="required" type="xsd:string" />
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="id" use="required" type="xsd:string" />
+		<xsd:attribute name="isDaughter" use="required" type="xsd:boolean" />
+		<xsd:attribute name="volume" use="required" type="xsd:double" />
+		<xsd:attribute name="subCellularModel" use="required" type="xsd:string" />
+		</xsd:complexType>
+	</xsd:element>
+	</xsd:sequence>	
+	</xsd:complexType>	
+	</xsd:element>
+
+<xsd:element name="subCellular">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="model" minOccurs="1" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="timeCourseSimulation" minOccurs="1"	maxOccurs="1">
+							<xsd:complexType>
+								<xsd:attribute name="startOutputTime" use="optional" type="xsd:float" default="0.0" />
+								<xsd:attribute name="stepSize" use="required" type="xsd:float" />
+								<xsd:attribute name="numberOfSteps" use="required" type="xsd:int" />
+								<xsd:attribute name="webServiceAddress" use="required" type="xsd:string" />
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="cellSizePartitionVariable"
+							minOccurs="1" maxOccurs="1">
+							<xsd:complexType>
+								<xsd:attribute name="modelId" use="required" type="xsd:string" />
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="budVariable" minOccurs="0" maxOccurs="1">
+						<xsd:complexType>
+						<xsd:attribute name="modelId" use="required" type="xsd:string" />
+						<xsd:attribute name="value" use="optional" type="xsd:float" />				
+					</xsd:complexType>					
+					</xsd:element>
+					<xsd:element name="nutrientConsumptionVariable"
+							minOccurs="1" maxOccurs="1">
+							<xsd:complexType>
+							<xsd:attribute name="modelId" use="optional" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+						<xsd:element name="events">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="event" minOccurs="1" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:attribute name="id" use="required" type="xsd:string" />
+								<xsd:attribute name="modelId" use="required" type="xsd:string" />
+								<xsd:attribute name="name" use="required" type="xsd:string" />
+								<xsd:attribute name="value" use="required" type="xsd:float" />
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="activeVariables">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="variable" minOccurs="1" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:attribute name="modelId" use="required" type="xsd:string" />
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+					</xsd:sequence>
+					<xsd:attribute name="id" use="required" type="xsd:string" />
+					<xsd:attribute name="name" use="required" type="xsd:string" />
+					<xsd:attribute name="type" use="required" type="xsd:string" />
+					<xsd:attribute name="isDaughter" use="optional" type="xsd:boolean" default="true" />
+					<xsd:attribute name="fileNameWithPath" use="required" type="xsd:string" />
+				</xsd:complexType>
+			</xsd:element>			
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>	
+
+<xsd:element name="simulation">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="ISAT" minOccurs="0" maxOccurs="1">
+				<xsd:complexType>
+					<xsd:attribute name="tolerance" use="required" type="xsd:float" />
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="parallelExecution" minOccurs="0" maxOccurs="1">
+				<xsd:complexType>
+					<xsd:attribute name="numberOfProcessors" use="required" type="xsd:int" />
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="duration" use="required" type="xsd:float" />
+		<xsd:attribute name="maxCellGeologicalAge" use="required" type="xsd:int" />
+		<xsd:attribute name="useISAT" use="required" type="xsd:boolean" />
+		<xsd:attribute name="allowParallelExecution" use="optional" type="xsd:boolean" default="true"/>
+	</xsd:complexType>	
+	</xsd:element>
+	
+	<xsd:element name="database">
+	<xsd:complexType>		
+		<xsd:attribute name="serverName" use="optional" type="xsd:string" default="localhost"/>
+		<xsd:attribute name="port" use="optional" type="xsd:int" default="5432" />
+		<xsd:attribute name="databaseName" use="optional" type="xsd:string" default="unicellsys"/>
+		<xsd:attribute name="userName" use="required" type="xsd:string"/>
+		<xsd:attribute name="password" use="required" type="xsd:string" />
+		<xsd:attribute name="initialConnections" use="optional" type="xsd:int" default="40"/>
+		<xsd:attribute name="maxConnections" use="optional" type="xsd:int" default="150"/>
+	</xsd:complexType>	
+	</xsd:element>
+	<!--Definition of Mase Type -->
+	<xsd:element name="manycell">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element ref="environment" minOccurs="1" maxOccurs="1" />
+			<xsd:element ref="cellular" minOccurs="1" maxOccurs="1" />
+			<xsd:element ref="subCellular"	minOccurs="1" maxOccurs="1" />
+			<xsd:element ref="simulation"  minOccurs="1" maxOccurs="1" />
+			<xsd:element ref="database"  minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

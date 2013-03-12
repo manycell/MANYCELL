@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+ <struts>
+ 	<package name="UI" extends="struts-default">
+ 	
+ 		<!-- ======== MSSimlator Actions ======== -->
+ 	
+         <!-- ==============Action setting for ManyCell Simulator ==============-->
+         <action name="doRegister" class="sim.mssim.action.user.RegistrationAction" method="register">
+         	<result name="input">/UI/Registration/UserRegister.jsp</result>
+ 			<result>../../Login.jsp</result>
+ 		</action> 		
+ 		
+ 		<!-- Monoscale Time Course Simulation -->
+ 		<action name="doRunDeterministicSimulator" class="sim.mssim.action.modelling.ModellingAction" method="doRunDeterministicSimulator">  
+ 		<result name="input">/UI/Samples/Monoscale/TimeCourse.jsp</result> 	  
+     	<result name="success">/UI/Samples/Monoscale/RunTimeCourseResponse.jsp</result>         
+    	</action> 	
+    	
+    	<action name="doRunSensitivity" class="sim.mssim.action.modelling.ModellingAction" method="doRunSensitivity">  
+ 		<result name="input">/UI/Samples/Monoscale/Sensitivity.jsp</result> 	  
+     	<result name="success">/UI/Samples/Monoscale/RunSensitivityResponse.jsp</result>         
+    	</action>     	
+    	
+ 		<action name="doCheckMonoscaleSubCellularModel" class="sim.mssim.action.modelling.ModellingAction" method="doCheckMonoscaleSubCellularModel">  
+ 		<result name="input">/UI/Modelling/MonoscaleModel.jsp</result> 	  
+     	<result name="success">/UI/Modelling/MonoscaleModelCheck.jsp</result>         
+    	</action>  
+    	
+    	<action name="doSubmitMonoscaleSubCellularModel" class="sim.mssim.action.modelling.ModellingAction" method="doSubmitMonoscaleSubCellularModel">  
+ 		<result name="input">/UI/Modelling/MonoscaleModelCheck.jsp</result> 	  
+     	<result name="success">/UI/Modelling/MonoscaleModelSubmitAck.jsp</result>         
+    	</action>      	
+    	
+ 		
+ 		<!-- Multiscale model specification --> 		
+ 		<action name="doSubmitSubCellularModel" class="sim.mssim.action.modelling.ModellingAction">
+         	<result name="input">/UI/Modelling/SubCellular.jsp</result>
+ 			<result>/UI/Modelling/SubCellular.jsp</result>
+ 		</action>
+ 		
+ 		<action name="doListSubCellularModelDirectory" class="sim.mssim.action.modelling.ModellingAction" method="doListSubCellularModelDirectory">         	
+ 			<result>/UI/Modelling/SubCellularModelLists.jsp</result>
+ 		</action>
+ 		
+ 		<action name="doLoadSubCellularModel" class="sim.mssim.action.modelling.ModellingAction" method="doLoadSubCellularModel">         	
+ 			<result>/UI/Modelling/ModelName.jsp</result>
+ 		</action>
+ 		
+ 		<action name="doListSubCellularModelDirectoryTimeCourse" class="sim.mssim.action.modelling.ModellingAction" method="doListSubCellularModelDirectory">         	
+ 			<result>/UI/Samples/Monoscale/TimeCourseSubCellularModelLists.jsp</result>
+ 		</action>
+ 		
+ 		<!-- Species window section -->
+ 		<action name="doAddSpeciesWindow" class="sim.mssim.action.modelling.ModellingAction" method="doSubmitSubCellularModel">     	  
+     	<result name="success">/UI/Modelling/SpeciesWindow.jsp</result>         
+    	</action>    	
+    	
+    	<!-- Species window section -->
+ 		<action name="doStoreSpecies" class="sim.mssim.action.modelling.ModellingAction" method="doSubCellularSpecies">     	  
+     	<result name="success">/UI/Modelling/AddSpeciesWindow.jsp</result>         
+    	</action>
+    	
+    	<!-- Save Sub-cellular data section -->
+ 		<action name="doSubCellularData" class="sim.mssim.action.modelling.ModellingAction" method="doSaveSubCellularData">     	  
+     	<result name="success">/UI/Modelling/SubCellular.jsp</result>         
+    	</action>
+    	
+    	<action name="doCheckSubCellularData" class="sim.mssim.action.modelling.ModellingAction" method="doCheckSubCellularData">   
+    	<result name="input">/UI/Modelling/Cellular.jsp</result>     	
+     	<result name="success">${url}</result>     	        
+    	</action>
+    	
+    	<action name="doSubmitSubCellularData" class="sim.mssim.action.modelling.ModellingAction" method="doSubmitSubCellularData">
+         	<result>/UI/Modelling/SubCellular.jsp</result>
+ 			<result>/UI/Modelling/SubCellularAck.jsp</result>
+ 		</action>
+    	
+    	<!-- Species window section -->
+ 		<action name="doAddDiffSpeciesWindow" class="sim.mssim.action.modelling.ModellingAction" method="doSubmitCellularModel">     	  
+     	<result name="success">/UI/Modelling/SpeciesWindow.jsp</result>         
+    	</action>
+    	
+    	<!-- Species window section -->
+ 		<action name="doStoreDiffSpecies" class="sim.mssim.action.modelling.ModellingAction" method="doCellularSpecies">     	  
+     	<result name="success">/UI/Modelling/AddDiffSpeciesWindow.jsp</result>         
+    	</action>
+    	
+    	<!-- Save cellular data section -->
+ 		<action name="doCellularData" class="sim.mssim.action.modelling.ModellingAction" method="doSaveCellularData">  
+ 		<result name="input">/UI/Modelling/Cellular.jsp</result> 	  
+     	<result name="success">/UI/Modelling/Cellular.jsp</result>         
+    	</action>
+    	
+    	<action name="doSubmitCellularData" class="sim.mssim.action.modelling.ModellingAction" method="doSubmitCellularData">
+         	<result>/UI/Modelling/Cellular.jsp</result>
+ 			<result>/UI/Modelling/CellularAck.jsp</result>
+ 		</action>
+    	
+    	<action name="doCheckCellularData" class="sim.mssim.action.modelling.ModellingAction" method="doCheckCellularData"> 
+    	<result name="input">/UI/Modelling/Environment.jsp</result>   	
+     	<result name="success">${url}</result>     	        
+    	</action>
+    	
+    	<!-- Species window section for Environment -->    	
+    	<action name="doAddNutrientSpeciesAndParamWindow" class="sim.mssim.action.modelling.ModellingAction" method="doSubmitEnvironmentModel">     	  
+     	<result name="success">/UI/Modelling/NutrientSpeciesAndParamWindow.jsp</result>         
+    	</action>
+    	
+    	<!-- Species window section for Environment -->    	
+    	<action name="doAddNutrientSpeciesWindow" class="sim.mssim.action.modelling.ModellingAction" method="doSubmitEnvironmentModel">     	  
+     	<result name="success">/UI/Modelling/SpeciesWindow.jsp</result>         
+    	</action>
+    	
+ 	<!-- <action name="doStoreNutrientSpecies" class="sim.mssim.action.modelling.ModellingAction" method="doEnvironmentSpecies">     	  
+     	<result name="success">/UI/Modelling/AddNutrientSpeciesWindow.jsp</result>         
+    	</action>-->
+    	
+    	<!-- Save Environment data section -->
+ 	<!-- 	<action name="doEnvironmentData" class="sim.mssim.action.modelling.ModellingAction" method="doSaveEnvironmentData">  
+ 		<result name="input">/UI/Modelling/Environment.jsp</result> 	  
+     	<result name="success">/UI/Modelling/Environment.jsp</result>         
+    	</action>-->
+ 		
+ 		<action name="doSubmitEnvironmentData" class="sim.mssim.action.modelling.ModellingAction" method="doSubmitEnvironmentData">
+         	<result>/UI/Modelling/Environment.jsp</result>
+ 			<result>/UI/Modelling/EnvironmentAck.jsp</result>
+ 		</action>
+ 		
+ 		<!-- Simulation data processing section -->
+ 		<action name="doCheckMultiscaleModel" class="sim.mssim.action.simulation.SimulationAction" method="doCheckMultiscaleModel"> 
+    	<result name="input">/UI/Simulation/MultiscaleModel.jsp</result>   	
+     	<result name="success">${url}</result>     	        
+    	</action>    	
+    	
+    	<action name="doShowMultiscaleModel" class="sim.mssim.action.simulation.SimulationAction" method="doShowMultiscaleModel"> 
+    	<result name="input">/UI/Simulation/MultiscaleModel.jsp</result>     	  
+     	<result name="success">/UI/Simulation/MultiscaleModelParameters.jsp</result>         
+    	</action>
+    	
+    	<action name="doGenerateMXMLModel" class="sim.mssim.action.simulation.SimulationAction" method="doGenerateMXMLModel"> 
+    	<result name="input">/UI/Simulation/MultiscaleModel.jsp</result>     	  
+     	<result name="success">/UI/Simulation/MultiscaleModelAck.jsp</result>         
+    	</action>
+ 		
+ 		
+ 		<!-- Process model section -->
+ 		<action name="processSBMLModel" class="sim.mssim.action.modelling.ModellingAction" method="doSubmitSubCellularModel">     	  
+     	<result name="success">/UI/Simulations/CellData.jsp</result>         
+    	</action>
+    	
+    	<!-- Process model section -->
+ <!-- 		<action name="doActiveVariableMenu" class="sim.mssim.action.model.ProcessSBMLModelAction">     	  
+     	<result name="success">/UI/Simulations/ActiveVariable.jsp</result>         
+    	</action>-->
+    	
+    	<action name="speciesValue" class="sim.mssim.action.modelling.SpeciesAction">      
+      <result name="success">/UI/Modelling/Species.jsp</result>         
+    </action>
+    
+    <!-- Multiscale simulation results --> 	
+    <action name="doListModelDirForResults" class="sim.mssim.action.result.ResultAction" method="doListModelDirForResults">         	
+ 			<result>/UI/Results/ResultsDisplay.jsp</result>
+ 		</action>
+ 		
+    
+ <!--    <action name="doResultsDisplay" class="sim.mssim.action.result.ResultAction" method="doResultsDisplay">         	
+ 			<result>/UI/Results/ResultsDisplay.jsp</result>
+ 		</action>-->
+    	
+ 		<action name="doGetResults" class="sim.mssim.action.result.ResultAction" method="doGetResults">   
+         	<result name="input">/UI/Results/SimulationResults.jsp</result>
+ 			<result name="success">${url}</result> 
+ 		</action>
+ 		
+ 		 <action name="*" class="sim.mssim.action.MSSimSupportAction">
+            <result>/UI/{1}.jsp</result>
+        </action>
+		
+
+        <!-- Add actions here -->
+    </package>
+</struts>

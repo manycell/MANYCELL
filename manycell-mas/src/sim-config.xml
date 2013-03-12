@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manycell>
+	<!--
+		XML Multiscale Model description for execution in ManyCell: A multiscale simulator for cellular systems
+	-->
+	<environment type="1">
+		<volume size="1.0" unit="l"/>		
+		<nutrients>
+			<nutrient name="Glucose" modeliId="species_1" value="2.0e-5" isAmount="true" />
+		</nutrients>
+	</environment>
+	<cellular>
+		<cells total="4" averageCellVolume="1" cellVolumeUnit="microlitre">
+			<sizeVariable modelId="MASS" value="1.2" isRandom="true"/>	
+			<changeModelInitialConditons>
+				<variable modelId="MASS" defaultValue="1.2" />
+			</changeModelInitialConditons>
+			<behaviours>
+				<behaviour name="proliferation" eventReference="div" />
+			</behaviours>
+		</cells>
+		<cell id="cell1" volume="10e-10" isDaughter="true"	subCellularModel="SCM">
+			<sizeVariable modelId="MASS" value="1.2"/>			
+			<changeModelInitialConditons>
+				<variable modelId="MASS" value="1.2" />
+			</changeModelInitialConditons>
+			<behaviours>
+				<behaviour name="proliferation" eventReference="div" />
+			</behaviours>
+		</cell>
+		<cell id="cell2" volume="10e-10" isDaughter="true"	subCellularModel="SCM">
+		<sizeVariable modelId="MASS" value="1.2"/>	
+			<changeModelInitialConditons>
+				<variable modelId="MASS" value="1.2" />
+			</changeModelInitialConditons>
+			<behaviours>
+				<behaviour name="proliferation" eventReference="div" />
+			</behaviours>
+		</cell>
+	</cellular>	
+	<subCellular>
+		<model id="SCM" name="single cell model" type="continuum" isDaughter="true" fileNameWithPath="/usr/local/user-workspace/models/MASTERmodelMother.xml">
+			<timeCourseSimulation stepSize="5" numberOfSteps="10" webServiceAddress="http://dada.mib.man.ac.uk:8080/CopasiWS/services/TimeCourseService" />
+			<cellSizePartitionVariable modelId="FValue" />
+			<budVariable modelId="B_Area_d" />
+			<nutirientConsumptionVariable modelId="parameter_7" />
+			<events>
+				<event id="div" name="division" modelId="BUD" value="0.0"/>
+			</events>
+			<activeVariables>
+				<variable modelId="MASS" />
+				<variable modelId="BUB" />
+				<variable modelId="CLB2" />
+			</activeVariables>
+		</model>
+	</subCellular>
+	<simulation duration="7200" maxCellGeologicalAge="31" useISAT="false" allowParallelExecution="true">
+		 <parallelExecution numberOfProcessors="4" />
+		 <ISAT tolerance="0.013" />
+	</simulation>	
+	<database userName="unicellsys" password="" />	
+</manycell>
