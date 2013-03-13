@@ -115,369 +115,668 @@ public class ModellingAction extends MSSimSupportAction implements SessionAware 
 	public ModellingAction() {
 		fileProcessor = new FileProcessor();
 	}
-
+	
+		
+	/**
+	 * @return the session
+	 */
 	public Map<String, Object> getSession() {
 		return session;
-	}	
-
-	public String getUser() {
-		return user;
 	}
 
-	public void setUser(String user) {
-		this.user = user;
-	}
 
+
+	/**
+	 * @param session the session to set
+	 */
 	public void setSession(Map session) {
 		this.session = session;
-	}		
-	
-	public Timestamp getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(Timestamp timestamp) {
-		this.timestamp = timestamp;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	//Monoscale time course data set and get	
-	public File getModel() {
-		return model;
-	}
-
-	public void setModel(File model) {
-		this.model = model;
-	}
-
-	public String getPlot() {
-		return plot;
-	}
-	
-	public void setPlot(String plot) {
-		this.plot = plot;
-	}
-
-	public String getData() {
-		return data;
-	}
-
-	public void setData(String data) {
-		this.data = data;
-	}
-
-	public String getResults() {
-		return results;
-	}
-
-	public void setResults(String results) {
-		this.results = results;
-	}
-
-	public String getInputFormat() {
-		return inputFormat;
-	}
-
-	public void setInputFormat(String inputFormat) {
-		this.inputFormat = inputFormat;
-	}
-
-	public String getOutputFormat() {
-		return outputFormat;
-	}
-
-	public void setOutputFormat(String outputFormat) {
-		this.outputFormat = outputFormat;
 	}	
 	
-	public String getDeltaMinimum() {
-		return deltaMinimum;
-	}
 
-	public void setDeltaMinimum(String deltaMinimum) {
-		this.deltaMinimum = deltaMinimum;
-	}
-
-	public String getDeltaFactor() {
-		return deltaFactor;
-	}
-
-	public void setDeltaFactor(String deltaFactor) {
-		this.deltaFactor = deltaFactor;
-	}
-
-	public String getFunction() {
-		return function;
-	}
-
-	public void setFunction(String function) {
-		this.function = function;
-	}
-
-	public String getVariable() {
-		return variable;
-	}
-
-	public void setVariable(String variable) {
-		this.variable = variable;
-	}
-
-	public String[] getFileNames() {
-		return fileNames;
-	}
-
-	public void setFileNames(String[] fileNames) {
-		this.fileNames = fileNames;
-	}
-
-	public String getPathway() {
-		return pathway;
-	}
-
-	public void setPathway(String pathway) {		
-		this.pathway = pathway;
-	}
-
-	public String getSubCellularData() {
-		return subCellularData;
-	}
-
-	public void setSubCellularData(String subCellularData) {
-		this.subCellularData = subCellularData;
-	}
-
-	public String getCellularData() {
-		return cellularData;
-	}
-
-	public void setCellularData(String cellularData) {
-		this.cellularData = cellularData;
-	}
-
-	public String getEnvironmentData() {
-		return environmentData;
-	}
-
-	public void setEnvironmentData(String environmentData) {
-		this.environmentData = environmentData;
-	}
-	
-
-	public int getNumberOfCells() {
-		return numberOfCells;
-	}
-
-	public void setNumberOfCells(int numberOfCells) {
-		this.numberOfCells = numberOfCells;
-	}
-
-	public String getContentType() {
-		return contentType;
-	}
-
-	public void setContentType(String contentType) {
-		this.contentType = contentType;
-	}
-
-	public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	public String getFileName() {
-		return fileName;
-	}
-
-	public void setFileName(String fileName) {
-		this.fileName = fileName;
-	}
-
-	public String getCaption() {
-		return caption;
-	}
-
-	public void setCaption(String caption) {
-		this.caption = caption;
-	}
-
-	public File getSbml() {
-		return sbml;
-	}
-
-	public void setSbml(File sbml) {
-		this.sbml = sbml;
-	}	
-
-	public float getStartOutputTime() {
-		return startOutputTime;
-	}
-
-	public void setStartOutputTime(float startOutputTime) {
-		this.startOutputTime = startOutputTime;
-	}
-
-	public float getStepSize() {
-		return stepSize;
-	}
-
-	public void setStepSize(float stepSize) {
-		this.stepSize = stepSize;
-	}
-
-	public int getStepNumber() {
-		return stepNumber;
-	}
-
-	public void setStepNumber(int stepNumber) {
-		this.stepNumber = stepNumber;
-	}
-
-	public String getSName() {
-		return SName;
-	}
-
-	public void setSName(String sName) {
-		SName = sName;
-	}
-	
-
-	public float getSValue() {
-		return SValue;
-	}
-
-	public void setSValue(float sValue) {
-		SValue = sValue;
-	}
-
-	public List<Species> getSpecies() {
-		return species;
-	}	
-
-	public String getBehaviour() {
-		return behaviour;
-	}
-
-	public void setBehaviour(String behaviour) {
-		this.behaviour = behaviour;
-	}
-
-	public String getSPName() {
-		return SPName;
-	}
-
-	public void setSPName(String sPName) {
-		SPName = sPName;
-	}
-	
-	public String getSSPName() {
-		return SSPName;
-	}
-
-	public void setSSPName(String sSPName) {
-		SSPName = sSPName;
-	}	
-	
-	public String getNUTPName() {
-		return NUTPName;
-	}
-
-	public void setNUTPName(String nUTPName) {
-		NUTPName = nUTPName;
-	}
-
-	public void setSpecies(List<Species> species) {
-		this.species = species;
-	}
-
-	public List<String> getSpeciesIds() {
-		return speciesIds;
-	}
-
-	public void setSpeciesIds(List<String> speciesIds) {
-		this.speciesIds = speciesIds;
-	}
-
-	public List<String> getSpeciesNames() {
-		return speciesNames;
-	}
-
-	public void setSpeciesNames(List<String> speciesNames) {
-		this.speciesNames = speciesNames;
-	}
-
-	public List<String> getParamIds() {
-		return paramIds;
-	}
-
-	public void setParamIds(List<String> paramIds) {
-		this.paramIds = paramIds;
-	}
-
-	public List<String> getParamNames() {
-		return paramNames;
-	}
-
-	public void setParamNames(List<String> paramNames) {
-		this.paramNames = paramNames;
-	}
-
-	public String getModelName() {
-		return modelName;
-	}
-
-	public void setModelName(String modelName) {
-		this.modelName = modelName;
-	}
-
-	public int getVersion() {
-		return version;
-	}
-
-	public void setVersion(int version) {
-		this.version = version;
-	}	
-
-	public float getVolume() {
-		return volume;
-	}
-
-	public void setVolume(float volume) {
-		this.volume = volume;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	public String getUnit() {
-		return unit;
-	}
-
-	public void setUnit(String unit) {
-		this.unit = unit;
-	}
-
+	/**
+	 * @return the url
+	 */
 	public String getUrl() {
 		return url;
 	}
 
+	/**
+	 * @param url the url to set
+	 */
 	public void setUrl(String url) {
 		this.url = url;
 	}
+
+	/**
+	 * @return the startOutputTime
+	 */
+	public float getStartOutputTime() {
+		return startOutputTime;
+	}
+
+	/**
+	 * @param startOutputTime the startOutputTime to set
+	 */
+	public void setStartOutputTime(float startOutputTime) {
+		this.startOutputTime = startOutputTime;
+	}
+
+	/**
+	 * @return the stepSize
+	 */
+	public float getStepSize() {
+		return stepSize;
+	}
+
+	/**
+	 * @param stepSize the stepSize to set
+	 */
+	public void setStepSize(float stepSize) {
+		this.stepSize = stepSize;
+	}
+
+	/**
+	 * @return the stepNumber
+	 */
+	public int getStepNumber() {
+		return stepNumber;
+	}
+
+	/**
+	 * @param stepNumber the stepNumber to set
+	 */
+	public void setStepNumber(int stepNumber) {
+		this.stepNumber = stepNumber;
+	}
+
+	/**
+	 * @return the subCellularData
+	 */
+	public String getSubCellularData() {
+		return subCellularData;
+	}
+
+	/**
+	 * @param subCellularData the subCellularData to set
+	 */
+	public void setSubCellularData(String subCellularData) {
+		this.subCellularData = subCellularData;
+	}
+
+	/**
+	 * @return the cellularData
+	 */
+	public String getCellularData() {
+		return cellularData;
+	}
+
+	/**
+	 * @param cellularData the cellularData to set
+	 */
+	public void setCellularData(String cellularData) {
+		this.cellularData = cellularData;
+	}
+
+	/**
+	 * @return the environmentData
+	 */
+	public String getEnvironmentData() {
+		return environmentData;
+	}
+
+	/**
+	 * @param environmentData the environmentData to set
+	 */
+	public void setEnvironmentData(String environmentData) {
+		this.environmentData = environmentData;
+	}
+
+	/**
+	 * @return the numberOfCells
+	 */
+	public int getNumberOfCells() {
+		return numberOfCells;
+	}
+
+	/**
+	 * @param numberOfCells the numberOfCells to set
+	 */
+	public void setNumberOfCells(int numberOfCells) {
+		this.numberOfCells = numberOfCells;
+	}
+
+	/**
+	 * @return the behaviour
+	 */
+	public String getBehaviour() {
+		return behaviour;
+	}
+
+	/**
+	 * @param behaviour the behaviour to set
+	 */
+	public void setBehaviour(String behaviour) {
+		this.behaviour = behaviour;
+	}
+
+	/**
+	 * @return the sPName
+	 */
+	public String getSPName() {
+		return SPName;
+	}
+
+	/**
+	 * @param sPName the sPName to set
+	 */
+	public void setSPName(String sPName) {
+		SPName = sPName;
+	}
+
+	/**
+	 * @return the sSPName
+	 */
+	public String getSSPName() {
+		return SSPName;
+	}
+
+	/**
+	 * @param sSPName the sSPName to set
+	 */
+	public void setSSPName(String sSPName) {
+		SSPName = sSPName;
+	}
+
+	/**
+	 * @return the nUTPName
+	 */
+	public String getNUTPName() {
+		return NUTPName;
+	}
+
+	/**
+	 * @param nUTPName the nUTPName to set
+	 */
+	public void setNUTPName(String nUTPName) {
+		NUTPName = nUTPName;
+	}
+
+	/**
+	 * @return the contentType
+	 */
+	public String getContentType() {
+		return contentType;
+	}
+
+	/**
+	 * @param contentType the contentType to set
+	 */
+	public void setContentType(String contentType) {
+		this.contentType = contentType;
+	}
+
+	/**
+	 * @return the content
+	 */
+	public String getContent() {
+		return content;
+	}
+
+	/**
+	 * @param content the content to set
+	 */
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	/**
+	 * @return the fileName
+	 */
+	public String getFileName() {
+		return fileName;
+	}
+
+	/**
+	 * @param fileName the fileName to set
+	 */
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	/**
+	 * @return the caption
+	 */
+	public String getCaption() {
+		return caption;
+	}
+
+	/**
+	 * @param caption the caption to set
+	 */
+	public void setCaption(String caption) {
+		this.caption = caption;
+	}
+
+	/**
+	 * @return the sbml
+	 */
+	public File getSbml() {
+		return sbml;
+	}
+
+	/**
+	 * @param sbml the sbml to set
+	 */
+	public void setSbml(File sbml) {
+		this.sbml = sbml;
+	}
+
+	/**
+	 * @return the modelName
+	 */
+	public String getModelName() {
+		return modelName;
+	}
+
+	/**
+	 * @param modelName the modelName to set
+	 */
+	public void setModelName(String modelName) {
+		this.modelName = modelName;
+	}
+
+	/**
+	 * @return the version
+	 */
+	public int getVersion() {
+		return version;
+	}
+
+	/**
+	 * @param version the version to set
+	 */
+	public void setVersion(int version) {
+		this.version = version;
+	}
+
+	/**
+	 * @return the fileNames
+	 */
+	public String[] getFileNames() {
+		return fileNames;
+	}
+
+	/**
+	 * @param fileNames the fileNames to set
+	 */
+	public void setFileNames(String[] fileNames) {
+		this.fileNames = fileNames;
+	}
+
+	/**
+	 * @return the pathway
+	 */
+	public String getPathway() {
+		return pathway;
+	}
+
+	/**
+	 * @param pathway the pathway to set
+	 */
+	public void setPathway(String pathway) {
+		this.pathway = pathway;
+	}
+
+	/**
+	 * @return the volume
+	 */
+	public float getVolume() {
+		return volume;
+	}
+
+	/**
+	 * @param volume the volume to set
+	 */
+	public void setVolume(float volume) {
+		this.volume = volume;
+	}
+
+	/**
+	 * @return the type
+	 */
+	public String getType() {
+		return type;
+	}
+
+	/**
+	 * @param type the type to set
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	/**
+	 * @return the unit
+	 */
+	public String getUnit() {
+		return unit;
+	}
+
+	/**
+	 * @param unit the unit to set
+	 */
+	public void setUnit(String unit) {
+		this.unit = unit;
+	}
+
+	/**
+	 * @return the species
+	 */
+	public List<Species> getSpecies() {
+		return species;
+	}
+
+	/**
+	 * @param species the species to set
+	 */
+	public void setSpecies(List<Species> species) {
+		this.species = species;
+	}
+
+	/**
+	 * @return the sName
+	 */
+	public String getSName() {
+		return SName;
+	}
+
+	/**
+	 * @param sName the sName to set
+	 */
+	public void setSName(String sName) {
+		SName = sName;
+	}
+
+	/**
+	 * @return the sValue
+	 */
+	public float getSValue() {
+		return SValue;
+	}
+
+	/**
+	 * @param sValue the sValue to set
+	 */
+	public void setSValue(float sValue) {
+		SValue = sValue;
+	}
+
+	/**
+	 * @return the speciesIds
+	 */
+	public List<String> getSpeciesIds() {
+		return speciesIds;
+	}
+
+	/**
+	 * @param speciesIds the speciesIds to set
+	 */
+	public void setSpeciesIds(List<String> speciesIds) {
+		this.speciesIds = speciesIds;
+	}
+
+	/**
+	 * @return the speciesNames
+	 */
+	public List<String> getSpeciesNames() {
+		return speciesNames;
+	}
+
+	/**
+	 * @param speciesNames the speciesNames to set
+	 */
+	public void setSpeciesNames(List<String> speciesNames) {
+		this.speciesNames = speciesNames;
+	}
+
+	/**
+	 * @return the paramIds
+	 */
+	public List<String> getParamIds() {
+		return paramIds;
+	}
+
+	/**
+	 * @param paramIds the paramIds to set
+	 */
+	public void setParamIds(List<String> paramIds) {
+		this.paramIds = paramIds;
+	}
+
+	/**
+	 * @return the paramNames
+	 */
+	public List<String> getParamNames() {
+		return paramNames;
+	}
+
+	/**
+	 * @param paramNames the paramNames to set
+	 */
+	public void setParamNames(List<String> paramNames) {
+		this.paramNames = paramNames;
+	}
+
+	/**
+	 * @return the fileProcessor
+	 */
+	public FileProcessor getFileProcessor() {
+		return fileProcessor;
+	}
+
+	/**
+	 * @param fileProcessor the fileProcessor to set
+	 */
+	public void setFileProcessor(FileProcessor fileProcessor) {
+		this.fileProcessor = fileProcessor;
+	}
+
+	/**
+	 * @return the modelDirectory
+	 */
+	public String getModelDirectory() {
+		return modelDirectory;
+	}
+
+	/**
+	 * @param modelDirectory the modelDirectory to set
+	 */
+	public void setModelDirectory(String modelDirectory) {
+		this.modelDirectory = modelDirectory;
+	}
+
+	/**
+	 * @return the description
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+	/**
+	 * @param description the description to set
+	 */
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	/**
+	 * @return the timestamp
+	 */
+	public Timestamp getTimestamp() {
+		return timestamp;
+	}
+
+	/**
+	 * @param timestamp the timestamp to set
+	 */
+	public void setTimestamp(Timestamp timestamp) {
+		this.timestamp = timestamp;
+	}
+
+	/**
+	 * @return the user
+	 */
+	public String getUser() {
+		return user;
+	}
+
+	/**
+	 * @param user the user to set
+	 */
+	public void setUser(String user) {
+		this.user = user;
+	}
+
+	/**
+	 * @return the plot
+	 */
+	public String getPlot() {
+		return plot;
+	}
+
+	/**
+	 * @param plot the plot to set
+	 */
+	public void setPlot(String plot) {
+		this.plot = plot;
+	}
+
+	/**
+	 * @return the data
+	 */
+	public String getData() {
+		return data;
+	}
+
+	/**
+	 * @param data the data to set
+	 */
+	public void setData(String data) {
+		this.data = data;
+	}
+
+	/**
+	 * @return the results
+	 */
+	public String getResults() {
+		return results;
+	}
+
+	/**
+	 * @param results the results to set
+	 */
+	public void setResults(String results) {
+		this.results = results;
+	}
+
+	/**
+	 * @return the inputFormat
+	 */
+	public String getInputFormat() {
+		return inputFormat;
+	}
+
+	/**
+	 * @param inputFormat the inputFormat to set
+	 */
+	public void setInputFormat(String inputFormat) {
+		this.inputFormat = inputFormat;
+	}
+
+	/**
+	 * @return the outputFormat
+	 */
+	public String getOutputFormat() {
+		return outputFormat;
+	}
+
+	/**
+	 * @param outputFormat the outputFormat to set
+	 */
+	public void setOutputFormat(String outputFormat) {
+		this.outputFormat = outputFormat;
+	}
+
+	/**
+	 * @return the model
+	 */
+	public File getModel() {
+		return model;
+	}
+
+	/**
+	 * @param model the model to set
+	 */
+	public void setModel(File model) {
+		this.model = model;
+	}
+
+	/**
+	 * @return the deltaMinimum
+	 */
+	public String getDeltaMinimum() {
+		return deltaMinimum;
+	}
+
+	/**
+	 * @param deltaMinimum the deltaMinimum to set
+	 */
+	public void setDeltaMinimum(String deltaMinimum) {
+		this.deltaMinimum = deltaMinimum;
+	}
+
+	/**
+	 * @return the deltaFactor
+	 */
+	public String getDeltaFactor() {
+		return deltaFactor;
+	}
+
+	/**
+	 * @param deltaFactor the deltaFactor to set
+	 */
+	public void setDeltaFactor(String deltaFactor) {
+		this.deltaFactor = deltaFactor;
+	}
+
+	/**
+	 * @return the function
+	 */
+	public String getFunction() {
+		return function;
+	}
+
+	/**
+	 * @param function the function to set
+	 */
+	public void setFunction(String function) {
+		this.function = function;
+	}
+
+	/**
+	 * @return the variable
+	 */
+	public String getVariable() {
+		return variable;
+	}
+
+	/**
+	 * @param variable the variable to set
+	 */
+	public void setVariable(String variable) {
+		this.variable = variable;
+	}	
 
 	// process sub-cellular model data
 	public String execute() throws Exception {	
@@ -589,10 +888,10 @@ public class ModellingAction extends MSSimSupportAction implements SessionAware 
 		this.setModelName(SMManager.getModelName());
 		
 		//testing
-		DatabaseManager manager = new DatabaseManager();
+		/*DatabaseManager manager = new DatabaseManager();
 		
 		manager.createObjectArray(); 
-		
+		*/
 		
 		return SUCCESS;
 	}

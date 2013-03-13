@@ -42,22 +42,6 @@ import sim.utils.Species;
  * @author dada
  *
  */
-/**
- * @author dada
- *
- */
-/**
- * @author dada
- *
- */
-/**
- * @author dada
- *
- */
-/**
- * @author dada
- *
- */
 public class SimulationAction extends MSSimSupportAction implements	SessionAware {
 	private static final long serialVersionUID = 5156288255337069381L;
 
