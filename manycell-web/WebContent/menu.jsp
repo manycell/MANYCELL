@@ -38,7 +38,7 @@ dojo.require("dojo.dijit.Tree");
 <!-- <body  bgcolor = "#FFFAFA" vlink="blue">-->
 
 <div>
-  <a href="/ManyCell/" target = "_top"><b><font size=2 style="font-size: 11pt">Home</font></b></a><br/><br/>
+  <a href="./" target = "_top"><b><font size=2 style="font-size: 11pt">Home</font></b></a><br/><br/>
 <a href="./UI/Registration/UserRegister.jsp" target = "main"><font size=2 style="font-size: 11pt">Registration</font></a><br/> 
 </div>
 

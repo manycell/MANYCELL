@@ -39,53 +39,98 @@ public class ResultAction extends MSSimSupportAction implements	SessionAware {
 	private String [] fileNames;
 	
 		// session for holding data
-	private Map<String, Object> session;	
+	private Map<String, Object> session;
 	
 	public ResultAction() {
 		fileProcessor = new FileProcessor();
-	}
+	}	
 	
+	/**
+	 * @param session the session to set
+	 */	
+	public void setSession(Map session) {
+		this.session = session;
+	}	
+	
+	
+	/**
+	 * @return the fileProcessor
+	 */
+	public FileProcessor getFileProcessor() {
+		return fileProcessor;
+	}
+
+	/**
+	 * @param fileProcessor the fileProcessor to set
+	 */
+	public void setFileProcessor(FileProcessor fileProcessor) {
+		this.fileProcessor = fileProcessor;
+	}
+
+	/**
+	 * @return the url
+	 */
 	public String getUrl() {
 		return url;
 	}
 
+	/**
+	 * @param url the url to set
+	 */
 	public void setUrl(String url) {
 		this.url = url;
 	}
-		
-	
+
+	/**
+	 * @return the pathway
+	 */
 	public String getPathway() {
 		return pathway;
 	}
 
+	/**
+	 * @param pathway the pathway to set
+	 */
 	public void setPathway(String pathway) {
 		this.pathway = pathway;
-	}	
+	}
 
+	/**
+	 * @return the modelName
+	 */
 	public String getModelName() {
 		return modelName;
 	}
 
+	/**
+	 * @param modelName the modelName to set
+	 */
 	public void setModelName(String modelName) {
 		this.modelName = modelName;
-	}	
+	}
 
+	/**
+	 * @return the fileNames
+	 */
 	public String[] getFileNames() {
 		return fileNames;
 	}
 
+	/**
+	 * @param fileNames the fileNames to set
+	 */
 	public void setFileNames(String[] fileNames) {
 		this.fileNames = fileNames;
 	}
 
+	/**
+	 * @return the session
+	 */
 	public Map<String, Object> getSession() {
-			return session;
-		}
-
-	public void setSession(Map session) {
-		this.session = session;
+		return session;
 	}
 	
+
 	public String doListModelDirForResults() throws Exception  {
 		File file = new File(System.getenv("TOMCAT_HOME")+ "/manycell/samples");
 		fileNames = file.list();		   	  	 

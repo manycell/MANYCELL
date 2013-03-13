@@ -50,6 +50,170 @@ public class ProcessSBMLModelManager {
 	public ProcessSBMLModelManager(){
 		
 	}
+	
+	
+	/**
+	 * @return the pList
+	 */
+	public ListOfParameters getpList() {
+		return pList;
+	}
+
+
+
+	/**
+	 * @param pList the pList to set
+	 */
+	public void setpList(ListOfParameters pList) {
+		this.pList = pList;
+	}
+
+
+
+	/**
+	 * @return the speciesIds
+	 */
+	public List<String> getSpeciesIds() {
+		return speciesIds;
+	}
+
+
+
+	/**
+	 * @param speciesIds the speciesIds to set
+	 */
+	public void setSpeciesIds(List<String> speciesIds) {
+		this.speciesIds = speciesIds;
+	}
+
+
+
+	/**
+	 * @return the speciesNames
+	 */
+	public List<String> getSpeciesNames() {
+		return speciesNames;
+	}
+
+
+
+	/**
+	 * @param speciesNames the speciesNames to set
+	 */
+	public void setSpeciesNames(List<String> speciesNames) {
+		this.speciesNames = speciesNames;
+	}
+
+
+
+	/**
+	 * @return the paramIds
+	 */
+	public List<String> getParamIds() {
+		return paramIds;
+	}
+
+
+
+	/**
+	 * @param paramIds the paramIds to set
+	 */
+	public void setParamIds(List<String> paramIds) {
+		this.paramIds = paramIds;
+	}
+
+
+
+	/**
+	 * @return the paramNames
+	 */
+	public List<String> getParamNames() {
+		return paramNames;
+	}
+
+
+
+	/**
+	 * @param paramNames the paramNames to set
+	 */
+	public void setParamNames(List<String> paramNames) {
+		this.paramNames = paramNames;
+	}
+
+
+
+	/**
+	 * @return the modelName
+	 */
+	public String getModelName() {
+		return modelName;
+	}
+
+
+
+	/**
+	 * @param modelName the modelName to set
+	 */
+	public void setModelName(String modelName) {
+		this.modelName = modelName;
+	}
+
+
+
+	/**
+	 * @return the version
+	 */
+	public int getVersion() {
+		return version;
+	}
+
+
+
+	/**
+	 * @param version the version to set
+	 */
+	public void setVersion(int version) {
+		this.version = version;
+	}
+
+
+
+	/**
+	 * @return the fileProcessor
+	 */
+	public FileProcessor getFileProcessor() {
+		return fileProcessor;
+	}
+
+
+
+	/**
+	 * @param fileProcessor the fileProcessor to set
+	 */
+	public void setFileProcessor(FileProcessor fileProcessor) {
+		this.fileProcessor = fileProcessor;
+	}
+
+
+
+	/**
+	 * @return the pNMap
+	 */
+	public Map<String, Object> getpNMap() {
+		return pNMap;
+	}
+
+
+
+	/**
+	 * @param pNMap the pNMap to set
+	 */
+	public void setpNMap(Map<String, Object> pNMap) {
+		this.pNMap = pNMap;
+	}
+
+
+
 	public ProcessSBMLModelManager(String fileNameWithPath, boolean isModelString){
 		fileProcessor = new FileProcessor();
 		SBMLReader reader = new SBMLReader();
@@ -86,30 +250,13 @@ public class ProcessSBMLModelManager {
 				paramNames.add(pList.get(i).getName());
 			}
 		}
-	}	
-	
-	public int getVersion() {
-		return version;
 	}
-
-
-
-	public void setVersion(int version) {
-		this.version = version;
-	}
-
-
 
 	public String [] getModelSpeciesIds(){
 		return null;
 	}	
 	
-	public String getModelName() {
-		return modelName;
-	}
-	public void setModelName(String modelName) {
-		this.modelName = modelName;
-	}
+	
 	public String [] getModelSpeciesNames(){
 		return null;
 	}
@@ -220,40 +367,19 @@ public class ProcessSBMLModelManager {
 			}
 		}
 		return id;
-}
+}	
 	
-	public List<String> getSpeciesIds(){		
-		return speciesIds;
-	}
-	
-	public List<String> getSpeciesNames(){		
-		return speciesNames;
-	}
-
-	public List<String> getParamIds() {
-		return paramIds;
-	}
-
-	public void setParamIds(List<String> paramIds) {
-		this.paramIds = paramIds;
-	}
-
-	public List<String> getParamNames() {
-		return paramNames;
-	}
-
-	public void setParamNames(List<String> paramNames) {
-		this.paramNames = paramNames;
-	}
-
-	public void setSpeciesIds(List<String> speciesIds) {
-		this.speciesIds = speciesIds;
-	}
-
-	public void setSpeciesNames(List<String> speciesNames) {
-		this.speciesNames = speciesNames;
-	}	
-	
+/**
+ * This method run the time course web service 
+ * @param host
+ * @param hostName
+ * @param model
+ * @param stepSize
+ * @param stepNumber
+ * @param userInputFormat
+ * @param userOutputFormat
+ * @return map, the map containing the operation after web service execution 
+ */
 public Map<String, String> runTSSimAndPlotResult(String host, String hostName, File model, String stepSize, String stepNumber, String userInputFormat, String userOutputFormat){
     	
     	//the processor

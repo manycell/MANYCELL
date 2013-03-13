@@ -38,6 +38,26 @@ import sim.mssim.action.MSSimSupportAction;
 import sim.utils.CellEvent;
 import sim.utils.Species;
 
+/**
+ * @author dada
+ *
+ */
+/**
+ * @author dada
+ *
+ */
+/**
+ * @author dada
+ *
+ */
+/**
+ * @author dada
+ *
+ */
+/**
+ * @author dada
+ *
+ */
 public class SimulationAction extends MSSimSupportAction implements	SessionAware {
 	private static final long serialVersionUID = 5156288255337069381L;
 
@@ -102,221 +122,440 @@ public class SimulationAction extends MSSimSupportAction implements	SessionAware
 	private Map<String, Object> session;
 	private FileProcessor fileProcessor;
 
-	private ManyCellConfig config; 
-//	String modelDirectory = "/usr/local/user-workspace/models";
+	private ManyCellConfig config; 	
 	
-	
-	public SimulationAction() {
-		fileProcessor = new FileProcessor();
-	}
-
-	public ManyCellConfig getConfig() {
-		return config;
-	}
-
-	public void setConfig(ManyCellConfig config) {
-		this.config = config;
-	}
-
-	public Map<String, Object> getSession() {
-		return session;
-	}
-
+	/**
+	 * @param session the session to set
+	 */
 	public void setSession(Map session) {
 		this.session = session;
 	}	
 	
-	
-	public double getAverageCellVolume() {
-		return averageCellVolume;
-	}
-
-	public void setAverageCellVolume(double averageCellVolume) {
-		this.averageCellVolume = averageCellVolume;
-	}
-
-	public String getCellVolumeUnit() {
-		return cellVolumeUnit;
-	}
-
-	public void setCellVolumeUnit(String cellVolumeUnit) {
-		this.cellVolumeUnit = cellVolumeUnit;
-	}
-
+	/**
+	 * @return the url
+	 */
 	public String getUrl() {
 		return url;
 	}
 
+	/**
+	 * @param url the url to set
+	 */
 	public void setUrl(String url) {
 		this.url = url;
-	}	
-
-	public String getModelName() {
-		return modelName;
 	}
 
-	public void setModelName(String modelName) {
-		this.modelName = modelName;
-	}	
-
-	public String getModelType() {
-		return modelType;
-	}
-
-	public void setModelType(String modelType) {
-		this.modelType = modelType;
-	}	
-
-	public String getEventName() {
-		return eventName;
-	}
-
-	public void setEventName(String eventName) {
-		this.eventName = eventName;
-	}
-
-	public String getEventId() {
-		return eventId;
-	}
-
-	public void setEventId(String eventId) {
-		this.eventId = eventId;
-	}
-
-	public String getEventModelId() {
-		return eventModelId;
-	}
-
-	public void setEventModelId(String eventModelId) {
-		this.eventModelId = eventModelId;
-	}
-
-	public float getStartOutputTime() {
-		return startOutputTime;
-	}
-
-	public void setStartOutputTime(float startOutputTime) {
-		this.startOutputTime = startOutputTime;
-	}
-
-	public float getStepSize() {
-		return stepSize;
-	}
-
-	public void setStepSize(float stepSize) {
-		this.stepSize = stepSize;
-	}
-
-	public int getStepNumber() {
-		return stepNumber;
-	}
-
-	public void setStepNumber(int stepNumber) {
-		this.stepNumber = stepNumber;
-	}
-
-	public List<Species> getActiveSpecies() {
-		return activeSpecies;
-	}
-
-	public void setActiveSpecies(List<Species> activeSpecies) {
-		this.activeSpecies = activeSpecies;
-	}	
-
-	public int getNumberOfCells() {
-		return numberOfCells;
-	}
-
-	public void setNumberOfCells(int numberOfCells) {
-		this.numberOfCells = numberOfCells;
-	}
-
-	public List<Species> getCellDiffSpecies() {
-		return cellDiffSpecies;
-	}
-
-	public void setCellDiffSpecies(List<Species> cellDiffSpecies) {
-		this.cellDiffSpecies = cellDiffSpecies;
-	}
-
-	public float getVolume() {
-		return volume;
-	}
-
-	public void setVolume(float volume) {
-		this.volume = volume;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	public String getUnit() {
-		return unit;
-	}
-
-	public void setUnit(String unit) {
-		this.unit = unit;
-	}
-
-	public String getSName() {
-		return SName;
-	}
-
-	public void setSName(String sName) {
-		SName = sName;
-	}
-
-	public float getSValue() {
-		return SValue;
-	}
-
-	public void setSValue(float sValue) {
-		SValue = sValue;
-	}
-
-	public String getSId() {
-		return SId;
-	}
-
-	public void setSId(String sId) {
-		SId = sId;
-	}	
-
-	public String getExecutionType() {
-		return executionType;
-	}
-
-	public void setExecutionType(String executionType) {
-		this.executionType = executionType;
-	}
-
+	/**
+	 * @return the subCellularData
+	 */
 	public String getSubCellularData() {
 		return subCellularData;
 	}
 
+	/**
+	 * @param subCellularData the subCellularData to set
+	 */
 	public void setSubCellularData(String subCellularData) {
 		this.subCellularData = subCellularData;
 	}
 
+	/**
+	 * @return the cellularData
+	 */
 	public String getCellularData() {
 		return cellularData;
 	}
 
+	/**
+	 * @param cellularData the cellularData to set
+	 */
 	public void setCellularData(String cellularData) {
 		this.cellularData = cellularData;
 	}
 
+	/**
+	 * @return the environmentData
+	 */
 	public String getEnvironmentData() {
 		return environmentData;
 	}
 
+	/**
+	 * @param environmentData the environmentData to set
+	 */
 	public void setEnvironmentData(String environmentData) {
 		this.environmentData = environmentData;
+	}
+
+	/**
+	 * @return the modelName
+	 */
+	public String getModelName() {
+		return modelName;
+	}
+
+	/**
+	 * @param modelName the modelName to set
+	 */
+	public void setModelName(String modelName) {
+		this.modelName = modelName;
+	}
+
+	/**
+	 * @return the modelType
+	 */
+	public String getModelType() {
+		return modelType;
+	}
+
+	/**
+	 * @param modelType the modelType to set
+	 */
+	public void setModelType(String modelType) {
+		this.modelType = modelType;
+	}
+
+	/**
+	 * @return the startOutputTime
+	 */
+	public float getStartOutputTime() {
+		return startOutputTime;
+	}
+
+	/**
+	 * @param startOutputTime the startOutputTime to set
+	 */
+	public void setStartOutputTime(float startOutputTime) {
+		this.startOutputTime = startOutputTime;
+	}
+
+	/**
+	 * @return the stepSize
+	 */
+	public float getStepSize() {
+		return stepSize;
+	}
+
+	/**
+	 * @param stepSize the stepSize to set
+	 */
+	public void setStepSize(float stepSize) {
+		this.stepSize = stepSize;
+	}
+
+	/**
+	 * @return the stepNumber
+	 */
+	public int getStepNumber() {
+		return stepNumber;
+	}
+
+	/**
+	 * @param stepNumber the stepNumber to set
+	 */
+	public void setStepNumber(int stepNumber) {
+		this.stepNumber = stepNumber;
+	}
+
+	/**
+	 * @return the activeSpecies
+	 */
+	public List<Species> getActiveSpecies() {
+		return activeSpecies;
+	}
+
+	/**
+	 * @param activeSpecies the activeSpecies to set
+	 */
+	public void setActiveSpecies(List<Species> activeSpecies) {
+		this.activeSpecies = activeSpecies;
+	}
+
+	/**
+	 * @return the eventName
+	 */
+	public String getEventName() {
+		return eventName;
+	}
+
+	/**
+	 * @param eventName the eventName to set
+	 */
+	public void setEventName(String eventName) {
+		this.eventName = eventName;
+	}
+
+	/**
+	 * @return the eventId
+	 */
+	public String getEventId() {
+		return eventId;
+	}
+
+	/**
+	 * @param eventId the eventId to set
+	 */
+	public void setEventId(String eventId) {
+		this.eventId = eventId;
+	}
+
+	/**
+	 * @return the eventModelId
+	 */
+	public String getEventModelId() {
+		return eventModelId;
+	}
+
+	/**
+	 * @param eventModelId the eventModelId to set
+	 */
+	public void setEventModelId(String eventModelId) {
+		this.eventModelId = eventModelId;
+	}
+
+	/**
+	 * @return the numberOfCells
+	 */
+	public int getNumberOfCells() {
+		return numberOfCells;
+	}
+
+	/**
+	 * @param numberOfCells the numberOfCells to set
+	 */
+	public void setNumberOfCells(int numberOfCells) {
+		this.numberOfCells = numberOfCells;
+	}
+
+	/**
+	 * @return the cellDiffSpecies
+	 */
+	public List<Species> getCellDiffSpecies() {
+		return cellDiffSpecies;
+	}
+
+	/**
+	 * @param cellDiffSpecies the cellDiffSpecies to set
+	 */
+	public void setCellDiffSpecies(List<Species> cellDiffSpecies) {
+		this.cellDiffSpecies = cellDiffSpecies;
+	}
+
+	/**
+	 * @return the averageCellVolume
+	 */
+	public double getAverageCellVolume() {
+		return averageCellVolume;
+	}
+
+	/**
+	 * @param averageCellVolume the averageCellVolume to set
+	 */
+	public void setAverageCellVolume(double averageCellVolume) {
+		this.averageCellVolume = averageCellVolume;
+	}
+
+	/**
+	 * @return the cellVolumeUnit
+	 */
+	public String getCellVolumeUnit() {
+		return cellVolumeUnit;
+	}
+
+	/**
+	 * @param cellVolumeUnit the cellVolumeUnit to set
+	 */
+	public void setCellVolumeUnit(String cellVolumeUnit) {
+		this.cellVolumeUnit = cellVolumeUnit;
+	}
+
+	/**
+	 * @return the volume
+	 */
+	public float getVolume() {
+		return volume;
+	}
+
+	/**
+	 * @param volume the volume to set
+	 */
+	public void setVolume(float volume) {
+		this.volume = volume;
+	}
+
+	/**
+	 * @return the type
+	 */
+	public String getType() {
+		return type;
+	}
+
+	/**
+	 * @param type the type to set
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	/**
+	 * @return the unit
+	 */
+	public String getUnit() {
+		return unit;
+	}
+
+	/**
+	 * @param unit the unit to set
+	 */
+	public void setUnit(String unit) {
+		this.unit = unit;
+	}
+
+	/**
+	 * @return the sName
+	 */
+	public String getSName() {
+		return SName;
+	}
+
+	/**
+	 * @param sName the sName to set
+	 */
+	public void setSName(String sName) {
+		SName = sName;
+	}
+
+	/**
+	 * @return the sValue
+	 */
+	public float getSValue() {
+		return SValue;
+	}
+
+	/**
+	 * @param sValue the sValue to set
+	 */
+	public void setSValue(float sValue) {
+		SValue = sValue;
+	}
+
+	/**
+	 * @return the sId
+	 */
+	public String getSId() {
+		return SId;
+	}
+
+	/**
+	 * @param sId the sId to set
+	 */
+	public void setSId(String sId) {
+		SId = sId;
+	}
+
+	/**
+	 * @return the executionType
+	 */
+	public String getExecutionType() {
+		return executionType;
+	}
+
+	/**
+	 * @param executionType the executionType to set
+	 */
+	public void setExecutionType(String executionType) {
+		this.executionType = executionType;
+	}
+
+	/**
+	 * @return the session
+	 */
+	public Map<String, Object> getSession() {
+		return session;
+	}	
+
+	/**
+	 * @return the fileProcessor
+	 */
+	public FileProcessor getFileProcessor() {
+		return fileProcessor;
+	}
+
+	/**
+	 * @param fileProcessor the fileProcessor to set
+	 */
+	public void setFileProcessor(FileProcessor fileProcessor) {
+		this.fileProcessor = fileProcessor;
+	}
+
+	/**
+	 * @return the config
+	 */
+	public ManyCellConfig getConfig() {
+		return config;
+	}
+
+	/**
+	 * @param config the config to set
+	 */
+	public void setConfig(ManyCellConfig config) {
+		this.config = config;
+	}
+
+	/**
+	 * @return the isAmount
+	 */
+	public boolean isAmount() {
+		return isAmount;
+	}
+
+	/**
+	 * @param isAmount the isAmount to set
+	 */
+	public void setAmount(boolean isAmount) {
+		this.isAmount = isAmount;
+	}
+
+	/**
+	 * @return the id
+	 */
+	public String getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	/**
+	 * @return the isDaughter
+	 */
+	public String getIsDaughter() {
+		return isDaughter;
+	}
+
+	/**
+	 * @param isDaughter the isDaughter to set
+	 */
+	public void setIsDaughter(String isDaughter) {
+		this.isDaughter = isDaughter;
+	}
+
+	/**
+	 * @return the partionVariableId
+	 */
+	public String getPartionVariableId() {
+		return partionVariableId;
+	}
+
+	/**
+	 * @param partionVariableId the partionVariableId to set
+	 */
+	public void setPartionVariableId(String partionVariableId) {
+		this.partionVariableId = partionVariableId;
 	}
 
 	public String doCheckMultiscaleModel() throws Exception  {
@@ -333,7 +572,7 @@ public class SimulationAction extends MSSimSupportAction implements	SessionAware
 		}
 		return SUCCESS;
 	}
-	
+
 	public String doShowMultiscaleModel() throws Exception  {
 		this.setSubCellularData((String)getSession().get("SubCellularData"));
 		this.setCellularData((String)getSession().get("CellularData"));
@@ -384,6 +623,10 @@ public class SimulationAction extends MSSimSupportAction implements	SessionAware
 		//time course simulation parameter	
 		private String partionVariableId = "FValue";		
 		
+	/**
+	 * @return SUCCESS as string
+	 * @throws Exception
+	 */
 	public String doGenerateMXMLModel() throws Exception  {		
 		config = new ManyCellConfig();
 		fileProcessor = new FileProcessor();
@@ -615,9 +858,15 @@ public class SimulationAction extends MSSimSupportAction implements	SessionAware
 		}		
 	//	System.out.println("This is test: "+test.substring(4));
     	return SUCCESS;
-    }
+    }	
 	
-	//write data to file using specified path 
+    /**
+     * Write data to file using specified path
+     * @param fileNameWithPath
+     * @param manyCellUser
+     * @param jobStoreDir
+     * @param userJobExecDir
+     */
     public void createCopyScriptFile (String fileNameWithPath, String manyCellUser, String jobStoreDir, String userJobExecDir) {	
    /* 	java ...... &
     	echo "$!" > myjavaprogram.pid
@@ -670,6 +919,11 @@ public class SimulationAction extends MSSimSupportAction implements	SessionAware
         }        
     }
     
+    /**
+     * Store metadata about job to be run into database
+     * @return the job id
+     * @throws Exception
+     */
     public int storeUserMetaData() throws Exception {
     	int jobId = 0;
     	String user = getServletRequest().getRemoteUser();		
@@ -692,6 +946,10 @@ public class SimulationAction extends MSSimSupportAction implements	SessionAware
 				
     }
     
+    /**
+     * get connection object into database
+     * @return con, the connection object     *
+     */
     public Connection getDBconnection(){
     	String url = "jdbc:postgresql://" +config.getServerName()+":"+config.getPort()+"/"+config.getDatabaseName();		
 		String driverName = "org.postgresql.Driver";

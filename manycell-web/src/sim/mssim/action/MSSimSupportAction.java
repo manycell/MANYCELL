@@ -15,6 +15,9 @@ ServletRequestAware,ServletResponseAware{
 	private HttpServletResponse response;	
 	
 	
+	/* (non-Javadoc)
+	 * @see org.apache.struts2.interceptor.ServletRequestAware#setServletRequest(javax.servlet.http.HttpServletRequest)
+	 */
 	@Override
 	public void setServletRequest(HttpServletRequest request){
 	    this.request = request;

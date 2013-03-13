@@ -17,44 +17,103 @@ public class RegistrationAction extends MSSimSupportAction{
 	private String email;	
 	private String accesscode;	
 	
-	public String getcPassword() {
-		return cPassword;
-	}
-	public void setcPassword(String cPassword) {
-		this.cPassword = cPassword;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+	
+	/**
+	 * @return the username
+	 */
 	public String getUsername() {
 		return username;
 	}
+
+
+	/**
+	 * @param username the username to set
+	 */
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public String getEmail() {
-		return email;
+
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
 	}
+
+
+	/**
+	 * @return the password
+	 */
 	public String getPassword() {
 		return password;
 	}
+
+
+	/**
+	 * @param password the password to set
+	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
 
+
+	/**
+	 * @return the cPassword
+	 */
+	public String getcPassword() {
+		return cPassword;
+	}
+
+
+	/**
+	 * @param cPassword the cPassword to set
+	 */
+	public void setcPassword(String cPassword) {
+		this.cPassword = cPassword;
+	}
+
+
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
+	}
+
+
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+	/**
+	 * @return the accesscode
+	 */
 	public String getAccesscode() {
 		return accesscode;
 	}
+
+
+	/**
+	 * @param accesscode the accesscode to set
+	 */
 	public void setAccesscode(String accesscode) {
 		this.accesscode = accesscode;
 	}
+
+
 	public String register() throws Exception{		
 		String url = "jdbc:postgresql://localhost:5432/unicellsys/";
 		String dbName = "unicellsys";
