@@ -7,5 +7,5 @@ Package 2 - manycell-mas:
 This is a multi-agents simulator. Developed in Java but uses JNI to connect and send request to the manycell-core.
 
 Package 3 - manycell-web:
-This package provides the web-based interface to MANYCELL. It runs on apache/tomcat server. 
+This package provides the web-based interface to MANYCELL. It is developed Java and JSP using struts. It runs on apache/tomcat server. 
 
