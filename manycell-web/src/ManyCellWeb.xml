@@ -6,7 +6,7 @@
  <struts>
  	<package name="UI" extends="struts-default">
  	
- 		<!-- ======== MSSimlator Actions ======== -->
+ 		<!-- ======== ManyCell Simulator Actions ======== -->
  	
          <!-- ==============Action setting for ManyCell Simulator ==============-->
          <action name="doRegister" class="sim.mssim.action.user.RegistrationAction" method="register">

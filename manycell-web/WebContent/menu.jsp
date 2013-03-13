@@ -7,7 +7,7 @@
  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <sx:head/>
-<title>MSSimCC Home Page</title>
+<title>MANYCELL Home Page</title>
 
  <script type="text/javascript" >
 dojo.require("dojo.widget.*");
@@ -39,31 +39,31 @@ dojo.require("dojo.dijit.Tree");
 
 <div>
   <a href="/ManyCell/" target = "_top"><b><font size=2 style="font-size: 11pt">Home</font></b></a><br/><br/>
-<a href="/ManyCell/UI/Registration/UserRegister.jsp" target = "main"><font size=2 style="font-size: 11pt">Registration</font></a><br/> 
+<a href="./UI/Registration/UserRegister.jsp" target = "main"><font size=2 style="font-size: 11pt">Registration</font></a><br/> 
 </div>
 
 <sx:tree id="ManyCell" label="<font size=2 style='font-size: 12pt'><b>ManyCell</b></font>" >
 <sx:treenode id="Modelling" label="<b>Modelling</b>">
-<sx:treenode id="Monoscale" label="<a href='/ManyCell/UI/Modelling/MonoscaleModel.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Monoscale</font></a>" />
+<sx:treenode id="Monoscale" label="<a href='./UI/Modelling/MonoscaleModel.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Monoscale</font></a>" />
 <sx:treenode id="Multiscale" label="<font size=2 style='font-size: 11pt'>Multiscale</font>" >
-<sx:treenode id="SubCellular" label="<a href='/ManyCell/UI/Modelling/SubCellular.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Sub-Cellular</font></a>" />
-<sx:treenode id="Cellular" label="<a href='/ManyCell/UI/Modelling/Cellular.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Cellular</font></a>" />
-<sx:treenode id="Environment" label="<a href='/ManyCell/UI/Modelling/Environment.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Environment</font></a>" />
+<sx:treenode id="SubCellular" label="<a href='./UI/Modelling/SubCellular.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Sub-Cellular</font></a>" />
+<sx:treenode id="Cellular" label="<a href='./UI/Modelling/Cellular.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Cellular</font></a>" />
+<sx:treenode id="Environment" label="<a href='./UI/Modelling/Environment.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Environment</font></a>" />
 </sx:treenode>
 </sx:treenode>
 
 <sx:treenode id ="Simulation" label="<b>Simulation</b>">
-<sx:treenode id="MonoscaleS" label="<a href='/ManyCell/UI/Samples/Monoscale/TimeCourse.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Monoscale</font></a>" />
-<sx:treenode id="MultiscaleS" label="<a href='/ManyCell/UI/Simulation/MultiscaleModel.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Multiscale</font></a>" />
+<sx:treenode id="MonoscaleS" label="<a href='./UI/Samples/Monoscale/TimeCourse.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Monoscale</font></a>" />
+<sx:treenode id="MultiscaleS" label="<a href='./UI/Simulation/MultiscaleModel.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Multiscale</font></a>" />
 </sx:treenode>
 
 <sx:treenode id="Results" label="<b>Results</b>">
-<sx:treenode id="GrowthCurve" label="<a href='/ManyCell/UI/Results/SimulationResults.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Results</font></a>" />
+<sx:treenode id="GrowthCurve" label="<a href='./UI/Results/SimulationResults.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Results</font></a>" />
 
-<sx:treenode id="GrowthCurve" label="<a href='/ManyCell/UI/Results/GrowthCurve.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Growth Curve</font></a>" />
-<sx:treenode id="Snapshots" label="<a href='/ManyCell/UI/Results/Snapshots.html' target = 'main'><font size=2 style='font-size: 11pt'>Snapshots</font></a>" />
-<sx:treenode id="statistics" label="<a href='/ManyCell/UI/Results/Statistic.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Statistic</font></a>" />
-<sx:treenode id="SubCellular" label="<a href='/ManyCell/UI/Results/SubCellular.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Sub-Cellular</font></a>" />
+<sx:treenode id="GrowthCurve" label="<a href='./UI/Results/GrowthCurve.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Growth Curve</font></a>" />
+<sx:treenode id="Snapshots" label="<a href='./UI/Results/Snapshots.html' target = 'main'><font size=2 style='font-size: 11pt'>Snapshots</font></a>" />
+<sx:treenode id="statistics" label="<a href='./UI/Results/Statistic.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Statistic</font></a>" />
+<sx:treenode id="SubCellular" label="<a href='./UI/Results/SubCellular.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Sub-Cellular</font></a>" />
 </sx:treenode>
 </sx:tree>
 <br/>
