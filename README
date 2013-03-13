@@ -1,4 +1,5 @@
-MANYCELL software is organised into three packages. 
+MANYCELL software is organised into three packages.
+
 Package 1 - manycell-core:
 This package is the main simulation engine. It receives requests from the manycell-mas package and carries out simulation of the single cell model
 using serial, parallel or ISAT based simulations.
