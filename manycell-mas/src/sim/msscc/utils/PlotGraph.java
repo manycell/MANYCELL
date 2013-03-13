@@ -7,6 +7,7 @@ import org.copasi.utils.SimpleGraphPloter;
 public class PlotGraph {
 
 	/**
+	 * Method for testing plotting of time course
 	 * @param args
 	 */
 	public static final String[] tableHeader ={"MASS","BUD", "CLB2", "MASS-1", "BUD-1", "CLB2-1"};

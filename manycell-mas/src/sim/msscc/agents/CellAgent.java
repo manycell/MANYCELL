@@ -38,225 +38,382 @@ public class CellAgent implements Runnable{
 	private boolean isDivided = false;
 	private boolean useTabulator;
 	private String webServiceAddress;
-	private DatabaseConnectionPool pool;	
+	private DatabaseConnectionPool pool;
 	
-	/*private String [] changedVariableIds = {};
-	private float [] changedVariableValues = {};		*/	
-	
-	public boolean isUseTabulator() {
-		return useTabulator;
-	}
-	public void setUseTabulator(boolean useTabulator) {
-		this.useTabulator = useTabulator;
-	}
-	public String getWebServiceAddress() {
-		return webServiceAddress;
-	}
-	public void setWebServiceAddress(String webServiceAddress) {
-		this.webServiceAddress = webServiceAddress;
-	}
-	public double getVolume() {
-		return volume;
-	}
-	public void setVolume(double volume) {
-		this.volume = volume;
-	}
-	public DatabaseConnectionPool getPool() {
-		return pool;
-	}
-	public void setPool(DatabaseConnectionPool pool) {
-		this.pool = pool;
-	}
-	public boolean isDivided() {
-		return isDivided;
-	}
-	public void setDivided(boolean isDivided) {
-		this.isDivided = isDivided;
-	}
-	public int getStepCounter() {
-		return stepCounter;
-	}
-	public void setStepCounter(int stepCounter) {
-		this.stepCounter = stepCounter;
-	}
-	public boolean isNewCell() {
-		return isNewCell;
-	}
-	public void setNewCell(boolean isNewCell) {
-		this.isNewCell = isNewCell;
-	}
-	public String getSimState() {
-		return simState;
-	}
-	public void setSimState(String simState) {
-		this.simState = simState;
-	}
-	public float getBirthSize() {
-		return birthSize;
-	}
-	public void setBirthSize(float birthSize) {
-		this.birthSize = birthSize;
-	}
-	public int getgAge() {
-		return gAge;
-	}
-	public void setgAge(int gAge) {
-		this.gAge = gAge;
-	}
-
 	private double currentGlucose;
 	private float cycleTime;	
 	
-	public float getCycleTime() {
-		return cycleTime;
-	}
-	public void setCycleTime(float cycleTime) {
-		this.cycleTime = cycleTime;
-	}
-	
-	
-	public double getCurrentGlucose() {
-		return currentGlucose;
-	}
-	public void setCurrentGlucose(double currentGlucose) {
-		this.currentGlucose = currentGlucose;
-	}
-	public float getSumOfGLUConsumed() {
-		return sumOfGLUConsumed;
-	}
-	public void setSumOfGLUConsumed(float sumOfGLUConsumed) {
-		this.sumOfGLUConsumed = sumOfGLUConsumed;
-	}
 	public CellAgent(String agentId) {
 		this.agentId = agentId;
 	}
+		
+	/*private String [] changedVariableIds = {};
+	private float [] changedVariableValues = {};		*/		
+		
+	/**
+	 * @return the agentId
+	 */
 	public String getAgentId() {
 		return agentId;
 	}
-	
-	public String getMotherId() {
-		return motherId;
-	}
-	public void setMotherId(String motherId) {
-		this.motherId = motherId;
-	}
-	public int getMotherAgeAtBirth() {
-		return motherAgeAtBirth;
-	}
-	public void setMotherAgeAtBirth(int motherAgeAtBirth) {
-		this.motherAgeAtBirth = motherAgeAtBirth;
-	}
-	public String getStateAtEvent() {
-		return stateAtEvent;
-	}
-	public void setStateAtEvent(String stateAtEvent) {
-		this.stateAtEvent = stateAtEvent;
-	}
-	public String getMetaData() {
-		return metaData;
-	}
-	public void setMetaData(String metaData) {
-		this.metaData = metaData;
-	}
-	
+
+	/**
+	 * @param agentId the agentId to set
+	 */
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
 	}
 
+	/**
+	 * @return the birthSize
+	 */
+	public float getBirthSize() {
+		return birthSize;
+	}
 
+	/**
+	 * @param birthSize the birthSize to set
+	 */
+	public void setBirthSize(float birthSize) {
+		this.birthSize = birthSize;
+	}
 
+	/**
+	 * @return the volume
+	 */
+	public double getVolume() {
+		return volume;
+	}
+
+	/**
+	 * @param volume the volume to set
+	 */
+	public void setVolume(double volume) {
+		this.volume = volume;
+	}
+
+	/**
+	 * @return the isMotherCell
+	 */
 	public boolean isMotherCell() {
 		return isMotherCell;
 	}
 
-
-
+	/**
+	 * @param isMotherCell the isMotherCell to set
+	 */
 	public void setMotherCell(boolean isMotherCell) {
 		this.isMotherCell = isMotherCell;
 	}
 
-
-
+	/**
+	 * @return the isDaughterCell
+	 */
 	public boolean isDaughterCell() {
 		return isDaughterCell;
 	}
 
-
-
+	/**
+	 * @param isDaughterCell the isDaughterCell to set
+	 */
 	public void setDaughterCell(boolean isDaughterCell) {
 		this.isDaughterCell = isDaughterCell;
 	}
 
+	/**
+	 * @return the motherId
+	 */
+	public String getMotherId() {
+		return motherId;
+	}
 
+	/**
+	 * @param motherId the motherId to set
+	 */
+	public void setMotherId(String motherId) {
+		this.motherId = motherId;
+	}
 
+	/**
+	 * @return the motherAgeAtBirth
+	 */
+	public int getMotherAgeAtBirth() {
+		return motherAgeAtBirth;
+	}
+
+	/**
+	 * @param motherAgeAtBirth the motherAgeAtBirth to set
+	 */
+	public void setMotherAgeAtBirth(int motherAgeAtBirth) {
+		this.motherAgeAtBirth = motherAgeAtBirth;
+	}
+
+	/**
+	 * @return the simMsg
+	 */
 	public SimulationRequestMessage getSimMsg() {
 		return simMsg;
 	}
 
-
-
+	/**
+	 * @param simMsg the simMsg to set
+	 */
 	public void setSimMsg(SimulationRequestMessage simMsg) {
 		this.simMsg = simMsg;
 	}
 
-
-
+	/**
+	 * @return the tcInputData
+	 */
 	public TimeCourseInputData getTcInputData() {
 		return tcInputData;
 	}
 
-
-
+	/**
+	 * @param tcInputData the tcInputData to set
+	 */
 	public void setTcInputData(TimeCourseInputData tcInputData) {
 		this.tcInputData = tcInputData;
 	}
 
-
-
+	/**
+	 * @return the lastDivisionEventTime
+	 */
 	public float getLastDivisionEventTime() {
 		return lastDivisionEventTime;
 	}
 
-
-
+	/**
+	 * @param lastDivisionEventTime the lastDivisionEventTime to set
+	 */
 	public void setLastDivisionEventTime(float lastDivisionEventTime) {
 		this.lastDivisionEventTime = lastDivisionEventTime;
 	}
 
-
-
+	/**
+	 * @return the paramData
+	 */
 	public SimulatorParameterData getParamData() {
 		return paramData;
 	}
 
-
-
+	/**
+	 * @param paramData the paramData to set
+	 */
 	public void setParamData(SimulatorParameterData paramData) {
 		this.paramData = paramData;
-	}	
+	}
 
-
+	/**
+	 * @return the eventData
+	 */
 	public EventData getEventData() {
 		return eventData;
 	}
 
-
-
+	/**
+	 * @param eventData the eventData to set
+	 */
 	public void setEventData(EventData eventData) {
 		this.eventData = eventData;
 	}
-	
 
-
+	/**
+	 * @return the gTime
+	 */
 	public float getgTime() {
 		return gTime;
 	}
 
-
+	/**
+	 * @param gTime the gTime to set
+	 */
 	public void setgTime(float gTime) {
 		this.gTime = gTime;
-	}	
-	
+	}
+
+	/**
+	 * @return the metaData
+	 */
+	public String getMetaData() {
+		return metaData;
+	}
+
+	/**
+	 * @param metaData the metaData to set
+	 */
+	public void setMetaData(String metaData) {
+		this.metaData = metaData;
+	}
+
+	/**
+	 * @return the stateAtEvent
+	 */
+	public String getStateAtEvent() {
+		return stateAtEvent;
+	}
+
+	/**
+	 * @param stateAtEvent the stateAtEvent to set
+	 */
+	public void setStateAtEvent(String stateAtEvent) {
+		this.stateAtEvent = stateAtEvent;
+	}
+
+	/**
+	 * @return the simState
+	 */
+	public String getSimState() {
+		return simState;
+	}
+
+	/**
+	 * @param simState the simState to set
+	 */
+	public void setSimState(String simState) {
+		this.simState = simState;
+	}
+
+	/**
+	 * @return the isNewCell
+	 */
+	public boolean isNewCell() {
+		return isNewCell;
+	}
+
+	/**
+	 * @param isNewCell the isNewCell to set
+	 */
+	public void setNewCell(boolean isNewCell) {
+		this.isNewCell = isNewCell;
+	}
+
+	/**
+	 * @return the sumOfGLUConsumed
+	 */
+	public float getSumOfGLUConsumed() {
+		return sumOfGLUConsumed;
+	}
+
+	/**
+	 * @param sumOfGLUConsumed the sumOfGLUConsumed to set
+	 */
+	public void setSumOfGLUConsumed(float sumOfGLUConsumed) {
+		this.sumOfGLUConsumed = sumOfGLUConsumed;
+	}
+
+	/**
+	 * @return the gAge
+	 */
+	public int getgAge() {
+		return gAge;
+	}
+
+	/**
+	 * @param gAge the gAge to set
+	 */
+	public void setgAge(int gAge) {
+		this.gAge = gAge;
+	}
+
+	/**
+	 * @return the stepCounter
+	 */
+	public int getStepCounter() {
+		return stepCounter;
+	}
+
+	/**
+	 * @param stepCounter the stepCounter to set
+	 */
+	public void setStepCounter(int stepCounter) {
+		this.stepCounter = stepCounter;
+	}
+
+	/**
+	 * @return the isDivided
+	 */
+	public boolean isDivided() {
+		return isDivided;
+	}
+
+	/**
+	 * @param isDivided the isDivided to set
+	 */
+	public void setDivided(boolean isDivided) {
+		this.isDivided = isDivided;
+	}
+
+	/**
+	 * @return the useTabulator
+	 */
+	public boolean isUseTabulator() {
+		return useTabulator;
+	}
+
+	/**
+	 * @param useTabulator the useTabulator to set
+	 */
+	public void setUseTabulator(boolean useTabulator) {
+		this.useTabulator = useTabulator;
+	}
+
+	/**
+	 * @return the webServiceAddress
+	 */
+	public String getWebServiceAddress() {
+		return webServiceAddress;
+	}
+
+	/**
+	 * @param webServiceAddress the webServiceAddress to set
+	 */
+	public void setWebServiceAddress(String webServiceAddress) {
+		this.webServiceAddress = webServiceAddress;
+	}
+
+	/**
+	 * @return the pool
+	 */
+	public DatabaseConnectionPool getPool() {
+		return pool;
+	}
+
+	/**
+	 * @param pool the pool to set
+	 */
+	public void setPool(DatabaseConnectionPool pool) {
+		this.pool = pool;
+	}
+
+	/**
+	 * @return the currentGlucose
+	 */
+	public double getCurrentGlucose() {
+		return currentGlucose;
+	}
+
+	/**
+	 * @param currentGlucose the currentGlucose to set
+	 */
+	public void setCurrentGlucose(double currentGlucose) {
+		this.currentGlucose = currentGlucose;
+	}
+
+	/**
+	 * @return the cycleTime
+	 */
+	public float getCycleTime() {
+		return cycleTime;
+	}
+
+	/**
+	 * @param cycleTime the cycleTime to set
+	 */
+	public void setCycleTime(float cycleTime) {
+		this.cycleTime = cycleTime;
+	}
+
 	public void run(){		
 	//	 SimulationRequestMessage simMsg;	
 		 // float gTime = ccMsg.getGlobalTime();

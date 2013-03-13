@@ -49,8 +49,359 @@ public class TimeCourseInputData {
 	//monitoring the species types (reaction, assignment, constant)
 	int nReactionSpecies;
 	int nConstantSpecies;
-	int nAssignmentSpecies;
+	int nAssignmentSpecies;	
 		
+	/**
+	 * @return the model
+	 */
+	public String getModel() {
+		return model;
+	}
+
+	/**
+	 * @param model the model to set
+	 */
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	/**
+	 * @return the speciesInitialCondition
+	 */
+	public double[] getSpeciesInitialCondition() {
+		return speciesInitialCondition;
+	}
+
+	/**
+	 * @param speciesInitialCondition the speciesInitialCondition to set
+	 */
+	public void setSpeciesInitialCondition(double[] speciesInitialCondition) {
+		this.speciesInitialCondition = speciesInitialCondition;
+	}
+
+	/**
+	 * @return the stepSize
+	 */
+	public float getStepSize() {
+		return stepSize;
+	}
+
+	/**
+	 * @param stepSize the stepSize to set
+	 */
+	public void setStepSize(float stepSize) {
+		this.stepSize = stepSize;
+	}
+
+	/**
+	 * @return the nTimeSteps
+	 */
+	public int getnTimeSteps() {
+		return nTimeSteps;
+	}
+
+	/**
+	 * @param nTimeSteps the nTimeSteps to set
+	 */
+	public void setnTimeSteps(int nTimeSteps) {
+		this.nTimeSteps = nTimeSteps;
+	}
+
+	/**
+	 * @return the sMatrixRow
+	 */
+	public int getsMatrixRow() {
+		return sMatrixRow;
+	}
+
+	/**
+	 * @param sMatrixRow the sMatrixRow to set
+	 */
+	public void setsMatrixRow(int sMatrixRow) {
+		this.sMatrixRow = sMatrixRow;
+	}
+
+	/**
+	 * @return the sMatrixCol
+	 */
+	public int getsMatrixCol() {
+		return sMatrixCol;
+	}
+
+	/**
+	 * @param sMatrixCol the sMatrixCol to set
+	 */
+	public void setsMatrixCol(int sMatrixCol) {
+		this.sMatrixCol = sMatrixCol;
+	}
+
+	/**
+	 * @return the nSpecies
+	 */
+	public int getnSpecies() {
+		return nSpecies;
+	}
+
+	/**
+	 * @param nSpecies the nSpecies to set
+	 */
+	public void setnSpecies(int nSpecies) {
+		this.nSpecies = nSpecies;
+	}
+
+	/**
+	 * @return the speciesId
+	 */
+	public String[] getSpeciesId() {
+		return speciesId;
+	}
+
+	/**
+	 * @param speciesId the speciesId to set
+	 */
+	public void setSpeciesId(String[] speciesId) {
+		this.speciesId = speciesId;
+	}
+
+	/**
+	 * @return the tolerance
+	 */
+	public float getTolerance() {
+		return tolerance;
+	}
+
+	/**
+	 * @param tolerance the tolerance to set
+	 */
+	public void setTolerance(float tolerance) {
+		this.tolerance = tolerance;
+	}
+
+	/**
+	 * @return the sumOfGLUConsumed
+	 */
+	public float getSumOfGLUConsumed() {
+		return sumOfGLUConsumed;
+	}
+
+	/**
+	 * @param sumOfGLUConsumed the sumOfGLUConsumed to set
+	 */
+	public void setSumOfGLUConsumed(float sumOfGLUConsumed) {
+		this.sumOfGLUConsumed = sumOfGLUConsumed;
+	}
+
+	/**
+	 * @return the cellVolume
+	 */
+	public double getCellVolume() {
+		return cellVolume;
+	}
+
+	/**
+	 * @param cellVolume the cellVolume to set
+	 */
+	public void setCellVolume(double cellVolume) {
+		this.cellVolume = cellVolume;
+	}
+
+	/**
+	 * @return the environmentVolume
+	 */
+	public double getEnvironmentVolume() {
+		return environmentVolume;
+	}
+
+	/**
+	 * @param environmentVolume the environmentVolume to set
+	 */
+	public void setEnvironmentVolume(double environmentVolume) {
+		this.environmentVolume = environmentVolume;
+	}
+
+	/**
+	 * @return the currentGlucose
+	 */
+	public double getCurrentGlucose() {
+		return currentGlucose;
+	}
+
+	/**
+	 * @param currentGlucose the currentGlucose to set
+	 */
+	public void setCurrentGlucose(double currentGlucose) {
+		this.currentGlucose = currentGlucose;
+	}
+
+	/**
+	 * @return the cellBirthSize
+	 */
+	public float getCellBirthSize() {
+		return cellBirthSize;
+	}
+
+	/**
+	 * @param cellBirthSize the cellBirthSize to set
+	 */
+	public void setCellBirthSize(float cellBirthSize) {
+		this.cellBirthSize = cellBirthSize;
+	}
+
+	/**
+	 * @return the isNewCell
+	 */
+	public boolean isNewCell() {
+		return isNewCell;
+	}
+
+	/**
+	 * @param isNewCell the isNewCell to set
+	 */
+	public void setNewCell(boolean isNewCell) {
+		this.isNewCell = isNewCell;
+	}
+
+	/**
+	 * @return the biomassVariable
+	 */
+	public String getBiomassVariable() {
+		return biomassVariable;
+	}
+
+	/**
+	 * @param biomassVariable the biomassVariable to set
+	 */
+	public void setBiomassVariable(String biomassVariable) {
+		this.biomassVariable = biomassVariable;
+	}
+
+	/**
+	 * @return the nutrientModelId
+	 */
+	public String getNutrientModelId() {
+		return nutrientModelId;
+	}
+
+	/**
+	 * @param nutrientModelId the nutrientModelId to set
+	 */
+	public void setNutrientModelId(String nutrientModelId) {
+		this.nutrientModelId = nutrientModelId;
+	}
+
+	/**
+	 * @return the budVariable
+	 */
+	public String getBudVariable() {
+		return budVariable;
+	}
+
+	/**
+	 * @param budVariable the budVariable to set
+	 */
+	public void setBudVariable(String budVariable) {
+		this.budVariable = budVariable;
+	}
+
+	/**
+	 * @return the changeVariableIdsValuesMap
+	 */
+	public Map<String, Float> getChangeVariableIdsValuesMap() {
+		return changeVariableIdsValuesMap;
+	}
+
+	/**
+	 * @param changeVariableIdsValuesMap the changeVariableIdsValuesMap to set
+	 */
+	public void setChangeVariableIdsValuesMap(
+			Map<String, Float> changeVariableIdsValuesMap) {
+		this.changeVariableIdsValuesMap = changeVariableIdsValuesMap;
+	}
+
+	/**
+	 * @return the partitionFunction
+	 */
+	public String getPartitionFunction() {
+		return partitionFunction;
+	}
+
+	/**
+	 * @param partitionFunction the partitionFunction to set
+	 */
+	public void setPartitionFunction(String partitionFunction) {
+		this.partitionFunction = partitionFunction;
+	}
+
+	/**
+	 * @return the eventVariable
+	 */
+	public String getEventVariable() {
+		return eventVariable;
+	}
+
+	/**
+	 * @param eventVariable the eventVariable to set
+	 */
+	public void setEventVariable(String eventVariable) {
+		this.eventVariable = eventVariable;
+	}
+
+	/**
+	 * @return the eventVariableValue
+	 */
+	public float getEventVariableValue() {
+		return eventVariableValue;
+	}
+
+	/**
+	 * @param eventVariableValue the eventVariableValue to set
+	 */
+	public void setEventVariableValue(float eventVariableValue) {
+		this.eventVariableValue = eventVariableValue;
+	}
+
+	/**
+	 * @return the nReactionSpecies
+	 */
+	public int getnReactionSpecies() {
+		return nReactionSpecies;
+	}
+
+	/**
+	 * @param nReactionSpecies the nReactionSpecies to set
+	 */
+	public void setnReactionSpecies(int nReactionSpecies) {
+		this.nReactionSpecies = nReactionSpecies;
+	}
+
+	/**
+	 * @return the nConstantSpecies
+	 */
+	public int getnConstantSpecies() {
+		return nConstantSpecies;
+	}
+
+	/**
+	 * @param nConstantSpecies the nConstantSpecies to set
+	 */
+	public void setnConstantSpecies(int nConstantSpecies) {
+		this.nConstantSpecies = nConstantSpecies;
+	}
+
+	/**
+	 * @return the nAssignmentSpecies
+	 */
+	public int getnAssignmentSpecies() {
+		return nAssignmentSpecies;
+	}
+
+	/**
+	 * @param nAssignmentSpecies the nAssignmentSpecies to set
+	 */
+	public void setnAssignmentSpecies(int nAssignmentSpecies) {
+		this.nAssignmentSpecies = nAssignmentSpecies;
+	}
+
 	//construct an object to set variables from model
 	public TimeCourseInputData(String model){
 		super();
@@ -73,217 +424,6 @@ public class TimeCourseInputData {
 	      System.exit(1);
 	    }
 	  }	
-
-	
-	public Map<String, Float> getChangeVariableIdsValuesMap() {
-		return changeVariableIdsValuesMap;
-	}
-
-	public void setChangeVariableIdsValuesMap(
-			Map<String, Float> changeVariableIdsValuesMap) {
-		this.changeVariableIdsValuesMap = changeVariableIdsValuesMap;
-	}
-
-	public String getBiomassVariable() {
-		return biomassVariable;
-	}
-
-	public void setBiomassVariable(String biomassVariable) {
-		this.biomassVariable = biomassVariable;
-	}
-	
-	public String getNutrientModelId() {
-		return nutrientModelId;
-	}
-
-	public void setNutrientModelId(String nutrientModelId) {
-		this.nutrientModelId = nutrientModelId;
-	}	
-
-	public String getBudVariable() {
-		return budVariable;
-	}
-
-	public void setBudVariable(String budVariable) {
-		this.budVariable = budVariable;
-	}
-
-	public String getPartitionFunction() {
-		return partitionFunction;
-	}
-
-	public void setPartitionFunction(String partitionFunction) {
-		this.partitionFunction = partitionFunction;
-	}	
-
-	public String getEventVariable() {
-		return eventVariable;
-	}
-
-	public void setEventVariable(String eventVariable) {
-		this.eventVariable = eventVariable;
-	}
-
-	public float getEventVariableValue() {
-		return eventVariableValue;
-	}
-
-	public void setEventVariableValue(float eventVariableValue) {
-		this.eventVariableValue = eventVariableValue;
-	}
-
-	public int getnReactionSpecies() {
-		return nReactionSpecies;
-	}
-
-	public void setnReactionSpecies(int nReactionSpecies) {
-		this.nReactionSpecies = nReactionSpecies;
-	}
-
-	public int getnConstantSpecies() {
-		return nConstantSpecies;
-	}
-
-	public void setnConstantSpecies(int nConstantSpecies) {
-		this.nConstantSpecies = nConstantSpecies;
-	}
-
-	public int getnAssignmentSpecies() {
-		return nAssignmentSpecies;
-	}
-
-	public void setnAssignmentSpecies(int nAssignmentSpecies) {
-		this.nAssignmentSpecies = nAssignmentSpecies;
-	}
-
-
-	public double getEnvironmentVolume() {
-		return environmentVolume;
-	}
-
-	public void setEnvironmentVolume(double environmentVolume) {
-		this.environmentVolume = environmentVolume;
-	}
-
-	public double getCellVolume() {
-		return cellVolume;
-	}
-
-
-
-	public void setCellVolume(double cellVolume) {
-		this.cellVolume = cellVolume;
-	}
-
-
-
-	public boolean isNewCell() {
-		return isNewCell;
-	}
-
-
-
-	public void setNewCell(boolean isNewCell) {
-		this.isNewCell = isNewCell;
-	}
-
-
-
-	public float getCellBirthSize() {
-		return cellBirthSize;
-	}
-
-
-
-	public void setCellBirthSize(float cellBirthSize) {
-		this.cellBirthSize = cellBirthSize;
-	}
-
-
-
-	public double getCurrentGlucose() {
-		return currentGlucose;
-	}
-
-
-
-	public void setCurrentGlucose(double currentGlucose) {
-		this.currentGlucose = currentGlucose;
-	}
-
-
-
-	public float getSumOfGLUConsumed() {
-		return sumOfGLUConsumed;
-	}
-
-
-	public void setSumOfGLUConsumed(float sumOfGLUConsumed) {
-		this.sumOfGLUConsumed = sumOfGLUConsumed;
-	}
-
-
-	public String getModel() {
-		return model;
-	}
-	public void setModel(String model) {
-		this.model = model;
-	}
-	public double[] getSpeciesInitialCondition() {
-		return speciesInitialCondition;
-	}
-	public void setSpeciesInitialCondition(double[] speciesInitialCondition) {
-		this.speciesInitialCondition = speciesInitialCondition;
-	}
-	public float getStepSize() {
-		return stepSize;
-	}
-	public void setStepSize(float stepSize) {
-		this.stepSize = stepSize;
-	}
-	public int getnTimeSteps() {
-		return nTimeSteps;
-	}
-	public void setnTimeSteps(int nTimeSteps) {
-		this.nTimeSteps = nTimeSteps;
-	}
-	public int getnSpecies() {
-		return nSpecies;
-	}
-	public void setnSpecies(int nSpecies) {
-		this.nSpecies = nSpecies;
-	}
-	public String[] getSpeciesId() {
-		return speciesId;
-	}
-	public void setSpeciesId(String[] speciesId) {
-		this.speciesId = speciesId;
-	}
-	public float getTolerance() {
-		return tolerance;
-	}
-	public void setTolerance(float tolerance) {
-		this.tolerance = tolerance;
-	}
-	
-	
-	public int getsMatrixRow() {
-		return sMatrixRow;
-	}
-
-	public void setsMatrixRow(int sMatrixRow) {
-		this.sMatrixRow = sMatrixRow;
-	}
-
-	public int getsMatrixCol() {
-		return sMatrixCol;
-	}
-
-	public void setsMatrixCol(int sMatrixCol) {
-		this.sMatrixCol = sMatrixCol;
-	}
-
-
 
 	// exstract initial condition from model
 	public void exstractInitialCondition() {

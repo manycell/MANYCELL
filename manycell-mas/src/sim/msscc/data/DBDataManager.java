@@ -30,55 +30,137 @@ public class DBDataManager implements DataManagerInterface {
 	private boolean usePool = false;
 	boolean isData = false;
 	boolean isLocal  = false;
-	private Database database = null;
+	private Database database = null;	
 	
+	/**
+	 * @return the stmt
+	 */
+	public Statement getStmt() {
+		return stmt;
+	}
+
+
+
+	/**
+	 * @param stmt the stmt to set
+	 */
+	public void setStmt(Statement stmt) {
+		this.stmt = stmt;
+	}
+
+
+
+	/**
+	 * @return the pool
+	 */
+	public DatabaseConnectionPool getPool() {
+		return pool;
+	}
+
+
+
+	/**
+	 * @param pool the pool to set
+	 */
+	public void setPool(DatabaseConnectionPool pool) {
+		this.pool = pool;
+	}
+
+
+
+	/**
+	 * @return the usePool
+	 */
+	public boolean isUsePool() {
+		return usePool;
+	}
+
+
+
+	/**
+	 * @param usePool the usePool to set
+	 */
+	public void setUsePool(boolean usePool) {
+		this.usePool = usePool;
+	}
+
+
+
+	/**
+	 * @return the isData
+	 */
+	public boolean isData() {
+		return isData;
+	}
+
+
+
+	/**
+	 * @param isData the isData to set
+	 */
+	public void setData(boolean isData) {
+		this.isData = isData;
+	}
+
+
+
+	/**
+	 * @return the isLocal
+	 */
+	public boolean isLocal() {
+		return isLocal;
+	}
+
+
+
+	/**
+	 * @param isLocal the isLocal to set
+	 */
+	public void setLocal(boolean isLocal) {
+		this.isLocal = isLocal;
+	}
+
+
+
+	/**
+	 * @return the database
+	 */
+	public Database getDatabase() {
+		return database;
+	}
+
+
+
+	/**
+	 * @param database the database to set
+	 */
+	public void setDatabase(Database database) {
+		this.database = database;
+	}
+
+
+
+	/**
+	 * @param connection the connection to set
+	 */
+	public void setConnection(Connection connection) {
+		this.connection = connection;
+	}
+
+
+
 	public void initPool(DatabaseConnectionPool pool, boolean usePool){
 	//	pool.initPool();
 		this.usePool = usePool;
 		this.pool = pool;
 	}
 
-	public Statement getStmt() {
-		return stmt;
-	}
-
-	public void setStmt(Statement stmt) {
-		this.stmt = stmt;
-	}
-
-	public void setConnection(Connection connection) {
-		this.connection = connection;
-	}
+	
 
 	public int storeTimeCourseResult(String userId, String CAID,
 			String simulationRun, String resultString, String resultMetadata) {
 		return 0;
-	}
-	
-	
-	public Database getDatabase() {
-		return database;
-	}
-
-	public void setDatabase(Database database) {
-		this.database = database;
-	}
-
-	public boolean isLocal() {
-		return isLocal;
-	}
-
-	public void setLocal(boolean isLocal) {
-		this.isLocal = isLocal;
-	}
-
-	public boolean isData() {
-		return isData;
-	}
-
-	public void setData(boolean isData) {
-		this.isData = isData;
-	}
+	}	
 
 	public int storeTimeCourseResult(String resultString) {
 		int storeTCID = 0;

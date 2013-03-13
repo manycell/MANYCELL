@@ -9,12 +9,20 @@ import java.util.Random;
 
 import sim.msscc.data.DBDataManager;
 
+/**
+ * The <code>AgentManager</code> defines the overall control the multi-agent simulation. Start the master 
+ * agent for the scheduling of the cell agents 
+ *
+ * @author Joseph O. Dada 
+ *
+ * @copyright
+ * The University of Manchester
+ *
+ */
 public class AgentManager {
 	
 	public static void main(String[] args) {		
-
-		float simDuration = 9000.0f;
-		float simStep = 0.0f;
+		
 		//get the start time of agents execution
 		Long pTime= System.currentTimeMillis();		
 		

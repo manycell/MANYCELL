@@ -29,95 +29,175 @@ public class TimeCourseBehaviour {
 //	private int generation;
 	boolean useTabulator = false;
 	private String webServiceAddress; //= "http://dada.mib.man.ac.uk:8080/CopasiWS/services/TimeCourseService";			
-		
-	public String getWebServiceAddress() {
-		return webServiceAddress;
+			
+
+	/**
+	 * @return the psconnector
+	 */
+	public PSConnector getPsconnector() {
+		return psconnector;
 	}
 
-	public boolean isUseTabulator() {
-		return useTabulator;
+	/**
+	 * @param psconnector the psconnector to set
+	 */
+	public void setPsconnector(PSConnector psconnector) {
+		this.psconnector = psconnector;
 	}
 
-	public void setUseTabulator(boolean useTabulator) {
-		this.useTabulator = useTabulator;
-	}
-
-	public Connection getCon() {
-		return con;
-	}
-
-	public void setCon(Connection con) {
-		this.con = con;
-	}
-
+	/**
+	 * @return the dataManager
+	 */
 	public DBDataManager getDataManager() {
 		return dataManager;
 	}
 
+	/**
+	 * @param dataManager the dataManager to set
+	 */
 	public void setDataManager(DBDataManager dataManager) {
 		this.dataManager = dataManager;
 	}
-	
 
-	public void setWebServiceAddress(String webServiceAddress) {
-		this.webServiceAddress = webServiceAddress;
-	}	
-	
-	public int getMotherAgeAtBirth() {
-		return motherAgeAtBirth;
+	/**
+	 * @return the con
+	 */
+	public Connection getCon() {
+		return con;
 	}
 
-	public void setMotherAgeAtBirth(int motherAgeAtBirth) {
-		this.motherAgeAtBirth = motherAgeAtBirth;
+	/**
+	 * @param con the con to set
+	 */
+	public void setCon(Connection con) {
+		this.con = con;
 	}
 
-	public String getMotherId() {
-		return motherId;
-	}
-
-	public void setMotherId(String motherId) {
-		this.motherId = motherId;
-	}
-
-	public float getBirthSize() {
-		return birthSize;
-	}
-
-	public void setBirthSize(float birthSize) {
-		this.birthSize = birthSize;
-	}
-
-	public int getCellAge() {
-		return cellAge;
-	}
-
-	public void setCellAge(int cellAge) {
-		this.cellAge = cellAge;
-	}
-
+	/**
+	 * @return the simMsg
+	 */
 	public SimulationRequestMessage getSimMsg() {
 		return simMsg;
 	}
 
+	/**
+	 * @param simMsg the simMsg to set
+	 */
 	public void setSimMsg(SimulationRequestMessage simMsg) {
 		this.simMsg = simMsg;
 	}
 
+	/**
+	 * @return the ldEventTime
+	 */
 	public float getLdEventTime() {
 		return ldEventTime;
 	}
 
+	/**
+	 * @param ldEventTime the ldEventTime to set
+	 */
 	public void setLdEventTime(float ldEventTime) {
 		this.ldEventTime = ldEventTime;
 	}
 
+	/**
+	 * @return the agentId
+	 */
 	public String getAgentId() {
 		return agentId;
 	}
 
+	/**
+	 * @param agentId the agentId to set
+	 */
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
-	}	
+	}
+
+	/**
+	 * @return the cellAge
+	 */
+	public int getCellAge() {
+		return cellAge;
+	}
+
+	/**
+	 * @param cellAge the cellAge to set
+	 */
+	public void setCellAge(int cellAge) {
+		this.cellAge = cellAge;
+	}
+
+	/**
+	 * @return the birthSize
+	 */
+	public float getBirthSize() {
+		return birthSize;
+	}
+
+	/**
+	 * @param birthSize the birthSize to set
+	 */
+	public void setBirthSize(float birthSize) {
+		this.birthSize = birthSize;
+	}
+
+	/**
+	 * @return the motherAgeAtBirth
+	 */
+	public int getMotherAgeAtBirth() {
+		return motherAgeAtBirth;
+	}
+
+	/**
+	 * @param motherAgeAtBirth the motherAgeAtBirth to set
+	 */
+	public void setMotherAgeAtBirth(int motherAgeAtBirth) {
+		this.motherAgeAtBirth = motherAgeAtBirth;
+	}
+
+	/**
+	 * @return the motherId
+	 */
+	public String getMotherId() {
+		return motherId;
+	}
+
+	/**
+	 * @param motherId the motherId to set
+	 */
+	public void setMotherId(String motherId) {
+		this.motherId = motherId;
+	}
+
+	/**
+	 * @return the useTabulator
+	 */
+	public boolean isUseTabulator() {
+		return useTabulator;
+	}
+
+	/**
+	 * @param useTabulator the useTabulator to set
+	 */
+	public void setUseTabulator(boolean useTabulator) {
+		this.useTabulator = useTabulator;
+	}
+
+	/**
+	 * @return the webServiceAddress
+	 */
+	public String getWebServiceAddress() {
+		return webServiceAddress;
+	}
+
+	/**
+	 * @param webServiceAddress the webServiceAddress to set
+	 */
+	public void setWebServiceAddress(String webServiceAddress) {
+		this.webServiceAddress = webServiceAddress;
+	}
 
 	public void cleanUPDB(){
 		//dataManager.cleanUp();

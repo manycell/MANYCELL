@@ -21,10 +21,14 @@ import java.util.*;
  *  Call processAgentEvent() to perform synchronous event processing
  *  Call postAgentEvent() to perform asynchronous event processing
  *
- * @author Joseph O. Dada * 
+ * @author Joseph P. Bigus
+ * @author Jennifer Bigus
+ * @modified by Joseph O. Dada
  *
  * @copyright
  * The University of Manchester
+ * Constructing Intelligent Agents using Java
+ * (C) Joseph P.Bigus and Jennifer Bigus 2001
  *
  *
  */

@@ -27,92 +27,147 @@ public class EventData {
 		this.stateAtEvent = stateAtEvent;
 		this.agentId = agentId;
 		this.tcid = tcid;
-	}	
-	
-	
-	public float getCycleTime() {
-		return cycleTime;
 	}
 
-	public void setCycleTime(float cycleTime) {
-		this.cycleTime = cycleTime;
-	}
-
-	public String getSimState() {
-		return simState;
-	}
-
-	public void setSimState(String simState) {
-		this.simState = simState;
-	}
-
-	public int getAgentgAge() {
-		return agentgAge;
-	}
-
-
-	public void setAgentgAge(int agentgAge) {
-		this.agentgAge = agentgAge;
-	}
-
-
+	/**
+	 * @return the gTime
+	 */
 	public float getgTime() {
 		return gTime;
 	}
 
+	/**
+	 * @param gTime the gTime to set
+	 */
 	public void setgTime(float gTime) {
 		this.gTime = gTime;
 	}
 
+	/**
+	 * @return the eventTime
+	 */
 	public float getEventTime() {
 		return eventTime;
 	}
 
+	/**
+	 * @param eventTime the eventTime to set
+	 */
 	public void setEventTime(float eventTime) {
 		this.eventTime = eventTime;
 	}
 
+	/**
+	 * @return the eventName
+	 */
 	public String getEventName() {
 		return eventName;
 	}
 
+	/**
+	 * @param eventName the eventName to set
+	 */
 	public void setEventName(String eventName) {
 		this.eventName = eventName;
-	}	
-	
+	}
 
+	/**
+	 * @return the stateAtEvent
+	 */
 	public String getStateAtEvent() {
 		return stateAtEvent;
 	}
 
+	/**
+	 * @param stateAtEvent the stateAtEvent to set
+	 */
 	public void setStateAtEvent(String stateAtEvent) {
 		this.stateAtEvent = stateAtEvent;
 	}
 
+	/**
+	 * @return the simState
+	 */
+	public String getSimState() {
+		return simState;
+	}
+
+	/**
+	 * @param simState the simState to set
+	 */
+	public void setSimState(String simState) {
+		this.simState = simState;
+	}
+
+	/**
+	 * @return the agentId
+	 */
 	public String getAgentId() {
 		return agentId;
 	}
 
+	/**
+	 * @param agentId the agentId to set
+	 */
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
 	}
 
+	/**
+	 * @return the agentgAge
+	 */
+	public int getAgentgAge() {
+		return agentgAge;
+	}
+
+	/**
+	 * @param agentgAge the agentgAge to set
+	 */
+	public void setAgentgAge(int agentgAge) {
+		this.agentgAge = agentgAge;
+	}
+
+	/**
+	 * @return the tcid
+	 */
 	public int getTcid() {
 		return tcid;
 	}
 
+	/**
+	 * @param tcid the tcid to set
+	 */
 	public void setTcid(int tcid) {
 		this.tcid = tcid;
 	}
 
+	/**
+	 * @return the metaData
+	 */
 	public String getMetaData() {
 		return metaData;
 	}
 
+	/**
+	 * @param metaData the metaData to set
+	 */
 	public void setMetaData(String metaData) {
 		this.metaData = metaData;
-	}	
-	
+	}
+
+	/**
+	 * @return the cycleTime
+	 */
+	public float getCycleTime() {
+		return cycleTime;
+	}
+
+	/**
+	 * @param cycleTime the cycleTime to set
+	 */
+	public void setCycleTime(float cycleTime) {
+		this.cycleTime = cycleTime;
+	}
 	
 	
 

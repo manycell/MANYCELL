@@ -16,94 +16,163 @@ public class PSConnector {
 	private double[] sInitialValue;
 	private float tolerance = 0.0005f;		
 		
-	private String simResult;
-	
+	private String simResult;	
 	private String webServiceAddress;
-	
-	
-	
-	public String getWebServiceAddress() {
-		return webServiceAddress;
-	}
 
-	public void setWebServiceAddress(String webServiceAddress) {
-		this.webServiceAddress = webServiceAddress;
-	}
 
-	public String getSimResult() {
-		return simResult;
-	}
-
-	public void setSimResult(String simResult) {
-		this.simResult = simResult;
-	}
-
-	public String getuModel() {
-		return uModel;
-	}
-
-	public void setuModel(String uModel) {
-		this.uModel = uModel;
-	}
-
+	/**
+	 * @return the speciesName
+	 */
 	public String[] getSpeciesName() {
 		return speciesName;
 	}
 
+	/**
+	 * @param speciesName the speciesName to set
+	 */
 	public void setSpeciesName(String[] speciesName) {
 		this.speciesName = speciesName;
 	}
 
+	/**
+	 * @return the speciesId
+	 */
 	public String[] getSpeciesId() {
 		return speciesId;
 	}
 
+	/**
+	 * @param speciesId the speciesId to set
+	 */
 	public void setSpeciesId(String[] speciesId) {
 		this.speciesId = speciesId;
 	}
 
+	/**
+	 * @return the sBMLModel
+	 */
 	public String getSBMLModel() {
 		return SBMLModel;
 	}
 
+	/**
+	 * @param sBMLModel the sBMLModel to set
+	 */
 	public void setSBMLModel(String sBMLModel) {
 		SBMLModel = sBMLModel;
 	}
 
-	public double[] getsInitialValue() {		
-		return sInitialValue;
+	/**
+	 * @return the uModel
+	 */
+	public String getuModel() {
+		return uModel;
 	}
 
-	public void setsInitialValue(double[] sInitialValue) {
-		this.sInitialValue = sInitialValue;
-	}	
+	/**
+	 * @param uModel the uModel to set
+	 */
+	public void setuModel(String uModel) {
+		this.uModel = uModel;
+	}
 
+	/**
+	 * @return the modelId
+	 */
 	public String getModelId() {
 		return modelId;
 	}
 
+	/**
+	 * @param modelId the modelId to set
+	 */
 	public void setModelId(String modelId) {
 		this.modelId = modelId;
 	}
 
+	/**
+	 * @return the nSpecies
+	 */
 	public int getnSpecies() {
 		return nSpecies;
 	}
 
+	/**
+	 * @param nSpecies the nSpecies to set
+	 */
 	public void setnSpecies(int nSpecies) {
 		this.nSpecies = nSpecies;
 	}
 
-
+	/**
+	 * @return the nNonConstSpecies
+	 */
 	public int getnNonConstSpecies() {
 		return nNonConstSpecies;
 	}
 
+	/**
+	 * @param nNonConstSpecies the nNonConstSpecies to set
+	 */
 	public void setnNonConstSpecies(int nNonConstSpecies) {
 		this.nNonConstSpecies = nNonConstSpecies;
 	}
 
+	/**
+	 * @return the sInitialValue
+	 */
+	public double[] getsInitialValue() {
+		return sInitialValue;
+	}
 
+	/**
+	 * @param sInitialValue the sInitialValue to set
+	 */
+	public void setsInitialValue(double[] sInitialValue) {
+		this.sInitialValue = sInitialValue;
+	}
+
+	/**
+	 * @return the tolerance
+	 */
+	public float getTolerance() {
+		return tolerance;
+	}
+
+	/**
+	 * @param tolerance the tolerance to set
+	 */
+	public void setTolerance(float tolerance) {
+		this.tolerance = tolerance;
+	}
+
+	/**
+	 * @return the simResult
+	 */
+	public String getSimResult() {
+		return simResult;
+	}
+
+	/**
+	 * @param simResult the simResult to set
+	 */
+	public void setSimResult(String simResult) {
+		this.simResult = simResult;
+	}
+
+	/**
+	 * @return the webServiceAddress
+	 */
+	public String getWebServiceAddress() {
+		return webServiceAddress;
+	}
+
+	/**
+	 * @param webServiceAddress the webServiceAddress to set
+	 */
+	public void setWebServiceAddress(String webServiceAddress) {
+		this.webServiceAddress = webServiceAddress;
+	}
 
 	static {		
 		System.loadLibrary("psconnector");

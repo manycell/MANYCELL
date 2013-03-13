@@ -49,131 +49,184 @@ public class TimeCourseSimulationResult {
 	
 	private boolean isDivided;	
 	
-	
-	
+
+
+	/**
+	 * @return the biomassVariable
+	 */
 	public String getBiomassVariable() {
 		return biomassVariable;
 	}
 
 
+	/**
+	 * @param biomassVariable the biomassVariable to set
+	 */
 	public void setBiomassVariable(String biomassVariable) {
 		this.biomassVariable = biomassVariable;
 	}
 
 
+	/**
+	 * @return the partitionFunction
+	 */
 	public String getPartitionFunction() {
 		return partitionFunction;
 	}
 
 
+	/**
+	 * @param partitionFunction the partitionFunction to set
+	 */
 	public void setPartitionFunction(String partitionFunction) {
 		this.partitionFunction = partitionFunction;
 	}
 
 
+	/**
+	 * @return the gLUConsumeId
+	 */
 	public String getGLUConsumeId() {
 		return GLUConsumeId;
 	}
 
 
+	/**
+	 * @param gLUConsumeId the gLUConsumeId to set
+	 */
 	public void setGLUConsumeId(String gLUConsumeId) {
 		GLUConsumeId = gLUConsumeId;
-	}
+	}	
 
-
+	/**
+	 * @param activeVariableIds the activeVariableIds to set
+	 */
 	public void setActiveVariableIds(String[] activeVariableIds) {
 		this.activeVariableIds = activeVariableIds;
 	}
 
 
+	/**
+	 * @return the eventVariable
+	 */
 	public String getEventVariable() {
 		return eventVariable;
 	}
 
 
+	/**
+	 * @param eventVariable the eventVariable to set
+	 */
 	public void setEventVariable(String eventVariable) {
 		this.eventVariable = eventVariable;
 	}
 
 
-
+	/**
+	 * @return the eventVariableValue
+	 */
 	public float getEventVariableValue() {
 		return eventVariableValue;
 	}
 
 
-
+	/**
+	 * @param eventVariableValue the eventVariableValue to set
+	 */
 	public void setEventVariableValue(float eventVariableValue) {
 		this.eventVariableValue = eventVariableValue;
 	}
 
 
-
-	public boolean isDivided() {
-		return isDivided;
-	}
-
-
-
-	public void setDivided(boolean isDivided) {
-		this.isDivided = isDivided;
-	}
-
-
-
+	/**
+	 * @return the simState
+	 */
 	public String getSimState() {
 		return simState;
 	}
 
 
-
+	/**
+	 * @param simState the simState to set
+	 */
 	public void setSimState(String simState) {
 		this.simState = simState;
 	}
 
 
-
+	/**
+	 * @return the fastTime
+	 */
 	public float[] getFastTime() {
 		return fastTime;
 	}
 
 
-
+	/**
+	 * @param fastTime the fastTime to set
+	 */
 	public void setFastTime(float[] fastTime) {
 		this.fastTime = fastTime;
 	}
 
 
+	/**
+	 * @return the isDivided
+	 */
+	public boolean isDivided() {
+		return isDivided;
+	}
 
+
+	/**
+	 * @param isDivided the isDivided to set
+	 */
+	public void setDivided(boolean isDivided) {
+		this.isDivided = isDivided;
+	}
+
+
+	/**
+	 * @return the activeVariableIds
+	 */
 	public String[] getActiveVariableIds() {
 		return activeVariableIds;
 	}
+	
 
 
-
-	public void setActiveVariables(String[] activeVariableIds) {
+/*	public void setActiveVariables(String[] activeVariableIds) {
 		this.activeVariableIds = activeVariableIds;
-	}
+	}*/
 
 
-
+	/**
+	 * @return the activeVariableValues
+	 */
 	public float[][] getActiveVariableValues() {
 		return activeVariableValues;
 	}
 
 
-
+	/**
+	 * @param activeVariableValues the activeVariableValues to set
+	 */
 	public void setActiveVariableValues(float[][] activeVariableValues) {
 		this.activeVariableValues = activeVariableValues;
 	}
 
 
-
+	/**
+	 * @return the parentDivisionTime
+	 */
 	public float getParentDivisionTime() {
 		return parentDivisionTime;
 	}
 
 
+	/**
+	 * @param parentDivisionTime the parentDivisionTime to set
+	 */
 	public void setParentDivisionTime(float parentDivisionTime) {
 		this.parentDivisionTime = parentDivisionTime;
 	}
@@ -182,165 +235,274 @@ public class TimeCourseSimulationResult {
 	//constructor
 	public TimeCourseSimulationResult(String resultString, SimulationRequestMessage simMsg){
 	//	this.convert2Array(resultString);
-		this.setActiveVariables(simMsg.getActiveVariableIds());
+		this.setActiveVariableIds(simMsg.getActiveVariableIds());
 		this.setBiomassVariable(simMsg.getBiomassVariable());
 		this.setPartitionFunction(simMsg.getPartitionFunction());
 		this.setEventVariable(simMsg.getEventVariable());
 		this.setEventVariableValue(simMsg.getEventVariableValue());
 		this.setGLUConsumeId(simMsg.getGLUConsumeId());
 		this.extractState(resultString);
-	}	
+	}
 	
+
+	//method for extracting state from simulation result
 	
-	
-	public float getSizeMultiplier() {
-		return sizeMultiplier;
-	}
-
-
-
-	public void setSizeMultiplier(float sizeMultiplier) {
-		this.sizeMultiplier = sizeMultiplier;
-	}
-
-
-
-	public float getSizeAtDivision() {
-		return sizeAtDivision;
-	}
-
-
-
-	public void setSizeAtDivision(float sizeAtDivision) {
-		this.sizeAtDivision = sizeAtDivision;
-	}
-
-
-
-	public float getGLUconsumed() {
-		return GLUconsumed;
-	}
-
-
-	public void setGLUconsumed(float gLUconsumed) {
-		GLUconsumed = gLUconsumed;
-	}
-
-
+	/**
+	 * @return the headerString
+	 */
 	public String getHeaderString() {
 		return headerString;
 	}
 
 
+	/**
+	 * @param headerString the headerString to set
+	 */
 	public void setHeaderString(String headerString) {
 		this.headerString = headerString;
 	}
 
 
-	public double[][] getSpeciesResultArray() {
-		return speciesResultArray;
-	}
-
-	public void setSpeciesResultArray(double[][] speciesResultArray) {
-		this.speciesResultArray = speciesResultArray;
-	}
-
-	public String getSpeciesResultString() {
-		return speciesResultString;
-	}
-
-	public void setSpeciesResultString(String speciesResultString) {
-		this.speciesResultString = speciesResultString;
-	}
-
-	public String getSpeciesHeaderString() {
-		return speciesHeaderString;
-	}
-
-	public void setSpeciesHeaderString(String speciesHeaderString) {
-		this.speciesHeaderString = speciesHeaderString;
-	}
-
-	public String[] getSpeciesHeaderData() {
-		return speciesHeaderData;
-	}
-
-
-
-
-	public void setSpeciesHeaderData(String[] speciesHeaderData) {
-		this.speciesHeaderData = speciesHeaderData;
-	}
-
-	public float getDivisionTime() {
-		return divisionTime;
-	}
-
-
-	public void setDivisionTime(float divisionTime) {
-		this.divisionTime = divisionTime;
-	}
-
-	public double[] getsInit() {
-		return sInit;
-	}
-
-	public void setsInit(double[] sInit) {
-		this.sInit = sInit;
-	}
-
-	public String getStateAtEvent() {
-		return stateAtEvent;
-	}
-
-
-	public void setStateAtEvent(String stateAtEvent) {
-		this.stateAtEvent = stateAtEvent;
-	}
-	
-
+	/**
+	 * @return the parameterResultArray
+	 */
 	public double[][] getParameterResultArray() {
 		return parameterResultArray;
 	}
 
 
+	/**
+	 * @param parameterResultArray the parameterResultArray to set
+	 */
 	public void setParameterResultArray(double[][] parameterResultArray) {
 		this.parameterResultArray = parameterResultArray;
 	}
 
 
+	/**
+	 * @return the paramResultString
+	 */
 	public String getParamResultString() {
 		return paramResultString;
 	}
 
 
+	/**
+	 * @param paramResultString the paramResultString to set
+	 */
 	public void setParamResultString(String paramResultString) {
 		this.paramResultString = paramResultString;
 	}
 
 
+	/**
+	 * @return the paramHeaderString
+	 */
 	public String getParamHeaderString() {
 		return paramHeaderString;
 	}
 
 
+	/**
+	 * @param paramHeaderString the paramHeaderString to set
+	 */
 	public void setParamHeaderString(String paramHeaderString) {
 		this.paramHeaderString = paramHeaderString;
 	}
 
 
+	/**
+	 * @return the paramHeaderData
+	 */
 	public String[] getParamHeaderData() {
 		return paramHeaderData;
 	}
 
 
+	/**
+	 * @param paramHeaderData the paramHeaderData to set
+	 */
 	public void setParamHeaderData(String[] paramHeaderData) {
 		this.paramHeaderData = paramHeaderData;
 	}
 
 
-	//method for extracting state from simulation result
-	
+	/**
+	 * @return the speciesResultArray
+	 */
+	public double[][] getSpeciesResultArray() {
+		return speciesResultArray;
+	}
+
+
+	/**
+	 * @param speciesResultArray the speciesResultArray to set
+	 */
+	public void setSpeciesResultArray(double[][] speciesResultArray) {
+		this.speciesResultArray = speciesResultArray;
+	}
+
+
+	/**
+	 * @return the speciesResultString
+	 */
+	public String getSpeciesResultString() {
+		return speciesResultString;
+	}
+
+
+	/**
+	 * @param speciesResultString the speciesResultString to set
+	 */
+	public void setSpeciesResultString(String speciesResultString) {
+		this.speciesResultString = speciesResultString;
+	}
+
+
+	/**
+	 * @return the speciesHeaderString
+	 */
+	public String getSpeciesHeaderString() {
+		return speciesHeaderString;
+	}
+
+
+	/**
+	 * @param speciesHeaderString the speciesHeaderString to set
+	 */
+	public void setSpeciesHeaderString(String speciesHeaderString) {
+		this.speciesHeaderString = speciesHeaderString;
+	}
+
+
+	/**
+	 * @return the speciesHeaderData
+	 */
+	public String[] getSpeciesHeaderData() {
+		return speciesHeaderData;
+	}
+
+
+	/**
+	 * @param speciesHeaderData the speciesHeaderData to set
+	 */
+	public void setSpeciesHeaderData(String[] speciesHeaderData) {
+		this.speciesHeaderData = speciesHeaderData;
+	}
+
+
+	/**
+	 * @return the divisionTime
+	 */
+	public float getDivisionTime() {
+		return divisionTime;
+	}
+
+
+	/**
+	 * @param divisionTime the divisionTime to set
+	 */
+	public void setDivisionTime(float divisionTime) {
+		this.divisionTime = divisionTime;
+	}
+
+
+	/**
+	 * @return the sInit
+	 */
+	public double[] getsInit() {
+		return sInit;
+	}
+
+
+	/**
+	 * @param sInit the sInit to set
+	 */
+	public void setsInit(double[] sInit) {
+		this.sInit = sInit;
+	}
+
+
+	/**
+	 * @return the gLUconsumed
+	 */
+	public float getGLUconsumed() {
+		return GLUconsumed;
+	}
+
+
+	/**
+	 * @param gLUconsumed the gLUconsumed to set
+	 */
+	public void setGLUconsumed(float gLUconsumed) {
+		GLUconsumed = gLUconsumed;
+	}
+
+
+	/**
+	 * @return the sizeAtDivision
+	 */
+	public float getSizeAtDivision() {
+		return sizeAtDivision;
+	}
+
+
+	/**
+	 * @param sizeAtDivision the sizeAtDivision to set
+	 */
+	public void setSizeAtDivision(float sizeAtDivision) {
+		this.sizeAtDivision = sizeAtDivision;
+	}
+
+
+	/**
+	 * @return the sizeMultiplier
+	 */
+	public float getSizeMultiplier() {
+		return sizeMultiplier;
+	}
+
+
+	/**
+	 * @param sizeMultiplier the sizeMultiplier to set
+	 */
+	public void setSizeMultiplier(float sizeMultiplier) {
+		this.sizeMultiplier = sizeMultiplier;
+	}
+
+
+	/**
+	 * @return the stateAtEvent
+	 */
+	public String getStateAtEvent() {
+		return stateAtEvent;
+	}
+
+
+	/**
+	 * @param stateAtEvent the stateAtEvent to set
+	 */
+	public void setStateAtEvent(String stateAtEvent) {
+		this.stateAtEvent = stateAtEvent;
+	}
+
+
+	/**
+	 * @return the cellSizeAtSim
+	 */
+	public StringBuffer getCellSizeAtSim() {
+		return cellSizeAtSim;
+	}
+
+
+	/**
+	 * @param cellSizeAtSim the cellSizeAtSim to set
+	 */
+	public void setCellSizeAtSim(StringBuffer cellSizeAtSim) {
+		this.cellSizeAtSim = cellSizeAtSim;
+	}
+
+
 	public void extractState(String simResult){
 		String str =null, strHead =null;		
 		List<String> speciesResultArrayList = new ArrayList();
