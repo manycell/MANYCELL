@@ -5,8 +5,10 @@ This package is the main simulation engine. It receives requests from the manyce
 using serial, parallel or ISAT based simulations.
 
 Package 2 - manycell-mas:
-This is a multi-agents simulator. Developed in Java but uses JNI to connect and send request to the manycell-core.
+This is a multi-agents simulator. Developed in Java but uses JNI to connect and send request to the manycell-core. 
+It takes the multiscale model encoded in Multiscale Model XML description language (MMXML) as input and automatically generates an executable 
+code for simulation of the multiscale model.
 
 Package 3 - manycell-web:
-This package provides the web-based interface to MANYCELL. It is developed Java and JSP using struts. It runs on apache/tomcat server. 
+This package provides the web-based interface to MANYCELL. It is developed in Java and JSP using struts. It runs on apache/tomcat server. 
 
