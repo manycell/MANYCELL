@@ -10,6 +10,10 @@ import org.copasi.utils.FileProcessor;
 import sim.mssim.action.MSSimSupportAction;
 import sim.mssim.modelmanager.ProcessSBMLModelManager;
 
+/**
+ * @author dada
+ *
+ */
 public class ResultAction extends MSSimSupportAction implements	SessionAware {
 	private static final long serialVersionUID = 5156288255337069381L;
 	

@@ -214,6 +214,10 @@ public class ProcessSBMLModelManager {
 
 
 
+	/**
+	 * @param fileNameWithPath
+	 * @param isModelString
+	 */
 	public ProcessSBMLModelManager(String fileNameWithPath, boolean isModelString){
 		fileProcessor = new FileProcessor();
 		SBMLReader reader = new SBMLReader();
@@ -506,6 +510,18 @@ public Map<String, String> runTSSimAndPlotResult(String host, String hostName, F
 	
     }   
 
+/**
+ * @param host
+ * @param hostName
+ * @param model
+ * @param userInputFormat
+ * @param userOutputFormat
+ * @param deltaFactor
+ * @param deltaMinimum
+ * @param function
+ * @param variable
+ * @return
+ */
 public String runSimulatorSBRMLResults(String host, String hostName, File model, String userInputFormat, String userOutputFormat, String deltaFactor, String deltaMinimum, String function, String variable){
 	FileProcessor fileProcessor = new FileProcessor();
 	String results = null;     	

@@ -896,6 +896,10 @@ public class ModellingAction extends MSSimSupportAction implements SessionAware 
 		return SUCCESS;
 	}
 	
+	/**
+	 * @return SUCCESS string
+	 * @throws Exception
+	 */
 	public String doRunDeterministicSimulator() throws Exception  {		
 		ProcessSBMLModelManager SMManager = new ProcessSBMLModelManager();	
 		

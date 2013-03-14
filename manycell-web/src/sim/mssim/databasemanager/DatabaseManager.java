@@ -70,7 +70,7 @@ public class DatabaseManager {
 			return SUCCESS;
 		}		
 	}*/
-	
+		
 	public String processTreeData(){
 		StringBuffer buff = new StringBuffer();
 		Statement stmt=null;
@@ -280,6 +280,11 @@ public String retrieveCellAgentData(String motherId) {
 		return id;
 	}
 	
+	/**
+	 * @param motherId, cell mother id
+	 * @param motherAgeAtBirth, cell mother age at birth of daughter cell
+	 * @return daughterId, the id of the daughter
+	 */
 	public String retrieveCellAgentData(String motherId, int motherAgeAtBirth) {
 	//	Connection conn = null;
 		StringBuffer buff = new StringBuffer();
