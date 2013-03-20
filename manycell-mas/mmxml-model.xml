@@ -21,10 +21,10 @@
 	<subCellular>
 		<model name="Chen2004_CellCycle Mother with GLU" id="SCM" type="continum"
 			isDaughter="true"
-			fileNameWithPath="/home/dada/local/user-workspace/manycell/manycell-model.xml">
+			fileNameWithPath="./manycell-model.xml">
 			<timeCourseSimulation numberOfSteps="10"
 				stepSize="10.0" startOutputTime="0.0"
-				webServiceAddress="http://dada.mib.man.ac.uk:8080/CopasiWS/services/TimeCourseService" />
+				webServiceAddress="must-change-to-web-address-of-CopasiWS/CopasiWS/services/TimeCourseService" />
 			<cellSizePartitionVariable modelId="F" />
 			<nutrientConsumptionVariable modelId="parameter_7" />
 			<events>
