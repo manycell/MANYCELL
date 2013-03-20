@@ -1,0 +1,1 @@
+MANYCELL packages are provided under the Artistic License 2.0 (see a copy of this license in the same directory with this file). This license allows non-commercial and commercial use free of charge.

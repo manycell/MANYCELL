@@ -1,0 +1,47 @@
+<manycell xmlns="http://www.manycell.org/sim-config-schema">
+	<!-- XML Multiscale Model description for execution in ManyCell: A multiscale 
+		simulator for cellular systems -->
+	<environment type="Yeast Cell Batch Culture ">
+		<volume size="1.0" unit="liter" />
+		<nutrients>
+			<nutrient name="GLU" modelId="species_1" value="0.0004" />
+		</nutrients>
+	</environment>
+	<cellular>
+		<cells total="5" averageCellVolume="0.001" cellVolumeUnit="microliter">
+			<sizeVariable isRandom="false" standardDeviation="0.2" modelId="MASS" value="1.60" />
+			<changeModelInitialConditons isRandom="false" standardDeviation="0.2"> 
+				<variable modelId="MASS" value="1.60" />
+			</changeModelInitialConditons>
+			<behaviours>
+				<behaviour name="division" eventReference="div" />
+			</behaviours>
+		</cells>
+	</cellular>
+	<subCellular>
+		<model name="Chen2004_CellCycle Mother with GLU" id="SCM" type="continum"
+			isDaughter="true"
+			fileNameWithPath="/home/dada/local/user-workspace/manycell/manycell-model.xml">
+			<timeCourseSimulation numberOfSteps="10"
+				stepSize="10.0" startOutputTime="0.0"
+				webServiceAddress="http://dada.mib.man.ac.uk:8080/CopasiWS/services/TimeCourseService" />
+			<cellSizePartitionVariable modelId="F" />
+			<nutrientConsumptionVariable modelId="parameter_7" />
+			<events>
+				<event name="division" id="div" modelId="parameter_2" value="-1.0" />
+			</events>
+			<activeVariables>
+				<variable modelId="CLB2" />				
+				<variable modelId="MASS" />
+			</activeVariables>
+		</model>
+	</subCellular>
+	<simulation allowParallelExecution="false" useISAT="true"
+		duration="600.0" maxCellGeologicalAge="31">
+		<ISAT tolerance="0.015" />
+		<parallelExecution numberOfProcessors="4" />
+	</simulation>
+	<database databaseName="unicellsys" port="5432" serverName="localhost"
+		userName="unicellsys" password="test_unicellsys" initialConnections="40"
+		maxConnections="150" />
+</manycell>
