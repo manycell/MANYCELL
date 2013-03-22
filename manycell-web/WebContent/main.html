@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Multiscale Agent-based Modelling and Simulation Environment</title>
+<link rel="stylesheet" type="text/css" href="simplecss.css" />
 </head>
 <body>
 <!--<h2>Background Info:</h2>-->
@@ -15,7 +16,7 @@
 <!-- <h2>Introduction</h2>-->
 
 <div align="justify"> 
-<h2>What is ManyCell?</h2>
+<div id="section_header">What is ManyCell?</div>
  <p>
 ManyCell is a flexible and efficient multiscale agent-based modelling and simulation environment for cellular systems. It
 uses ordinary differential equations (ODEs) to model the internal biochemistry 
@@ -32,14 +33,14 @@ distributed computing, we hope to be able to comprehensively and efficiently sim
 multiscale models of many large-scale cellular systems.
 </p>
 
-<h2>How does ManyCell work?</h2>
+<div id="section_header">How does ManyCell work?</div>
 <p>
-ManyCell takes multiscale model defined in XML format (MXML) as input and automatically generates executable code for the 
-multiscale model specified in the MXML input file. The type of executable code generated depends on the choice of
-the user. All models at different levels of biological organisation of the system being modelled must be specified in the MXML file. 
+ManyCell takes multiscale model defined in XML format (MMXML) as input and automatically generates executable code for the 
+multiscale model specified in the MMXML input file. The type of executable code generated depends on the choice of
+the user. All models at different levels of biological organisation of the system being modelled must be specified in the MMXML file. 
 ManyCell presently supports the definition of sub-cellular, cellular and micro-environment model information of biological systems. 
 
-<h2>What output do you get from ManyCell?</h2>
+<div id="section_header">What Output do you get from ManyCell?</div>
 <p>
 ManyCell stores all data generated during the simulation for cellular events and states of the sub-cellular species including final 
 output data in RDBMS. This allows the number of transactions (events triggered by the underlying
@@ -47,7 +48,7 @@ ODEs) to be extremely large, and as a bonus the simulation results are easily ma
 Data generated are analysed automatically and presented graphically at the end of simulation.
 </p>
 
-<h2>Simulation Examples in ManyCell</h2>
+<div id="section_header">ManyCell Simulation Examples</div>
 <ul>
 <li><a href="./UI/Samples/Monoscale/TimeCourse.jsp" target = "main"><font size=2 style='font-size: 11pt'>Time Course Simulation of Sub-Cellular Model</font></a><br/>
 <li><a href='./UI/Samples/Monoscale/Sensitivity.jsp' target = "main"><font size=2 style='font-size: 11pt'>Sensitivity Analysis of Sub-Cellular Model</font></a><br/>
@@ -56,7 +57,7 @@ Data generated are analysed automatically and presented graphically at the end o
 </div>
 
 <br/>
-<b>Acknowledgements</b>
+<div id="section_header">Acknowledgements</div>
 <p>
 ManyCell is funded by the European Commission within the seventh framework programme,
 theme 1 Health through the UNICELLSYS project (Grant 201142).  

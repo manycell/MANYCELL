@@ -24,3 +24,15 @@ display: none; /*Hide them by default. Don't delete. */
 .treeview .submenu ul li{ /*Style for LIs of ULs that are children of LIs (submenu) */
 cursor: default;
 }
+#section_header {
+  background-color: #595791;
+  margin: 5px 0 0 0;
+  float:left;
+  width: 99%;
+  height: 20px;
+  text-align: left;
+  clear:both;
+  font: bold 14px Arial;
+  color: #FFFFFF;
+  text-indent: 10px;  
+}

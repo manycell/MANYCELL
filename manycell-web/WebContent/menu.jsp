@@ -37,11 +37,13 @@ dojo.require("dojo.dijit.Tree");
 <body  bgcolor = "F5F5F5" vlink="blue">
 <!-- <body  bgcolor = "#FFFAFA" vlink="blue">-->
 
+
 <div>
   <a href="./" target = "_top"><b><font size=2 style="font-size: 11pt">Home</font></b></a><br/><br/>
+  
+  <hr color="red"/>
 <a href="./UI/Registration/UserRegister.jsp" target = "main"><font size=2 style="font-size: 11pt">Registration</font></a><br/> 
 </div>
-
 <sx:tree id="ManyCell" label="<font size=2 style='font-size: 12pt'><b>ManyCell</b></font>" >
 <sx:treenode id="Modelling" label="<b>Modelling</b>">
 <sx:treenode id="Monoscale" label="<a href='./UI/Modelling/MonoscaleModel.jsp' target = 'main'><font size=2 style='font-size: 11pt'>Monoscale</font></a>" />
@@ -67,11 +69,43 @@ dojo.require("dojo.dijit.Tree");
 </sx:treenode>
 </sx:tree>
 <br/>
-Links <br/>
-<a href='http://www.unicellsys.eu/' target = 'new'><font size=2 style='font-size: 10pt'>UNICELLSYS</font></a><br/>
-<a href='http://www.comp-sys-bio.org/SBRML' target = 'new'><font size=2 style='font-size: 10pt'>SBRML</font></a><br/>
-<a href='http://www.comp-sys-bio.org/CopasiWS/' target = 'new'><font size=2 style='font-size: 10pt'>CopasiWS</font></a><br/>
-<a href='http://www.copasi.org' target = 'new'><font size=2 style='font-size: 10pt'>COPASI</font></a><br/>
+<hr color="red"/>
+<b>User Guide</b> 
+<ul>
+<li><a href='./introduction.html' target = 'main'><font size=2 style='font-size: 10pt'>Introduction</font></a><br/>
+<li><a href='./requirements.html' target = 'main'><font size=2 style='font-size: 10pt'>Requirements</font></a><br/>
+<li><a href='./installation.html' target = 'main'><font size=2 style='font-size: 10pt'>Installation</font></a><br/>
+<li><a href='./configuration.html' target = 'main'><font size=2 style='font-size: 10pt'>Configuration</font></a>
+</ul>
+
+<hr color="red"/>
+<b>Download</b>
+<ul>
+<li><a href='./readme.html' target = 'main'><font size=2 style='font-size: 10pt'>README</font></a><br/>
+<li><a href='./dist/manycell-core/manycell-core-1.0.tar' target="main" ><font size=2 style='font-size: 10pt'>manycell-core</font></a><br/>
+<li><a href='./dist/manycell-mas/manycell-mas-1.0.tar'target="main" ><font size=2 style='font-size: 10pt'>manycell-mas</font></a><br/>
+<li><a href='./dist/manycell-web/manycell-web-1.0.tar' target="main"><font size=2 style='font-size: 10pt'>manycell-web</font></a><br/>
+<li><a href='http://www.comp-sys-bio.org/CopasiWS/' target = 'new'><font size=2 style='font-size: 10pt'>CopasiWS</font></a>
+</ul>
+
+<hr color="red"/>
+<b>Code Documentation</b> 
+<ul>
+<li><a href="https://github.com/manycell/MANYCELL" target='new'><font size=2 style='font-size: 10pt'>Code Repository</font></a><br/>
+<li><a href='http://www.comp-sys-bio.org/ManyCell/documentation/manycell-core/html/index.html' target = 'main'><font size=2 style='font-size: 10pt'>manycell-core</font></a><br/>
+<li><a href='http://www.comp-sys-bio.org/ManyCell/documentation/manycell-mas/html/index.html' target = 'main'><font size=2 style='font-size: 10pt'>manycell-mas</font></a><br/>
+<li><a href='http://www.comp-sys-bio.org/ManyCell/documentation/manycell-web/html/index.html' target = 'main'><font size=2 style='font-size: 10pt'>manycell-web</font></a>
+</uL>
+
+<hr color="red"/>
+<b>Links</b>
+<ul>
+<li><a href='http://www.unicellsys.eu/' target = 'new'><font size=2 style='font-size: 10pt'>UNICELLSYS</font></a><br/>
+<li><a href='http://www.comp-sys-bio.org/SBRML' target = 'new'><font size=2 style='font-size: 10pt'>SBRML</font></a><br/>
+<li><a href='http://www.comp-sys-bio.org/CopasiWS/' target = 'new'><font size=2 style='font-size: 10pt'>CopasiWS</font></a><br/>
+<li><a href='http://www.copasi.org' target = 'new'><font size=2 style='font-size: 10pt'>COPASI</font></a>
+</ul>
+<hr color="red"/>
 
 <!-- <script type="text/javascript">
 
