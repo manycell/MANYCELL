@@ -15,7 +15,7 @@
 
 NOTE:
 
- - Run soapcpp2 on copasiws3/timecoursews.h to generate the SOAP/XML processing logic.
+ - Run soapcpp2 on copasiws/timecoursews.h to generate the SOAP/XML processing logic.
    Use soapcpp2 option -I to specify paths for #import
    To build with STL, 'stlvector.h' is imported from 'import' dir in package.
    Use soapcpp2 option -i to generate improved proxy and server classes.
