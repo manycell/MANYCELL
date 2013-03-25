@@ -23,7 +23,7 @@ import java.util.*;
  *
  * @author Joseph P. Bigus
  * @author Jennifer Bigus
- * @modified by Joseph O. Dada
+ * @author modified by Joseph O. Dada
  *
  * @copyright
  * The University of Manchester

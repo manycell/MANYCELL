@@ -7,6 +7,16 @@ import sim.msscc.data.DivisionTimeEventData;
 import sim.msscc.data.SimulationRequestMessage;
 import sim.msscc.data.TimeCourseSimulationResult;
 
+/**
+ * The <code>SimulatorAgent</code> sub-class of Agent used for initial testing. 
+ *
+ * @author Joseph O. Dada 
+ *
+ * @copyright
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
+ *
+ */
 public class SimulatorAgent extends Agent{
 
 	private PSConnector psconnector = new PSConnector();

@@ -11,6 +11,17 @@ import sim.msscc.data.SimulationRequestMessage;
 import sim.msscc.data.SimulatorParameterData;
 import sim.msscc.data.TimeCourseInputData;
 
+/**
+ * The <code>CellAgent</code> is software representation of biological cell. It defines
+ * the attributes and behaviours of biological cells.
+ * 
+ * @author Joseph O. Dada
+ *
+ * @copyright
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
+ *
+ */
 public class CellAgent implements Runnable{
 	
 	private String agentId = null;

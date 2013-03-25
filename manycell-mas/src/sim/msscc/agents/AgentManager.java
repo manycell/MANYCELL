@@ -16,7 +16,8 @@ import sim.msscc.data.DBDataManager;
  * @author Joseph O. Dada 
  *
  * @copyright
- * The University of Manchester
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
  *
  */
 public class AgentManager {

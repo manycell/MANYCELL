@@ -58,22 +58,16 @@ import org.manycell.config.SubCellularDocument.SubCellular.Model.TimeCourseSimul
 
 /**
  * The <code>MasterAgent</code> class implements the global master
- * for culture simulator.
+ * for MANYCELL simulator. It is a controller of the simulator.
  *
- * @author Joseph O. Dada
- * *
+ * @author Joseph O. Dada 
+ *
  * @copyright
- * The University of Manchester
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
  *
  */
-/**
- * @author dada
- *
- */
-/**
- * @author dada
- *
- */
+
 public class MasterAgent extends Agent {
 	private static MasterAgent instance = null;
 	//private SimulatorAgent simAgent = new SimulatorAgent("simAgent");
