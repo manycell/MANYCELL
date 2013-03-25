@@ -19,6 +19,16 @@
  */
 package sim.jnative;
 
+/**
+ * The <code>SimulatorConnector</code> provide API for connecting to CopasiWS client. 
+ *
+ * @author Joseph O. Dada 
+ *
+ * @copyright
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
+ *
+ */
 public class SimulatorConnector {	
 	static {    	
 	//	System.loadLibrary("psimnative");

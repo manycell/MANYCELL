@@ -17,7 +17,7 @@ import sim.msscc.data.TimeCourseSimulationResult;
  * The <code>TimeCourseBehavior</code> defines the behaviour of cell agents. Cell agent 
  * uses it to execute its behaviour. It is the main channel that cell agents use to simulate 
  * their sub-cellular reaction networks. It can simulate the reaction network either serially 
- * or through a ISAT tabulator 
+ * or through ISAT tabulator 
  *
  * @author Joseph O. Dada 
  *
