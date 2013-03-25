@@ -13,6 +13,19 @@ import sim.msscc.data.SimulationRequestMessage;
 import sim.msscc.data.StateData;
 import sim.msscc.data.TimeCourseSimulationResult;
 
+/**
+ * The <code>TimeCourseBehavior</code> defines the behaviour of cell agents. Cell agent 
+ * uses it to execute its behaviour. It is the main channel that cell agents use to simulate 
+ * their sub-cellular reaction networks. It can simulate the reaction network either serially 
+ * or through a ISAT tabulator 
+ *
+ * @author Joseph O. Dada 
+ *
+ * @copyright
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
+ *
+ */
 
 public class TimeCourseBehaviour {
 	
@@ -28,7 +41,7 @@ public class TimeCourseBehaviour {
 	private String motherId;
 //	private int generation;
 	boolean useTabulator = false;
-	private String webServiceAddress; //= "http://dada.mib.man.ac.uk:8080/CopasiWS/services/TimeCourseService";			
+	private String webServiceAddress; 	
 			
 
 	/**

@@ -1,5 +1,16 @@
 package sim.msscc.data;
 
+/**
+ * The <code>DataManagerInterface</code> defines the API for connecting to cell agent and simulation 
+ * data stored in the database or files 
+ *
+ * @author Joseph O. Dada 
+ *
+ * @copyright
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
+ *
+ */
 public interface DataManagerInterface {
 	public int storeTimeCourseResult(String userId, String CAID,
 			String simulationRun, String resultString, String resultMetadata);

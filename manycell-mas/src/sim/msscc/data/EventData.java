@@ -1,5 +1,16 @@
 package sim.msscc.data;
 
+/**
+ * The <code>EventData</code> is responsible for handling event data for the cell agents. 
+ * Events are used to connect the internal biochemistry of cell to its behaviours at the cellular level  
+ *
+ * @author Joseph O. Dada 
+ *
+ * @copyright
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
+ *
+ */
 public class EventData {
 	
 	private float gTime;

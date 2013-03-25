@@ -15,11 +15,14 @@ import org.manycell.config.DatabaseDocument.Database;
 import org.postgresql.jdbc2.optional.ConnectionPool;
 
 /**
- * @author dada
+ * The <code>DBDataManager</code> provides programming interface 
+ * for the connecting to the database. It implements the interface defined in <code> DataManagerInterface class</code> 
  *
- */
-/**
- * @author dada
+ * @author Joseph O. Dada 
+ *
+ * @copyright
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
  *
  */
 public class DBDataManager implements DataManagerInterface {

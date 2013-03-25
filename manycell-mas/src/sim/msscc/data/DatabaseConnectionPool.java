@@ -8,6 +8,18 @@ import org.postgresql.jdbc2.optional.ConnectionPool;
 import org.postgresql.jdbc2.optional.PoolingDataSource;
 //import org.postgresql.jdbc2.optional.
 import javax.sql.ConnectionPoolDataSource;
+
+/**
+ * The <code>DatabaseConnector</code> provide methods for creating a connection pool 
+ * for connecting to database 
+ *
+ * @author Joseph O. Dada 
+ *
+ * @copyright
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
+ *
+ */
 public class DatabaseConnectionPool {	
 	PoolingDataSource source = new PoolingDataSource();	
 	

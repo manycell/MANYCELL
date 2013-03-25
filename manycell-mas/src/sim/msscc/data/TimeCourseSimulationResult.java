@@ -7,6 +7,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+/**
+ * The <code>TimeCourseSimulationResult</code> defines methods for processing 
+ * time course simulation results of sub-cellular network for cell agents.
+ *
+ * @author Joseph O. Dada 
+ *
+ * @copyright
+ * MANYCELL, UNICELLSYS Project
+ * (C) The University of Manchester 2012
+ *
+ */
 public class TimeCourseSimulationResult {	
 	
 //	private String []headerData;
