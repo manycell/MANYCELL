@@ -115,8 +115,16 @@ public class AgentManager {
 		String variable = master.getActiveVariables()[i];			
 		manager.saveCellVariableTimeEvolution(variable, cells, master.getStepSize(), duration, dir, randInt+".species-"+variable+"-"+code+".txt");		
 	}	
+	
+	//temp local processing of results
+/*	int cells = 5;
+	float duration = 5400;
+	manager.saveGrowthData(0, 10, duration, dir, randInt+".growth-"+code+".txt");
+	manager.saveCellAgeDistribution(dir, randInt+".cellAgeDistribution-"+code+".txt");
+	manager.saveSummaryData(0, cells, duration, dir, randInt+".summary-"+code+".txt");
+*/	
 		
-	master.stopAgentProcessing();
+//TODO	master.stopAgentProcessing();
 
 	//	System.out.println(buff);
 		

@@ -38,84 +38,6 @@ make[1]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core'
 
 **** Build Finished ****
 
-**** Build of configuration Default for project manycell-core ****
-
-make all 
-make  all-recursive
-make[1]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core'
-Making all in mssimulator
-make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-Making all in copasiwsclient
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient'
-make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient'
-Making all in istabulator
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-Making all in ellipsoid
-make[4]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid'
-make[4]: Nothing to be done for `all'.
-make[4]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid'
-make[4]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-make[4]: Nothing to be done for `all-am'.
-make[4]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-Making all in psconnector
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
-make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
-Making all in testapp
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
-make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-make[3]: Nothing to be done for `all-am'.
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core'
-make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core'
-make[1]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core'
-
-**** Build Finished ****
-
-**** Build of configuration Default for project manycell-core ****
-
-make all 
-make  all-recursive
-make[1]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core'
-Making all in mssimulator
-make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-Making all in copasiwsclient
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient'
-make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient'
-Making all in istabulator
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-Making all in ellipsoid
-make[4]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid'
-make[4]: Nothing to be done for `all'.
-make[4]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid'
-make[4]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-make[4]: Nothing to be done for `all-am'.
-make[4]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-Making all in psconnector
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
-make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
-Making all in testapp
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
-make[3]: Nothing to be done for `all'.
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-make[3]: Nothing to be done for `all-am'.
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core'
-make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core'
-make[1]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core'
-
-**** Build Finished ****
-
 **** Clean-only build of configuration Default for project manycell-core ****
 
 make clean 
@@ -196,7 +118,7 @@ mv -f .deps/libcopasiwsclient_la-soapC.Tpo .deps/libcopasiwsclient_la-soapC.Plo
 mv -f .deps/libcopasiwsclient_la-soapClient.Tpo .deps/libcopasiwsclient_la-soapClient.Plo
 ../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT libcopasiwsclient_la-stdsoap2.lo -MD -MP -MF .deps/libcopasiwsclient_la-stdsoap2.Tpo -c -o libcopasiwsclient_la-stdsoap2.lo `test -f 'copasiws/stdsoap2.cpp' || echo './'`copasiws/stdsoap2.cpp
 mv -f .deps/libcopasiwsclient_la-stdsoap2.Tpo .deps/libcopasiwsclient_la-stdsoap2.Plo
-../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o libcopasiwsclient.la -rpath /home/dada/workspace/git/manycell/manycell-core/lib/lib libcopasiwsclient_la-CopasiWSSimulator.lo libcopasiwsclient_la-SimulatorFactory.lo libcopasiwsclient_la-soapC.lo libcopasiwsclient_la-soapClient.lo libcopasiwsclient_la-stdsoap2.lo  
+../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o libcopasiwsclient.la -rpath /usr/local/lib libcopasiwsclient_la-CopasiWSSimulator.lo libcopasiwsclient_la-SimulatorFactory.lo libcopasiwsclient_la-soapC.lo libcopasiwsclient_la-soapClient.lo libcopasiwsclient_la-stdsoap2.lo  
 libtool: link: g++ -shared -nostdlib /usr/lib/gcc/i586-suse-linux/4.5/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.5/crtbeginS.o  .libs/libcopasiwsclient_la-CopasiWSSimulator.o .libs/libcopasiwsclient_la-SimulatorFactory.o .libs/libcopasiwsclient_la-soapC.o .libs/libcopasiwsclient_la-soapClient.o .libs/libcopasiwsclient_la-stdsoap2.o   -L/usr/lib/gcc/i586-suse-linux/4.5 -L/usr/lib/gcc/i586-suse-linux/4.5/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.5/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/i586-suse-linux/4.5/crtendS.o /usr/lib/gcc/i586-suse-linux/4.5/../../../crtn.o    -Wl,-soname -Wl,libcopasiwsclient.so.0 -o .libs/libcopasiwsclient.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libcopasiwsclient.so.0" && ln -s "libcopasiwsclient.so.0.0.0" "libcopasiwsclient.so.0")
 libtool: link: (cd ".libs" && rm -f "libcopasiwsclient.so" && ln -s "libcopasiwsclient.so.0.0.0" "libcopasiwsclient.so")
@@ -322,7 +244,7 @@ libtool: compile:  gfortran -g -O2 -c ellu_rad_upper.f90 -o ellu_rad_upper.o >/d
 ../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ellu_radii.lo ellu_radii.f90
 libtool: compile:  gfortran -g -O2 -c ellu_radii.f90  -fPIC -o .libs/ellu_radii.o
 libtool: compile:  gfortran -g -O2 -c ellu_radii.f90 -o ellu_radii.o >/dev/null 2>&1
-../../../doltlibtool --tag=F77   --mode=link gfortran  -g -O2   -o libellipsoid.la -rpath /home/dada/workspace/git/manycell/manycell-core/lib/lib destsv.lo dgqt.lo dtplll.lo ell_aff_pr.lo ell_bbt2chol.lo ell_bbt2eig.lo ell_chol_det.lo ell_chol2eig.lo ell_cov_2d.lo ell_eig2chol.lo ell_full2eig.lo ell_full2low.lo ell_house.lo ell_line_proj.lo ell_low2chol.lo ell_pair_cover_cv_ql.lo ell_pair_cover_cv.lo ell_pair_cover_it.lo ell_pair_cover_query.lo ell_pair_cover_sph.lo ell_pair_cover.lo ell_pair_separate.lo ell_pair_shrink.lo ell_pt_dist.lo ell_pt_hyper.lo ell_pt_in.lo ell_pt_modify.lo ell_pt_near_far.lo ell_pt_shrink.lo ell_pts_uncover.lo ell_rad_lower.lo ell_rad_upper.lo ell_radii.lo ellu_bbt2chol.lo ellu_chol2eig.lo ellu_pt_near_far.lo ellu_rad_upper.lo ellu_radii.lo -llapack -lblas 
+../../../doltlibtool --tag=F77   --mode=link gfortran  -g -O2   -o libellipsoid.la -rpath /usr/local/lib destsv.lo dgqt.lo dtplll.lo ell_aff_pr.lo ell_bbt2chol.lo ell_bbt2eig.lo ell_chol_det.lo ell_chol2eig.lo ell_cov_2d.lo ell_eig2chol.lo ell_full2eig.lo ell_full2low.lo ell_house.lo ell_line_proj.lo ell_low2chol.lo ell_pair_cover_cv_ql.lo ell_pair_cover_cv.lo ell_pair_cover_it.lo ell_pair_cover_query.lo ell_pair_cover_sph.lo ell_pair_cover.lo ell_pair_separate.lo ell_pair_shrink.lo ell_pt_dist.lo ell_pt_hyper.lo ell_pt_in.lo ell_pt_modify.lo ell_pt_near_far.lo ell_pt_shrink.lo ell_pts_uncover.lo ell_rad_lower.lo ell_rad_upper.lo ell_radii.lo ellu_bbt2chol.lo ellu_chol2eig.lo ellu_pt_near_far.lo ellu_rad_upper.lo ellu_radii.lo -llapack -lblas 
 libtool: link: gfortran -shared  .libs/destsv.o .libs/dgqt.o .libs/dtplll.o .libs/ell_aff_pr.o .libs/ell_bbt2chol.o .libs/ell_bbt2eig.o .libs/ell_chol_det.o .libs/ell_chol2eig.o .libs/ell_cov_2d.o .libs/ell_eig2chol.o .libs/ell_full2eig.o .libs/ell_full2low.o .libs/ell_house.o .libs/ell_line_proj.o .libs/ell_low2chol.o .libs/ell_pair_cover_cv_ql.o .libs/ell_pair_cover_cv.o .libs/ell_pair_cover_it.o .libs/ell_pair_cover_query.o .libs/ell_pair_cover_sph.o .libs/ell_pair_cover.o .libs/ell_pair_separate.o .libs/ell_pair_shrink.o .libs/ell_pt_dist.o .libs/ell_pt_hyper.o .libs/ell_pt_in.o .libs/ell_pt_modify.o .libs/ell_pt_near_far.o .libs/ell_pt_shrink.o .libs/ell_pts_uncover.o .libs/ell_rad_lower.o .libs/ell_rad_upper.o .libs/ell_radii.o .libs/ellu_bbt2chol.o .libs/ellu_chol2eig.o .libs/ellu_pt_near_far.o .libs/ellu_rad_upper.o .libs/ellu_radii.o   -llapack -lblas    -Wl,-soname -Wl,libellipsoid.so.0 -o .libs/libellipsoid.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libellipsoid.so.0" && ln -s "libellipsoid.so.0.0.0" "libellipsoid.so.0")
 libtool: link: (cd ".libs" && rm -f "libellipsoid.so" && ln -s "libellipsoid.so.0.0.0" "libellipsoid.so")
@@ -335,8 +257,8 @@ make[4]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimul
 mv -f .deps/libistabulator_la-BSTree.Tpo .deps/libistabulator_la-BSTree.Plo
 ../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT libistabulator_la-ISTabulator.lo -MD -MP -MF .deps/libistabulator_la-ISTabulator.Tpo -c -o libistabulator_la-ISTabulator.lo `test -f 'ISTabulator.cpp' || echo './'`ISTabulator.cpp
 mv -f .deps/libistabulator_la-ISTabulator.Tpo .deps/libistabulator_la-ISTabulator.Plo
-../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o libistabulator.la -rpath /home/dada/workspace/git/manycell/manycell-core/lib/lib libistabulator_la-BSTree.lo libistabulator_la-ISTabulator.lo ../copasiwsclient/libcopasiwsclient.la ../istabulator/ellipsoid/libellipsoid.la 
-libtool: link: g++ -shared -nostdlib /usr/lib/gcc/i586-suse-linux/4.5/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.5/crtbeginS.o  .libs/libistabulator_la-BSTree.o .libs/libistabulator_la-ISTabulator.o   -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs -Wl,-rpath -Wl,/home/dada/workspace/git/manycell/manycell-core/lib/lib ../copasiwsclient/.libs/libcopasiwsclient.so ../istabulator/ellipsoid/.libs/libellipsoid.so -llapack -lblas -L/usr/lib/gcc/i586-suse-linux/4.5 -L/usr/lib/gcc/i586-suse-linux/4.5/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.5/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/i586-suse-linux/4.5/crtendS.o /usr/lib/gcc/i586-suse-linux/4.5/../../../crtn.o    -Wl,-soname -Wl,libistabulator.so.0 -o .libs/libistabulator.so.0.0.0
+../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o libistabulator.la -rpath /usr/local/lib libistabulator_la-BSTree.lo libistabulator_la-ISTabulator.lo ../copasiwsclient/libcopasiwsclient.la ../istabulator/ellipsoid/libellipsoid.la 
+libtool: link: g++ -shared -nostdlib /usr/lib/gcc/i586-suse-linux/4.5/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.5/crtbeginS.o  .libs/libistabulator_la-BSTree.o .libs/libistabulator_la-ISTabulator.o   -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs ../copasiwsclient/.libs/libcopasiwsclient.so ../istabulator/ellipsoid/.libs/libellipsoid.so -llapack -lblas -L/usr/lib/gcc/i586-suse-linux/4.5 -L/usr/lib/gcc/i586-suse-linux/4.5/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.5/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/i586-suse-linux/4.5/crtendS.o /usr/lib/gcc/i586-suse-linux/4.5/../../../crtn.o    -Wl,-soname -Wl,libistabulator.so.0 -o .libs/libistabulator.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libistabulator.so.0" && ln -s "libistabulator.so.0.0.0" "libistabulator.so.0")
 libtool: link: (cd ".libs" && rm -f "libistabulator.so" && ln -s "libistabulator.so.0.0.0" "libistabulator.so")
 libtool: link: ar cru .libs/libistabulator.a  libistabulator_la-BSTree.o libistabulator_la-ISTabulator.o
@@ -348,8 +270,8 @@ Making all in psconnector
 make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
 ../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -I/usr/lib/java/jdk1.6.0_16/include -I/home/dada/tools/jdk1.6.0_25/include -I/home/dada/tools/jdk1.6.0_25/include/linux -I/usr/lib/java/jdk1.6.0_16/include/linux -I/home/dada/tools/libsbml-4.0.1/include -DLINUX   -g -O2 -MT libpsconnector_la-sim_jnative_PSConnector.lo -MD -MP -MF .deps/libpsconnector_la-sim_jnative_PSConnector.Tpo -c -o libpsconnector_la-sim_jnative_PSConnector.lo `test -f 'sim_jnative_PSConnector.cpp' || echo './'`sim_jnative_PSConnector.cpp
 mv -f .deps/libpsconnector_la-sim_jnative_PSConnector.Tpo .deps/libpsconnector_la-sim_jnative_PSConnector.Plo
-../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o libpsconnector.la -rpath /home/dada/workspace/git/manycell/manycell-core/lib/lib libpsconnector_la-sim_jnative_PSConnector.lo ../copasiwsclient/libcopasiwsclient.la ../istabulator/libistabulator.la 
-libtool: link: g++ -shared -nostdlib /usr/lib/gcc/i586-suse-linux/4.5/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.5/crtbeginS.o  .libs/libpsconnector_la-sim_jnative_PSConnector.o   -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/.libs -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs -Wl,-rpath -Wl,/home/dada/workspace/git/manycell/manycell-core/lib/lib -L/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs -L/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs ../copasiwsclient/.libs/libcopasiwsclient.so ../istabulator/.libs/libistabulator.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs/libcopasiwsclient.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs/libellipsoid.so -llapack -lblas -L/usr/lib/gcc/i586-suse-linux/4.5 -L/usr/lib/gcc/i586-suse-linux/4.5/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.5/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/i586-suse-linux/4.5/crtendS.o /usr/lib/gcc/i586-suse-linux/4.5/../../../crtn.o    -Wl,-soname -Wl,libpsconnector.so.0 -o .libs/libpsconnector.so.0.0.0
+../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o libpsconnector.la -rpath /usr/local/lib libpsconnector_la-sim_jnative_PSConnector.lo ../copasiwsclient/libcopasiwsclient.la ../istabulator/libistabulator.la 
+libtool: link: g++ -shared -nostdlib /usr/lib/gcc/i586-suse-linux/4.5/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.5/crtbeginS.o  .libs/libpsconnector_la-sim_jnative_PSConnector.o   -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/.libs -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs -L/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs -L/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs ../copasiwsclient/.libs/libcopasiwsclient.so ../istabulator/.libs/libistabulator.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs/libcopasiwsclient.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs/libellipsoid.so -llapack -lblas -L/usr/lib/gcc/i586-suse-linux/4.5 -L/usr/lib/gcc/i586-suse-linux/4.5/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.5/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/i586-suse-linux/4.5/crtendS.o /usr/lib/gcc/i586-suse-linux/4.5/../../../crtn.o    -Wl,-soname -Wl,libpsconnector.so.0 -o .libs/libpsconnector.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libpsconnector.so.0" && ln -s "libpsconnector.so.0.0.0" "libpsconnector.so.0")
 libtool: link: (cd ".libs" && rm -f "libpsconnector.so" && ln -s "libpsconnector.so.0.0.0" "libpsconnector.so")
 libtool: link: ar cru .libs/libpsconnector.a  libpsconnector_la-sim_jnative_PSConnector.o
@@ -361,7 +283,7 @@ make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimul
 g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT testsimulator-TestSimulator.o -MD -MP -MF .deps/testsimulator-TestSimulator.Tpo -c -o testsimulator-TestSimulator.o `test -f 'TestSimulator.cpp' || echo './'`TestSimulator.cpp
 mv -f .deps/testsimulator-TestSimulator.Tpo .deps/testsimulator-TestSimulator.Po
 ../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o testsimulator testsimulator-TestSimulator.o ../copasiwsclient/libcopasiwsclient.la ../istabulator/libistabulator.la -llapack -lblas 
-libtool: link: g++ -g -O2 -o .libs/testsimulator testsimulator-TestSimulator.o  ../copasiwsclient/.libs/libcopasiwsclient.so ../istabulator/.libs/libistabulator.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs/libcopasiwsclient.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs/libellipsoid.so -llapack -lblas -Wl,-rpath -Wl,/home/dada/workspace/git/manycell/manycell-core/lib/lib
+libtool: link: g++ -g -O2 -o .libs/testsimulator testsimulator-TestSimulator.o  ../copasiwsclient/.libs/libcopasiwsclient.so ../istabulator/.libs/libistabulator.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs/libcopasiwsclient.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs/libellipsoid.so -llapack -lblas
 make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
 make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
 make[3]: Nothing to be done for `all-am'.
@@ -369,6 +291,67 @@ make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimula
 make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
 make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core'
 make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core'
+make[1]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core'
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Default for project manycell-core ****
+
+make clean 
+Making clean in mssimulator
+make[1]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
+Making clean in testapp
+make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
+ rm -f testsimulator
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
+Making clean in psconnector
+make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
+test -z "libpsconnector.la" || rm -f libpsconnector.la
+rm -f "./so_locations"
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
+Making clean in istabulator
+make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
+Making clean in ellipsoid
+make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid'
+test -z "libellipsoid.la" || rm -f libellipsoid.la
+rm -f "./so_locations"
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid'
+Making clean in .
+make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
+test -z "libistabulator.la" || rm -f libistabulator.la
+rm -f "./so_locations"
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
+make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
+Making clean in copasiwsclient
+make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient'
+test -z "libcopasiwsclient.la" || rm -f libcopasiwsclient.la
+rm -f "./so_locations"
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient'
+Making clean in .
+make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
+rm -rf .libs _libs
+rm -f *.lo
+make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
+make[1]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
+Making clean in .
+make[1]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core'
+rm -rf .libs _libs
+rm -f *.lo
 make[1]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core'
 
 **** Build Finished ****

@@ -1,4 +1,4 @@
-MANYCELL software is organised into three packages.
+MANYCELL software is organised into three packages in addition to CopasiWS software for simulation of sub-cellular network model.
 
 Package 1 - manycell-core:
 This package is the main simulation engine. It receives requests from the manycell-mas package and carries out simulation of the single cell model using serial, parallel or ISAT based simulations.
@@ -10,3 +10,5 @@ It takes the multiscale model encoded in Multiscale Model XML description langua
 Package 3 - manycell-web:
 This package provides the web-based interface to MANYCELL. It is developed in Java and JSP using struts. It runs on apache/tomcat server. 
 
+CopasiWS - COPASI Web Services:
+This is an independent software needed by MANYCELL for simulation of biochemical reaction network encoded in SBML. 

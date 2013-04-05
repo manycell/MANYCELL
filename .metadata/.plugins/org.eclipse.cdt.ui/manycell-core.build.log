@@ -1,196 +1,61 @@
 
-**** Build of configuration Default for project manycell-core ****
+**** Clean-only build of configuration Default for project manycell-core ****
 
-make all 
-make  all-recursive
-make[1]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core'
-Making all in mssimulator
-make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-Making all in copasiwsclient
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient'
-../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT libcopasiwsclient_la-CopasiWSSimulator.lo -MD -MP -MF .deps/libcopasiwsclient_la-CopasiWSSimulator.Tpo -c -o libcopasiwsclient_la-CopasiWSSimulator.lo `test -f 'CopasiWSSimulator.cpp' || echo './'`CopasiWSSimulator.cpp
-mv -f .deps/libcopasiwsclient_la-CopasiWSSimulator.Tpo .deps/libcopasiwsclient_la-CopasiWSSimulator.Plo
-../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT libcopasiwsclient_la-SimulatorFactory.lo -MD -MP -MF .deps/libcopasiwsclient_la-SimulatorFactory.Tpo -c -o libcopasiwsclient_la-SimulatorFactory.lo `test -f 'SimulatorFactory.cpp' || echo './'`SimulatorFactory.cpp
-mv -f .deps/libcopasiwsclient_la-SimulatorFactory.Tpo .deps/libcopasiwsclient_la-SimulatorFactory.Plo
-../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT libcopasiwsclient_la-soapC.lo -MD -MP -MF .deps/libcopasiwsclient_la-soapC.Tpo -c -o libcopasiwsclient_la-soapC.lo `test -f 'copasiws/soapC.cpp' || echo './'`copasiws/soapC.cpp
-mv -f .deps/libcopasiwsclient_la-soapC.Tpo .deps/libcopasiwsclient_la-soapC.Plo
-../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT libcopasiwsclient_la-soapClient.lo -MD -MP -MF .deps/libcopasiwsclient_la-soapClient.Tpo -c -o libcopasiwsclient_la-soapClient.lo `test -f 'copasiws/soapClient.cpp' || echo './'`copasiws/soapClient.cpp
-mv -f .deps/libcopasiwsclient_la-soapClient.Tpo .deps/libcopasiwsclient_la-soapClient.Plo
-../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT libcopasiwsclient_la-stdsoap2.lo -MD -MP -MF .deps/libcopasiwsclient_la-stdsoap2.Tpo -c -o libcopasiwsclient_la-stdsoap2.lo `test -f 'copasiws/stdsoap2.cpp' || echo './'`copasiws/stdsoap2.cpp
-mv -f .deps/libcopasiwsclient_la-stdsoap2.Tpo .deps/libcopasiwsclient_la-stdsoap2.Plo
-../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o libcopasiwsclient.la -rpath /home/dada/workspace/git/manycell/manycell-core/lib/lib libcopasiwsclient_la-CopasiWSSimulator.lo libcopasiwsclient_la-SimulatorFactory.lo libcopasiwsclient_la-soapC.lo libcopasiwsclient_la-soapClient.lo libcopasiwsclient_la-stdsoap2.lo  
-libtool: link: g++ -shared -nostdlib /usr/lib/gcc/i586-suse-linux/4.5/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.5/crtbeginS.o  .libs/libcopasiwsclient_la-CopasiWSSimulator.o .libs/libcopasiwsclient_la-SimulatorFactory.o .libs/libcopasiwsclient_la-soapC.o .libs/libcopasiwsclient_la-soapClient.o .libs/libcopasiwsclient_la-stdsoap2.o   -L/usr/lib/gcc/i586-suse-linux/4.5 -L/usr/lib/gcc/i586-suse-linux/4.5/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.5/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/i586-suse-linux/4.5/crtendS.o /usr/lib/gcc/i586-suse-linux/4.5/../../../crtn.o    -Wl,-soname -Wl,libcopasiwsclient.so.0 -o .libs/libcopasiwsclient.so.0.0.0
-libtool: link: (cd ".libs" && rm -f "libcopasiwsclient.so.0" && ln -s "libcopasiwsclient.so.0.0.0" "libcopasiwsclient.so.0")
-libtool: link: (cd ".libs" && rm -f "libcopasiwsclient.so" && ln -s "libcopasiwsclient.so.0.0.0" "libcopasiwsclient.so")
-libtool: link: ar cru .libs/libcopasiwsclient.a  libcopasiwsclient_la-CopasiWSSimulator.o libcopasiwsclient_la-SimulatorFactory.o libcopasiwsclient_la-soapC.o libcopasiwsclient_la-soapClient.o libcopasiwsclient_la-stdsoap2.o
-libtool: link: ranlib .libs/libcopasiwsclient.a
-libtool: link: ( cd ".libs" && rm -f "libcopasiwsclient.la" && ln -s "../libcopasiwsclient.la" "libcopasiwsclient.la" )
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient'
-Making all in istabulator
+make clean 
+Making clean in mssimulator
+make[1]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
+Making clean in testapp
+make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
+ rm -f testsimulator
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
+Making clean in psconnector
+make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
+test -z "libpsconnector.la" || rm -f libpsconnector.la
+rm -f "./so_locations"
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
+Making clean in istabulator
+make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
+Making clean in ellipsoid
+make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid'
+test -z "libellipsoid.la" || rm -f libellipsoid.la
+rm -f "./so_locations"
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid'
+Making clean in .
 make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-Making all in ellipsoid
-make[4]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid'
-../../../doltlibtool --tag=F77   --mode=compile gfortran  -g -O2 -c -o destsv.lo destsv.f
-libtool: compile:  gfortran -g -O2 -c destsv.f  -fPIC -o .libs/destsv.o
-libtool: compile:  gfortran -g -O2 -c destsv.f -o destsv.o >/dev/null 2>&1
-../../../doltlibtool --tag=F77   --mode=compile gfortran  -g -O2 -c -o dgqt.lo dgqt.f
-libtool: compile:  gfortran -g -O2 -c dgqt.f  -fPIC -o .libs/dgqt.o
-libtool: compile:  gfortran -g -O2 -c dgqt.f -o dgqt.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o dtplll.lo dtplll.f90
-libtool: compile:  gfortran -g -O2 -c dtplll.f90  -fPIC -o .libs/dtplll.o
-libtool: compile:  gfortran -g -O2 -c dtplll.f90 -o dtplll.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_aff_pr.lo ell_aff_pr.f90
-libtool: compile:  gfortran -g -O2 -c ell_aff_pr.f90  -fPIC -o .libs/ell_aff_pr.o
-libtool: compile:  gfortran -g -O2 -c ell_aff_pr.f90 -o ell_aff_pr.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_bbt2chol.lo ell_bbt2chol.f90
-libtool: compile:  gfortran -g -O2 -c ell_bbt2chol.f90  -fPIC -o .libs/ell_bbt2chol.o
-libtool: compile:  gfortran -g -O2 -c ell_bbt2chol.f90 -o ell_bbt2chol.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_bbt2eig.lo ell_bbt2eig.f90
-libtool: compile:  gfortran -g -O2 -c ell_bbt2eig.f90  -fPIC -o .libs/ell_bbt2eig.o
-libtool: compile:  gfortran -g -O2 -c ell_bbt2eig.f90 -o ell_bbt2eig.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_chol_det.lo ell_chol_det.f90
-libtool: compile:  gfortran -g -O2 -c ell_chol_det.f90  -fPIC -o .libs/ell_chol_det.o
-libtool: compile:  gfortran -g -O2 -c ell_chol_det.f90 -o ell_chol_det.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_chol2eig.lo ell_chol2eig.f90
-libtool: compile:  gfortran -g -O2 -c ell_chol2eig.f90  -fPIC -o .libs/ell_chol2eig.o
-libtool: compile:  gfortran -g -O2 -c ell_chol2eig.f90 -o ell_chol2eig.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_cov_2d.lo ell_cov_2d.f90
-libtool: compile:  gfortran -g -O2 -c ell_cov_2d.f90  -fPIC -o .libs/ell_cov_2d.o
-libtool: compile:  gfortran -g -O2 -c ell_cov_2d.f90 -o ell_cov_2d.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_eig2chol.lo ell_eig2chol.f90
-libtool: compile:  gfortran -g -O2 -c ell_eig2chol.f90  -fPIC -o .libs/ell_eig2chol.o
-libtool: compile:  gfortran -g -O2 -c ell_eig2chol.f90 -o ell_eig2chol.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_full2eig.lo ell_full2eig.f90
-libtool: compile:  gfortran -g -O2 -c ell_full2eig.f90  -fPIC -o .libs/ell_full2eig.o
-libtool: compile:  gfortran -g -O2 -c ell_full2eig.f90 -o ell_full2eig.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_full2low.lo ell_full2low.f90
-libtool: compile:  gfortran -g -O2 -c ell_full2low.f90  -fPIC -o .libs/ell_full2low.o
-libtool: compile:  gfortran -g -O2 -c ell_full2low.f90 -o ell_full2low.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_house.lo ell_house.f90
-libtool: compile:  gfortran -g -O2 -c ell_house.f90  -fPIC -o .libs/ell_house.o
-libtool: compile:  gfortran -g -O2 -c ell_house.f90 -o ell_house.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_line_proj.lo ell_line_proj.f90
-libtool: compile:  gfortran -g -O2 -c ell_line_proj.f90  -fPIC -o .libs/ell_line_proj.o
-libtool: compile:  gfortran -g -O2 -c ell_line_proj.f90 -o ell_line_proj.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_low2chol.lo ell_low2chol.f90
-libtool: compile:  gfortran -g -O2 -c ell_low2chol.f90  -fPIC -o .libs/ell_low2chol.o
-libtool: compile:  gfortran -g -O2 -c ell_low2chol.f90 -o ell_low2chol.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pair_cover_cv_ql.lo ell_pair_cover_cv_ql.f90
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover_cv_ql.f90  -fPIC -o .libs/ell_pair_cover_cv_ql.o
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover_cv_ql.f90 -o ell_pair_cover_cv_ql.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pair_cover_cv.lo ell_pair_cover_cv.f90
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover_cv.f90  -fPIC -o .libs/ell_pair_cover_cv.o
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover_cv.f90 -o ell_pair_cover_cv.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pair_cover_it.lo ell_pair_cover_it.f90
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover_it.f90  -fPIC -o .libs/ell_pair_cover_it.o
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover_it.f90 -o ell_pair_cover_it.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pair_cover_query.lo ell_pair_cover_query.f90
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover_query.f90  -fPIC -o .libs/ell_pair_cover_query.o
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover_query.f90 -o ell_pair_cover_query.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pair_cover_sph.lo ell_pair_cover_sph.f90
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover_sph.f90  -fPIC -o .libs/ell_pair_cover_sph.o
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover_sph.f90 -o ell_pair_cover_sph.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pair_cover.lo ell_pair_cover.f90
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover.f90  -fPIC -o .libs/ell_pair_cover.o
-libtool: compile:  gfortran -g -O2 -c ell_pair_cover.f90 -o ell_pair_cover.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pair_separate.lo ell_pair_separate.f90
-libtool: compile:  gfortran -g -O2 -c ell_pair_separate.f90  -fPIC -o .libs/ell_pair_separate.o
-libtool: compile:  gfortran -g -O2 -c ell_pair_separate.f90 -o ell_pair_separate.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pair_shrink.lo ell_pair_shrink.f90
-libtool: compile:  gfortran -g -O2 -c ell_pair_shrink.f90  -fPIC -o .libs/ell_pair_shrink.o
-libtool: compile:  gfortran -g -O2 -c ell_pair_shrink.f90 -o ell_pair_shrink.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pt_dist.lo ell_pt_dist.f90
-libtool: compile:  gfortran -g -O2 -c ell_pt_dist.f90  -fPIC -o .libs/ell_pt_dist.o
-libtool: compile:  gfortran -g -O2 -c ell_pt_dist.f90 -o ell_pt_dist.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pt_hyper.lo ell_pt_hyper.f90
-libtool: compile:  gfortran -g -O2 -c ell_pt_hyper.f90  -fPIC -o .libs/ell_pt_hyper.o
-libtool: compile:  gfortran -g -O2 -c ell_pt_hyper.f90 -o ell_pt_hyper.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pt_in.lo ell_pt_in.f90
-libtool: compile:  gfortran -g -O2 -c ell_pt_in.f90  -fPIC -o .libs/ell_pt_in.o
-libtool: compile:  gfortran -g -O2 -c ell_pt_in.f90 -o ell_pt_in.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pt_modify.lo ell_pt_modify.f90
-libtool: compile:  gfortran -g -O2 -c ell_pt_modify.f90  -fPIC -o .libs/ell_pt_modify.o
-libtool: compile:  gfortran -g -O2 -c ell_pt_modify.f90 -o ell_pt_modify.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pt_near_far.lo ell_pt_near_far.f90
-libtool: compile:  gfortran -g -O2 -c ell_pt_near_far.f90  -fPIC -o .libs/ell_pt_near_far.o
-libtool: compile:  gfortran -g -O2 -c ell_pt_near_far.f90 -o ell_pt_near_far.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pt_shrink.lo ell_pt_shrink.f90
-libtool: compile:  gfortran -g -O2 -c ell_pt_shrink.f90  -fPIC -o .libs/ell_pt_shrink.o
-libtool: compile:  gfortran -g -O2 -c ell_pt_shrink.f90 -o ell_pt_shrink.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_pts_uncover.lo ell_pts_uncover.f90
-libtool: compile:  gfortran -g -O2 -c ell_pts_uncover.f90  -fPIC -o .libs/ell_pts_uncover.o
-libtool: compile:  gfortran -g -O2 -c ell_pts_uncover.f90 -o ell_pts_uncover.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_rad_lower.lo ell_rad_lower.f90
-libtool: compile:  gfortran -g -O2 -c ell_rad_lower.f90  -fPIC -o .libs/ell_rad_lower.o
-libtool: compile:  gfortran -g -O2 -c ell_rad_lower.f90 -o ell_rad_lower.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_rad_upper.lo ell_rad_upper.f90
-libtool: compile:  gfortran -g -O2 -c ell_rad_upper.f90  -fPIC -o .libs/ell_rad_upper.o
-libtool: compile:  gfortran -g -O2 -c ell_rad_upper.f90 -o ell_rad_upper.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ell_radii.lo ell_radii.f90
-libtool: compile:  gfortran -g -O2 -c ell_radii.f90  -fPIC -o .libs/ell_radii.o
-libtool: compile:  gfortran -g -O2 -c ell_radii.f90 -o ell_radii.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ellu_bbt2chol.lo ellu_bbt2chol.f90
-libtool: compile:  gfortran -g -O2 -c ellu_bbt2chol.f90  -fPIC -o .libs/ellu_bbt2chol.o
-libtool: compile:  gfortran -g -O2 -c ellu_bbt2chol.f90 -o ellu_bbt2chol.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ellu_chol2eig.lo ellu_chol2eig.f90
-libtool: compile:  gfortran -g -O2 -c ellu_chol2eig.f90  -fPIC -o .libs/ellu_chol2eig.o
-libtool: compile:  gfortran -g -O2 -c ellu_chol2eig.f90 -o ellu_chol2eig.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ellu_pt_near_far.lo ellu_pt_near_far.f90
-libtool: compile:  gfortran -g -O2 -c ellu_pt_near_far.f90  -fPIC -o .libs/ellu_pt_near_far.o
-libtool: compile:  gfortran -g -O2 -c ellu_pt_near_far.f90 -o ellu_pt_near_far.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ellu_rad_upper.lo ellu_rad_upper.f90
-libtool: compile:  gfortran -g -O2 -c ellu_rad_upper.f90  -fPIC -o .libs/ellu_rad_upper.o
-libtool: compile:  gfortran -g -O2 -c ellu_rad_upper.f90 -o ellu_rad_upper.o >/dev/null 2>&1
-../../../doltlibtool --tag=FC   --mode=compile gfortran  -g -O2 -c -o ellu_radii.lo ellu_radii.f90
-libtool: compile:  gfortran -g -O2 -c ellu_radii.f90  -fPIC -o .libs/ellu_radii.o
-libtool: compile:  gfortran -g -O2 -c ellu_radii.f90 -o ellu_radii.o >/dev/null 2>&1
-../../../doltlibtool --tag=F77   --mode=link gfortran  -g -O2   -o libellipsoid.la -rpath /home/dada/workspace/git/manycell/manycell-core/lib/lib destsv.lo dgqt.lo dtplll.lo ell_aff_pr.lo ell_bbt2chol.lo ell_bbt2eig.lo ell_chol_det.lo ell_chol2eig.lo ell_cov_2d.lo ell_eig2chol.lo ell_full2eig.lo ell_full2low.lo ell_house.lo ell_line_proj.lo ell_low2chol.lo ell_pair_cover_cv_ql.lo ell_pair_cover_cv.lo ell_pair_cover_it.lo ell_pair_cover_query.lo ell_pair_cover_sph.lo ell_pair_cover.lo ell_pair_separate.lo ell_pair_shrink.lo ell_pt_dist.lo ell_pt_hyper.lo ell_pt_in.lo ell_pt_modify.lo ell_pt_near_far.lo ell_pt_shrink.lo ell_pts_uncover.lo ell_rad_lower.lo ell_rad_upper.lo ell_radii.lo ellu_bbt2chol.lo ellu_chol2eig.lo ellu_pt_near_far.lo ellu_rad_upper.lo ellu_radii.lo -llapack -lblas 
-libtool: link: gfortran -shared  .libs/destsv.o .libs/dgqt.o .libs/dtplll.o .libs/ell_aff_pr.o .libs/ell_bbt2chol.o .libs/ell_bbt2eig.o .libs/ell_chol_det.o .libs/ell_chol2eig.o .libs/ell_cov_2d.o .libs/ell_eig2chol.o .libs/ell_full2eig.o .libs/ell_full2low.o .libs/ell_house.o .libs/ell_line_proj.o .libs/ell_low2chol.o .libs/ell_pair_cover_cv_ql.o .libs/ell_pair_cover_cv.o .libs/ell_pair_cover_it.o .libs/ell_pair_cover_query.o .libs/ell_pair_cover_sph.o .libs/ell_pair_cover.o .libs/ell_pair_separate.o .libs/ell_pair_shrink.o .libs/ell_pt_dist.o .libs/ell_pt_hyper.o .libs/ell_pt_in.o .libs/ell_pt_modify.o .libs/ell_pt_near_far.o .libs/ell_pt_shrink.o .libs/ell_pts_uncover.o .libs/ell_rad_lower.o .libs/ell_rad_upper.o .libs/ell_radii.o .libs/ellu_bbt2chol.o .libs/ellu_chol2eig.o .libs/ellu_pt_near_far.o .libs/ellu_rad_upper.o .libs/ellu_radii.o   -llapack -lblas    -Wl,-soname -Wl,libellipsoid.so.0 -o .libs/libellipsoid.so.0.0.0
-libtool: link: (cd ".libs" && rm -f "libellipsoid.so.0" && ln -s "libellipsoid.so.0.0.0" "libellipsoid.so.0")
-libtool: link: (cd ".libs" && rm -f "libellipsoid.so" && ln -s "libellipsoid.so.0.0.0" "libellipsoid.so")
-libtool: link: ar cru .libs/libellipsoid.a  destsv.o dgqt.o dtplll.o ell_aff_pr.o ell_bbt2chol.o ell_bbt2eig.o ell_chol_det.o ell_chol2eig.o ell_cov_2d.o ell_eig2chol.o ell_full2eig.o ell_full2low.o ell_house.o ell_line_proj.o ell_low2chol.o ell_pair_cover_cv_ql.o ell_pair_cover_cv.o ell_pair_cover_it.o ell_pair_cover_query.o ell_pair_cover_sph.o ell_pair_cover.o ell_pair_separate.o ell_pair_shrink.o ell_pt_dist.o ell_pt_hyper.o ell_pt_in.o ell_pt_modify.o ell_pt_near_far.o ell_pt_shrink.o ell_pts_uncover.o ell_rad_lower.o ell_rad_upper.o ell_radii.o ellu_bbt2chol.o ellu_chol2eig.o ellu_pt_near_far.o ellu_rad_upper.o ellu_radii.o
-libtool: link: ranlib .libs/libellipsoid.a
-libtool: link: ( cd ".libs" && rm -f "libellipsoid.la" && ln -s "../libellipsoid.la" "libellipsoid.la" )
-make[4]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid'
-make[4]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT libistabulator_la-BSTree.lo -MD -MP -MF .deps/libistabulator_la-BSTree.Tpo -c -o libistabulator_la-BSTree.lo `test -f 'BSTree.cpp' || echo './'`BSTree.cpp
-mv -f .deps/libistabulator_la-BSTree.Tpo .deps/libistabulator_la-BSTree.Plo
-../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT libistabulator_la-ISTabulator.lo -MD -MP -MF .deps/libistabulator_la-ISTabulator.Tpo -c -o libistabulator_la-ISTabulator.lo `test -f 'ISTabulator.cpp' || echo './'`ISTabulator.cpp
-mv -f .deps/libistabulator_la-ISTabulator.Tpo .deps/libistabulator_la-ISTabulator.Plo
-../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o libistabulator.la -rpath /home/dada/workspace/git/manycell/manycell-core/lib/lib libistabulator_la-BSTree.lo libistabulator_la-ISTabulator.lo ../copasiwsclient/libcopasiwsclient.la ../istabulator/ellipsoid/libellipsoid.la 
-libtool: link: g++ -shared -nostdlib /usr/lib/gcc/i586-suse-linux/4.5/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.5/crtbeginS.o  .libs/libistabulator_la-BSTree.o .libs/libistabulator_la-ISTabulator.o   -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs -Wl,-rpath -Wl,/home/dada/workspace/git/manycell/manycell-core/lib/lib ../copasiwsclient/.libs/libcopasiwsclient.so ../istabulator/ellipsoid/.libs/libellipsoid.so -llapack -lblas -L/usr/lib/gcc/i586-suse-linux/4.5 -L/usr/lib/gcc/i586-suse-linux/4.5/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.5/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/i586-suse-linux/4.5/crtendS.o /usr/lib/gcc/i586-suse-linux/4.5/../../../crtn.o    -Wl,-soname -Wl,libistabulator.so.0 -o .libs/libistabulator.so.0.0.0
-libtool: link: (cd ".libs" && rm -f "libistabulator.so.0" && ln -s "libistabulator.so.0.0.0" "libistabulator.so.0")
-libtool: link: (cd ".libs" && rm -f "libistabulator.so" && ln -s "libistabulator.so.0.0.0" "libistabulator.so")
-libtool: link: ar cru .libs/libistabulator.a  libistabulator_la-BSTree.o libistabulator_la-ISTabulator.o
-libtool: link: ranlib .libs/libistabulator.a
-libtool: link: ( cd ".libs" && rm -f "libistabulator.la" && ln -s "../libistabulator.la" "libistabulator.la" )
-make[4]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
+test -z "libistabulator.la" || rm -f libistabulator.la
+rm -f "./so_locations"
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
 make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
-Making all in psconnector
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
-../../doltlibtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -I/usr/lib/java/jdk1.6.0_16/include -I/home/dada/tools/jdk1.6.0_25/include -I/home/dada/tools/jdk1.6.0_25/include/linux -I/usr/lib/java/jdk1.6.0_16/include/linux -I/home/dada/tools/libsbml-4.0.1/include -DLINUX   -g -O2 -MT libpsconnector_la-sim_jnative_PSConnector.lo -MD -MP -MF .deps/libpsconnector_la-sim_jnative_PSConnector.Tpo -c -o libpsconnector_la-sim_jnative_PSConnector.lo `test -f 'sim_jnative_PSConnector.cpp' || echo './'`sim_jnative_PSConnector.cpp
-mv -f .deps/libpsconnector_la-sim_jnative_PSConnector.Tpo .deps/libpsconnector_la-sim_jnative_PSConnector.Plo
-../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o libpsconnector.la -rpath /home/dada/workspace/git/manycell/manycell-core/lib/lib libpsconnector_la-sim_jnative_PSConnector.lo ../copasiwsclient/libcopasiwsclient.la ../istabulator/libistabulator.la 
-libtool: link: g++ -shared -nostdlib /usr/lib/gcc/i586-suse-linux/4.5/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.5/crtbeginS.o  .libs/libpsconnector_la-sim_jnative_PSConnector.o   -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/.libs -Wl,-rpath -Wl,/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs -Wl,-rpath -Wl,/home/dada/workspace/git/manycell/manycell-core/lib/lib -L/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs -L/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs ../copasiwsclient/.libs/libcopasiwsclient.so ../istabulator/.libs/libistabulator.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs/libcopasiwsclient.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs/libellipsoid.so -llapack -lblas -L/usr/lib/gcc/i586-suse-linux/4.5 -L/usr/lib/gcc/i586-suse-linux/4.5/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.5/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/i586-suse-linux/4.5/crtendS.o /usr/lib/gcc/i586-suse-linux/4.5/../../../crtn.o    -Wl,-soname -Wl,libpsconnector.so.0 -o .libs/libpsconnector.so.0.0.0
-libtool: link: (cd ".libs" && rm -f "libpsconnector.so.0" && ln -s "libpsconnector.so.0.0.0" "libpsconnector.so.0")
-libtool: link: (cd ".libs" && rm -f "libpsconnector.so" && ln -s "libpsconnector.so.0.0.0" "libpsconnector.so")
-libtool: link: ar cru .libs/libpsconnector.a  libpsconnector_la-sim_jnative_PSConnector.o
-libtool: link: ranlib .libs/libpsconnector.a
-libtool: link: ( cd ".libs" && rm -f "libpsconnector.la" && ln -s "../libpsconnector.la" "libpsconnector.la" )
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/psconnector'
-Making all in testapp
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
-g++ -DHAVE_CONFIG_H -I. -I../..  -I../../include -DLINUX   -g -O2 -MT testsimulator-TestSimulator.o -MD -MP -MF .deps/testsimulator-TestSimulator.Tpo -c -o testsimulator-TestSimulator.o `test -f 'TestSimulator.cpp' || echo './'`TestSimulator.cpp
-mv -f .deps/testsimulator-TestSimulator.Tpo .deps/testsimulator-TestSimulator.Po
-../../doltlibtool --tag=CXX   --mode=link g++  -g -O2   -o testsimulator testsimulator-TestSimulator.o ../copasiwsclient/libcopasiwsclient.la ../istabulator/libistabulator.la -llapack -lblas 
-libtool: link: g++ -g -O2 -o .libs/testsimulator testsimulator-TestSimulator.o  ../copasiwsclient/.libs/libcopasiwsclient.so ../istabulator/.libs/libistabulator.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient/.libs/libcopasiwsclient.so /home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator/ellipsoid/.libs/libellipsoid.so -llapack -lblas -Wl,-rpath -Wl,/home/dada/workspace/git/manycell/manycell-core/lib/lib
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/testapp'
-make[3]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-make[3]: Nothing to be done for `all-am'.
-make[3]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
+make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/istabulator'
+Making clean in copasiwsclient
+make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient'
+test -z "libcopasiwsclient.la" || rm -f libcopasiwsclient.la
+rm -f "./so_locations"
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator/copasiwsclient'
+Making clean in .
+make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
+rm -rf .libs _libs
+rm -f *.lo
 make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
-make[2]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core'
-make[2]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core'
+make[1]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core/mssimulator'
+Making clean in .
+make[1]: Entering directory `/home/dada/workspace/MANYCELL/manycell-core'
+rm -rf .libs _libs
+rm -f *.lo
 make[1]: Leaving directory `/home/dada/workspace/MANYCELL/manycell-core'
 
 **** Build Finished ****

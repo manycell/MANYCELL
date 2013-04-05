@@ -16,7 +16,7 @@ import org.postgresql.jdbc2.optional.ConnectionPool;
 
 /**
  * The <code>DBDataManager</code> provides programming interface 
- * for the connecting to the database. It implements the interface defined in <code> DataManagerInterface class</code> 
+ * for connecting to the database. It implements the interface defined in <code>DataManagerInterface</code> 
  *
  * @author Joseph O. Dada 
  *
@@ -803,7 +803,7 @@ public class DBDataManager implements DataManagerInterface {
 			stmt = this.getDataProcessConnection().createStatement();
 			ResultSet rset = stmt.executeQuery("SELECT MAX(gage) FROM cellagents");
 			if(rset.next()){
-				maxAge = rset.getInt("gage");
+				maxAge = rset.getInt(1);
 			}
 			StringBuffer buff = new StringBuffer();
 			for(int i = 0; i<=maxAge; i++){
@@ -867,10 +867,18 @@ public class DBDataManager implements DataManagerInterface {
 		Connection con = null;
 			String url = null; 
 			Properties props = new Properties();
+			
+		//	url = "jdbc:postgresql://dada.mib.man.ac.uk:5432/unicellsys";
+			String hostName = "130.88.212.174"; //bernie.mib.manchester.ac.uk		
+				url = "jdbc:postgresql://"+hostName+":5432/unicellsys";//			
+				props.setProperty("user", "postgres");
+				props.setProperty("password", ""); 
+			
+			
 			// database connection paramters		
-				url = "jdbc:postgresql://"+this.database.getServerName()+":5432/"+this.database.getDatabaseName();						
+		/*		url = "jdbc:postgresql://"+this.database.getServerName()+":5432/"+this.database.getDatabaseName();						
 				props.setProperty("user", this.database.getUserName());
-				props.setProperty("password", this.database.getPassword()); 
+				props.setProperty("password", this.database.getPassword()); */
 				
 			try {			
 				Class.forName("org.postgresql.Driver");
