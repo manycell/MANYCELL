@@ -786,7 +786,7 @@ public class TimeCourseSimulationResult {
 								if(i==stateEventLine)stateAtEvent = stateAtEvent+"$"+strLine; 
 								
 								//spiesser model ###
-							//	if(i==stateEventLine-1)stateAtEvent = stateAtEvent+"$"+strLine; 
+						//		if(i==stateEventLine-1)stateAtEvent = stateAtEvent+"$"+strLine; 
 								
 							}
 

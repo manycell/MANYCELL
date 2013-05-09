@@ -15,6 +15,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
@@ -531,13 +532,20 @@ public class MasterAgent extends Agent {
 
 				// the queue object and the thread pool
 				int dataFetchSize = 30;
-
+				
 				// parallel execution directive 
-				BlockThreadPoolExecutor execSvc = null;
+				
+			//	BlockThreadPoolExecutor execSvc = null;	
+				ExecutorService execSvc = null;
 				if (this.isAllowParallelExecution()) {
+					BlockingQueue<Runnable> queue = new ArrayBlockingQueue<Runnable>(dataFetchSize*4);
+				    RejectedExecutionHandler rejectedExecutionHandler = new ThreadPoolExecutor.CallerRunsPolicy();
+				   execSvc =  new ThreadPoolExecutor(this.getNumberOfProcessors(), this.getNumberOfProcessors(), 500L, TimeUnit.MILLISECONDS, queue, rejectedExecutionHandler);
+
 					//create a queue object to handle job queue
-					BlockingQueue<Runnable> queue = new ArrayBlockingQueue<Runnable>(this.getNumberOfProcessors()*2, true);						
-					execSvc = new BlockThreadPoolExecutor(this.getNumberOfProcessors(), this.getNumberOfProcessors(), this.getNumberOfProcessors(), 500L, TimeUnit.MILLISECONDS, queue);
+				//	BlockingQueue<Runnable> queue = new ArrayBlockingQueue<Runnable>(this.getNumberOfProcessors()*2, true);						
+				//	execSvc = new BlockThreadPoolExecutor(this.getNumberOfProcessors(), this.getNumberOfProcessors(), this.getNumberOfProcessors(), 500L, TimeUnit.MILLISECONDS, queue);
+					
 					
 				}
 				// database manager object
@@ -712,9 +720,9 @@ public class MasterAgent extends Agent {
 								}
 						//		System.out.println("No of Agent Now: "+this.agentCounter);
 								
-								if (this.isAllowParallelExecution()) {
+							/*	if (this.isAllowParallelExecution()) {
 									System.out.println("Queue size now: " + execSvc.getQueue().size());
-								}
+								}*/
 								this.agentCounter++;					
 
 							}
